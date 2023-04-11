@@ -1,0 +1,18 @@
+.barnav {
+  visibility: hidden;
+  display: none; }
+
+.main-slider {
+  height: 300px; }
+
+@media (min-width: 1024px) {
+  .barnav {
+    visibility: visible;
+    display: contents; }
+    .barnav .ul-main {
+      display: inherit; }
+
+  .main-slider {
+    height: 500px; } }
+
+/*# sourceMappingURL=style.css.map */
