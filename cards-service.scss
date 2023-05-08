@@ -1,0 +1,168 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins');
+:root{
+    --colorEven: #00a0e3;
+    --colorOdd: #c3073f
+}
+
+.containers{
+    // width: 1350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // gap: 30px;
+    // margin: 3rem auto;
+    // padding: 0 1rem;
+}
+
+.containers .card{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    margin: 0 auto;
+    background: #fff;
+    transition: .5s;
+}
+
+.containers .card:nth-child(even):hover{
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+                0px 0px 30px 0px var(--colorEven);
+}
+.containers .card:nth-child(odd):hover{
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset,
+                0px 0px 30px 0px var(--colorOdd);
+}
+
+.containers .card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers .card .face.face1{
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.containers .card:nth-child(even) .face.face1 h2, .containers .card:nth-child(even) .face.face1 p{
+    color: var(--colorEven);
+}
+.containers .card:nth-child(odd) .face.face1 h2, .containers .card:nth-child(odd) .face.face1 p{
+    color: var(--colorOdd);
+}
+
+.containers .card .face.face1 h2{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 30px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.containers .card:nth-child(even) .face.face1 h2:hover{
+    border-left: 3px solid var(--colorEven);
+    border-right: 3px solid var(--colorEven);
+}
+
+.containers .card:nth-child(odd) .face.face1 h2:hover{
+    border-left: 3px solid var(--colorOdd);
+    border-right: 3px solid var(--colorOdd);
+}
+
+.containers .card .face.face1 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    // margin-top: 30px;
+    transition: .5s;
+}
+
+.containers .card:nth-child(even) .face.face1 a{
+    color: var(--colorEven);
+    border: 2px solid var(--colorEven);
+}
+.containers .card:nth-child(odd) .face.face1 a{
+    color: var(--colorOdd);
+    border: 2px solid var(--colorOdd);
+}
+
+.containers .card:nth-child(even) .face.face1 a:hover{
+    color: #fff;
+    background: var(--colorEven);
+}
+.containers .card:nth-child(odd) .face.face1 a:hover{
+    color: #fff;
+    background: var(--colorOdd);
+}
+
+
+
+
+
+.containers .card .face.face2{
+    border: 1px solid #fff;
+}
+
+.containers .card:nth-child(even) .face.face2{
+    background: var(--colorEven);
+    transition: .5s;
+    flex-direction: column;
+}
+.containers .card:nth-child(odd) .face.face2{
+    background: var(--colorOdd);
+    transition: .5s;
+    flex-direction: column;
+}
+
+.containers .card:hover .face.face2{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+}
+
+.containers .card:hover .face.face2 h1{
+    display: none;
+}
+.containers .card:hover .face.face2 h2{
+    font-size: 2em;
+}
+
+
+.containers .card:nth-child(even):hover .face.face2 h2{
+    color: var(--colorEven);
+}
+.containers .card:nth-child(odd):hover .face.face2 h2{
+    color: var(--colorOdd);
+}
+
+.containers .card:nth-child(even):hover .face.face2{
+    border: 2px solid var(--colorEven);
+}
+.containers .card:nth-child(odd):hover .face.face2{
+    border: 2px solid var(--colorOdd);
+}
+
+.containers .card .face.face2 h1{
+    color: #fff;
+    margin-top: 25px;
+}
+
+.containers .card .face.face2 h2{
+    font-size: 8em;
+    color: #fff;
+    transform: .5s;
+}
