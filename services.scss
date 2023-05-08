@@ -1,0 +1,467 @@
+*,*:before,*:after {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.services__section label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0; top: 0;
+  cursor: pointer;
+}
+.services__section {
+  background: #fff;
+  overflow: hidden;
+  border: 6px solid #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+.services__section:before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 50%;
+}
+#wedding:checked ~ .services__section label[for='wedding'],
+#dole:checked ~ .services__section label[for='dole'],
+#tele:checked ~ .services__section label[for='tele'],
+#catele:checked ~ .services__section label[for='catele']{
+  display: none;
+}
+figcaption a {
+  display: block;
+  text-decoration: none;
+  color:  #99C5F0;
+  font-size: 5vw;
+  line-height: 1.35;
+  text-align: center;
+}
+figcaption a:hover {
+  color: #FFFF99;
+}
+
+figure {
+  background-size: cover;
+  position: absolute;
+  width: 32%;
+  height: calc(100% / 3);
+  left: 75%;
+  transition: 1s;
+  overflow: hidden;
+  z-index: 2;
+}
+figure:nth-child(1) {
+  background-image: url(https://2.bp.blogspot.com/-VqBiS5s8Z18/Uwn6L_kg2aI/AAAAAAAAI1c/0OktwnnhrBg/s1600/centrar-css.jpg);
+}
+figure:nth-child(2) {
+  background-image: url(https://1.bp.blogspot.com/-2wr0l_tXMXg/Uwn6OI1bBwI/AAAAAAAAI18/4xGPQH_H1-E/s1600/transition.jpg);
+}
+figure:nth-child(3) {
+  background-image: url(https://2.bp.blogspot.com/-k27USFfTGUE/Uwn6MQfGRLI/AAAAAAAAI1k/EtsOmdO3ofQ/s1600/font-face.jpg);
+}
+figure:nth-child(4) {
+  background-image: url(https://4.bp.blogspot.com/-7V2u5I6skyQ/Uwn6Nj5SAbI/AAAAAAAAI10/l-5jcl1TL0I/s1600/scollbars.jpg);
+}
+
+figcaption {
+  position: absolute;
+  background: rgba(0,0,0,.4);
+  width: 100%;
+  -webkit-transition: .5s cubic-bezier(0,0,.4,1.9);
+  transition: .5s cubic-bezier(0,0,.4,1.9);
+  opacity: 0;
+}
+figure:nth-child(1) figcaption {
+  bottom: 110%;
+  left:0;
+}
+figure:nth-child(2) figcaption {
+  bottom: 10%;
+  left: -110%
+}
+figure:nth-child(3) figcaption {
+  bottom: 10%;
+  left: 110%
+}
+figure:nth-child(4) figcaption {
+  bottom: -110%;
+  left: 0%
+}
+
+// #wedding:checked
+#wedding:checked ~ section figure:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  z-index: 1;
+}
+#wedding:checked ~ section figure:nth-child(2) {
+  top: 103%;
+  left: 0;
+}
+#wedding:checked ~ section figure:nth-child(3) {
+  top: 103%;
+  left: 34%;
+}
+#wedding:checked ~ section figure:nth-child(4) {
+  top: 103%;
+  left: 68%;
+}
+// #dole:checked
+#dole:checked ~ section figure:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  z-index: 1;
+}
+#dole:checked ~ section figure:nth-child(3) {
+  top: 103%;
+  left: 0;
+}
+#dole:checked ~ section figure:nth-child(4) {
+  top: 103%;
+  left: 34%;
+}
+#dole:checked ~ section figure:nth-child(1) {
+  top: 103%;
+  left: 68%; 
+}
+// #tele:checked
+#tele:checked ~ section figure:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  z-index: 1;
+}
+#tele:checked ~ section figure:nth-child(4) {
+  top: 103%;
+  left: 0;
+}
+#tele:checked ~ section figure:nth-child(1) {
+  top: 103%;
+  left: 34%; 
+}
+#tele:checked ~ section figure:nth-child(2) { 
+  top: 103%;
+  left: 68%; 
+}
+// #catole:checked
+#catele:checked ~ section figure:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  z-index: 1;
+}
+#catele:checked ~ section figure:nth-child(1) {
+  top: 103%;
+  left: 0;
+}
+#catele:checked ~ section figure:nth-child(2) {
+  top: 103%;
+  left: 34%;
+}
+#catele:checked ~ section figure:nth-child(3) {
+  top: 103%;
+  left: 68%;
+}
+
+figure h2 {
+  padding: .5rem 0;
+  font-weight: 400;
+  color: yellow;
+  font-size: 7vw;
+  text-align: center;
+  transform: scale(0);
+  transform-origin: 0 0;
+  transition: .5s;
+  text-shadow: 0 0 1px #000, 1px 1px 1px #000, 2px 2px 1px #000, 3px 3px 1px #000;
+}
+#wedding:checked ~ section figure:nth-child(1) h2,
+#dole:checked ~ section figure:nth-child(2) h2,
+#tele:checked ~ section figure:nth-child(3) h2,
+#catele:checked ~ section figure:nth-child(4) h2 {
+  transform: scale(.7);
+  transition-delay: .8s;
+}
+#wedding:checked ~ section figure:nth-child(1) figcaption,
+#dole:checked ~ section figure:nth-child(2) figcaption,
+#tele:checked ~ section figure:nth-child(3) figcaption,
+#catele:checked ~ section figure:nth-child(4) figcaption {
+  opacity: 1;
+  transition-delay: 1.3s;
+  bottom: 10%;
+  left: 0;
+}
+.tester {
+  margin: -6px 2rem 0;
+}
+.tester:after {
+  content:'';
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom: 6px dotted #99C5F0;
+  transition: 1.5s steps(25);
+  z-index: 10;
+}
+#wedding:checked ~ .tester:after {width: 25%;}
+#dole:checked ~ .tester:after {width: 50%;}
+#tele:checked ~ .tester:after {width: 75%;}
+#catele:checked ~ .tester:after {width: 100%;}
+
+@media (min-width: 768px) {
+  .services__section {
+    background: #fff;
+    margin: 2rem 2rem 0rem;
+  }
+  .services__section:before {
+    padding-top: 37.5%;
+  }
+  figure {
+    width: 25%;
+  }
+  // #wedding:checked
+  #wedding:checked ~ section figure:nth-child(1) {
+    width: 75%;
+    left: -6px;
+  }
+  #wedding:checked ~ section figure:nth-child(2) {
+    top: -6px;
+    left: 75%;
+  }
+  #wedding:checked ~ section figure:nth-child(3) {
+    top: calc(100% / 3);
+    left: 75%;
+  }
+  #wedding:checked ~ section figure:nth-child(4) {
+    top: calc(100% / 1.5 + 6px);
+    left: 75%;
+  }
+  // #dole:checked
+  #dole:checked ~ section figure:nth-child(2) {
+    width: 75%;
+    left: -6px;
+  }
+  #dole:checked ~ section figure:nth-child(3) {
+    top: -6px;
+    left: 75%;
+  }
+  #dole:checked ~ section figure:nth-child(4) {
+    top: calc(100% / 3);
+    left: 75%;
+  }
+  #dole:checked ~ section figure:nth-child(1) {
+    top: calc(100% / 1.5 + 6px);
+    left: 75%;  
+  }
+  // #tele:checked
+  #tele:checked ~ section figure:nth-child(3) {
+    width: 75%;
+    left: -6px;
+  }
+  #tele:checked ~ section figure:nth-child(4) {
+    top: -6px;
+    left: 75%;
+  }
+  #tele:checked ~ section figure:nth-child(1) {
+    top: calc(100% / 3); 
+    left: 75%;
+  }
+  #tele:checked ~ section figure:nth-child(2) {
+    top: calc(100% / 1.5 + 6px); 
+    left: 75%;  
+  }
+  // #catole:checked
+  #catele:checked ~ section figure:nth-child(4) {
+    width: 75%;
+    left: -6px;
+  }
+  #catele:checked ~ section figure:nth-child(1) {
+    top: -6px;
+    left: 75%;
+  }
+  #catele:checked ~ section figure:nth-child(2) {
+    top: calc(100% / 3);
+    left: 75%;
+  }
+  #catele:checked ~ section figure:nth-child(3) {
+    top: calc(100% / 1.5 + 6px);
+    left: 75%;
+  }
+} 
+
+$primary-font: sans-serif;
+$secondary-font:'Oswald', sans-serif;
+
+main {
+  background: #ccc;
+  background: url('https://www.mirandawashburn.com/media/projects/travelHomepage/hero.jpeg') no-repeat center center;
+  background-size: cover;
+  box-shadow: inset 0 0 100vw 100vw rgba(0,0,0,0.3),0 16px 8px -8px rgba(0, 0, 0, 0.4);
+  height: 440px;
+  padding: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+}
+/*CARD*/
+.card__btn {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 24px;
+  font-family: $primary-font;
+  font-size: 6px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 88px;
+  margin: 8px 0 0;
+  opacity: 0.5;
+  padding: 8px;
+}
+.card__text-sm {
+  color: #fff;
+  font-family: $primary-font;
+  font-size: 10px;
+  margin: 0;
+  padding: 16px 0 8px;
+  position: relative;
+}
+.card__text-sm::before {
+  content: "";
+  background: #fff;
+  height: 1px;
+  width: 16px;
+  position: absolute;
+  top: 0;
+}
+.card__text-lg {
+  color: #fff;
+  font-family: $secondary-font;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+  width: 100%;
+  margin: 0;
+}
+/*...large...*/
+.card-lg__container {
+  padding: 0 16px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .card__text-lg {
+    font-family: $secondary-font;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+  } 
+  .card__text-md {
+    color: #fff;
+    font-family: $primary-font;
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 1.5;
+    padding: 0 32px 0 0;
+    opacity: 0.5;
+  }
+  .card__text-sm {
+    font-size: 14px;
+  }
+  .card__text-sm::before {
+    width: 24px;
+    height: 2px;
+  }
+}
+/*...small...*/
+.card-sm__container {
+  height: 232px;
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+}
+.card-sm {
+  background: #ccc;
+  background-size: cover; 
+  background-position: center center;
+  box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.3),
+    0 16px 8px -8px rgba(0,0,0,0.4);
+  border-radius: 8px;
+  width: 104px;
+  height: calc(100% - 64px); 
+  margin: 0 8px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    margin: -8px 8px 0;
+  }
+  .card__text-sm { 
+    opacity: 0.8;
+  }
+}
+/*HIDE DEFAULT SCROLL BAR*/
+.main::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  -ms-overflow-style: none;
+}
+
+
+
+
+
+// valores NOSOTROS
+.valores {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 8px;
+  justify-content: center;
+  .val_1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .val_2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .val_3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .val_4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 610px) {
+  .valores {
+    .val_1 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    .val_2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+    .val_3 {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+    .val_4 {
+      grid-row: 1/2;
+      grid-column: 4/5;
+    }
+  }
+}

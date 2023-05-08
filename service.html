@@ -10,166 +10,186 @@
         <!-- Google icons material symbols -->
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
+
     <body>
-        <nav class="navbar navbar-dark bg-dark fixed-top p-0">
-            <div class="d-flex justify-content-between align-items-center px-2 w-100" style="background-color: #D9B471">
-                <div>
-                    <a href="" style="display: flex; color:#31353e; text-decoration: none">
-                        <i class="material-symbols-outlined pe-1" style="font-size: 17px">mail</i>
-                        <span style="font-size: 14px; font-weight: 700;">goldenartist@gmail.com</span>
-                    </a>
-                </div>
-    
-                <div>
-                    <a href="" style="text-decoration: none">
-                        <img src="asset/public/facebook.png" style="width: 20px; height: 20px; vertical-align: text-bottom" alt="">
-                    </a>
-                    <a href="" style="text-decoration: none">
-                        <img src="asset/public/whatsapp.png" style="width: 20px; height: 20px; vertical-align: text-bottom" alt="">
-                    </a>
-                    <a href="" style="text-decoration: none">
-                        <img src="asset/public/instagram.png" style="width: 20px; height: 20px; vertical-align: text-bottom" alt="">
-                    </a>
-                    <a href="" style="text-decoration: none">
-                        <img src="asset/public/gorjeo.png" style="width: 20px; height: 20px; vertical-align: text-bottom" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <div style="width: 110px">
-                        <img src="asset/public/golden-artist-wh.png" class="img-fluid" style="object-fit: contain" alt="">
-                    </div>
-                </a>
-                <div class="barnav">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ul-main">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Galería</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="artist.html">Artistas</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="service.html">Servicios</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contactos</a>
-                        </li>
-                    </ul>
-                   
-                    <div class="box">
-                      <div class="container-2">
-                          <span class="icon"><i class="material-symbols-outlined">search</i></span>
-                          <input type="search" id="search" placeholder="Search..." />
-                      </div>
-                    </div>
-                </div>
-
-                <button class="navbar-toggler d-lg-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header pb-0">
-                        <a class="navbar-brand" href="index.html">
-                            <div style="width: 110px">
-                                <img src="asset/public/golden-artist-wh.png" class="img-fluid" style="object-fit: contain" alt="">
+        <header>
+            <nav>
+                <div class="container d-flex justify-content-between">
+                    <section>
+                        <a href="index.html">
+                            <div style="width: 150px; position: relative; z-index: 205">
+                                <img src="asset/public/golden-artist-wh.png" class="img-fluid" alt="">
                             </div>
                         </a>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
+                    </section>
 
-                    <div class="offcanvas-body pt-0">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
+                    <ul class="d-none d-lg-flex">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Galería</a>
-                            </li>
+                        <li>
+                            <a href="service.html">Servicios</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="artist.html">Artistas</a>
-                            </li>
+                        <li>
+                            <a href="artist.html">Artistas</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="service.html">Servicios</a>
-                            </li>
+                        <li>
+                            <a href="gallery.html">Galería</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contactos</a>
-                            </li>
-                        </ul>
-                       
-                        <div class="box">
+                        <li>
+                            <a href="contacts.html">Nosotros</a>
+                        </li>
+                        <li class="ms-3">
                             <div class="container-2">
                                 <span class="icon"><i class="material-symbols-outlined">search</i></span>
                                 <input type="search" id="search" placeholder="Search..." />
                             </div>
-                        </div>
+                        </li>
+                    </ul>
+
+                    <div class="navigation d-flex d-lg-none position-relative">
+                        <input class="navigation__checkbox" id="nav-toggle" type="checkbox">
+
+                        <label class="navigation__button" for="nav-toggle">
+                        <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+                        </label>
+
+                        <div class="navigation__background"></div>
+                
+                        <nav class="navigation__nav" role="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="index.html" class="navigation__link" style="color: #EBD1AE;">
+                                    <i class="material-symbols-outlined">home</i>
+                                    <span style="vertical-align: text-bottom;">&nbsp;Inicio</span>
+                                </a>
+                            </li>
+
+                            <li class="navigation__item">
+                                <a href="service.html" class="navigation__link" style="color: #EBD1AE;">
+                                    <i class="material-symbols-outlined">card_travel</i>
+                                    <span style="vertical-align: text-bottom;">&nbsp;Servicios</span>
+                                </a>
+                            </li>
+
+                            <li class="navigation__item">
+                                <a href="artist.html" class="navigation__link" style="color: #EBD1AE;">
+                                    <i class="material-symbols-outlined">switch_account</i>
+                                    <span style="vertical-align: text-bottom;">&nbsp;Artistas</span>
+                                </a>
+                            </li>
+
+                            <li class="navigation__item">
+                                <a href="gallery.html" class="navigation__link" style="color: #EBD1AE;">
+                                    <i class="material-symbols-outlined">collections</i>
+                                    <span style="vertical-align: text-bottom;">&nbsp;Galería</span>
+                                </a>
+                            </li>
+
+                            <li class="navigation__item">
+                                <a href="contacts.html" class="navigation__link" style="color: #EBD1AE;">
+                                    <i class="material-symbols-outlined">person_outline</i>
+                                    <span style="vertical-align: text-bottom;">&nbsp;Nosotros</span>
+                                </a>
+                            </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
-        <!-- service -->
-        <div class="pt-3 pb-5" style="background-color: white; margin-top: 97px">
+        <!-- Artist -->
+        <div class="py-5 mt-4" style="background-color: white">
             <div class="container">
-                <div class="row mb-5 justify-content-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img class="mb-4" src="asset/images/service4.jpeg"
-                            style="height: 100%; width: 100%; object-fit: cover;"/>
+                <div class="row my-5 justify-content-center">
+                    <div class="col-md-5">
+                        <h4 class="text-center">Matrimoios</h4>
+                        <h5 class="text-center">momentos memorables</h5>
+                        <p class="text-center" id="mitexto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae rem mollitia 
+                            aliquam exercitationem repudiandae. Doloremque animi dignissimos aut sed assumenda.
+                        </p>
                     </div>
 
-                    <div class="col-md-5 justify-content-center d-flex flex-column">
-                        <h4 style="font-weight: 700">Matrimonios</h4>
-                        <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat provident vitae non, 
-                            voluptas, fugit nemo omnis ab voluptatibus minus quibusdam tempora sapiente suscipit 
-                            saepe maiores ipsam in enim! Rem, unde aspernatur mollitia totam ea tempora.
-                        </h6>
+                    <div class="col-md-5 mb-3 mb-md-0">
+                        <img id="galeria" class="img-fluid mb-4" src="asset/images/banner2.jpeg" alt=""/>
+                    </div>
+
+                    <div id="nav" class="col-12 d-flex justify-content-start justify-content-md-center" style="overflow: auto;">
+                        <ul>
+                            <li>
+                                <a onclick="cargarfoto(201,0)">
+                                    <img src="https://picsum.photos/id/201/400/400" alt="">
+                                </a>    
+                            </li>
+                            
+                            <li>
+                                <a onclick="cargarfoto(202,1)">
+                                    <img src="https://picsum.photos/id/202/400/400" alt="">
+                                </a>    
+                            </li>
+                            
+                            <li>
+                                <a onclick="cargarfoto(203,2)">
+                                    <img src="https://picsum.photos/id/203/400/400" alt="">
+                                </a>    
+                            </li>
+                            
+                            <li>
+                                <a onclick="cargarfoto(204,3)">
+                                    <img src="https://picsum.photos/id/204/400/400" alt="">
+                                </a>    
+                            </li>
+                            
+                        </ul>
                     </div>
                 </div>
-
-                <div class="row gy-3 gy-xl-0 justify-content-center">
-                    <div class="col-10 col-sm-6 col-md-5 col-lg-3">
-                        <div class="text-center">
-                            <img class="mb-4" src="asset/images/boda.jpg"
-                            style="height: 150px; width: 100%; object-fit: cover;"/>
-                        </div>
-                    </div>
-    
-                    <div class="col-10 col-sm-6 col-md-5 col-lg-3">
-                        <div class="text-center">
-                                <img class="mb-4" src="asset/images/boda2.jpg"
-                            style="height: 150px; width: 100%; object-fit: cover;"/>
-                        </div>
-                    </div>
-    
-                    <div class="col-10 col-sm-6 col-md-5 col-lg-3">
-                        <div class="text-center">
-                                <img class="mb-4" src="asset/images/boda3.jpg"
-                            style="height: 150px; width: 100%; object-fit: cover;"/>
-                        </div>
-                    </div>
-    
-                    <div class="col-10 col-sm-6 col-md-5 col-lg-3">
-                        <div class="text-center">
-                                <img class="mb-4" src="asset/images/boda4.jpg"
-                            style="height: 150px; width: 100%; object-fit: cover;"/>
-                        </div>
-                    </div>
-                </div>
-
+                
                 <div class="text-center mb-5">
+                    <h3>Otros Servicios</h3>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, 
+                        blanditiis.Lorem ipsum dolor sit amet.
+                    </h6>
+                </div>
+
+                <main id="main" class="main">
+                    <section>
+                        <h1 class="text-center mt-4">Servicios de calidad</h1>
+                    </section>
+                  
+                    <section class="card-sm__container">
+                      <!--- START: CARD --->
+                      <section class="card-sm" style="background-image:url('https://www.mirandawashburn.com/media/projects/travelHomepage/losLancesBeach.jpeg')">
+                        <p class="card__text-sm">Tanifa - Spain</p>
+                        <h1 class="card__text-lg">Los Lances Beach</h1>
+                      </section>
+                      <!--- END: CARD --->
+                  
+                      <!--- START: CARD --->
+                      <section class="card-sm" style="background-image: url('https://www.mirandawashburn.com/media/projects/travelHomepage/sierraNevada.jpeg')">
+                        <p class="card__text-sm">Sierra Nevada - USA</p>
+                        <h1 class="card__text-lg">Yosemite National  </h1>
+                      </section>
+                      <!--- END: CARD --->
+                  
+                      <!--- START: CARD --->
+                      <section class="card-sm" style="background-image: url('https://www.mirandawashburn.com/media/projects/travelHomepage/cappadociaTurkey.jpeg')">
+                        <p class="card__text-sm">Cappadocia - Turkey</p>
+                        <h1 class="card__text-lg">Goreme &nbsp; Valley</h1>
+                      </section>
+                      <!--- END: CARD --->
+                    </section>
+                  
+                </main>
+
+                <div class="text-center my-5">
                     <h3>Comentarios</h3>
                     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h6>
                     <h6>Lorem ipsum dolor sit amet.</h6>
@@ -251,72 +271,84 @@
             </div>
         </div>
 
+        <div class="progress-wrap active-progress">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" 
+                    style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 234.936;">
+                </path>
+            </svg>
+            <i class="material-symbols-outlined" style="position: absolute; top: 7px; left: 8px; color: #6B522F">keyboard_double_arrow_up</i>
+        </div>
+
+        <a href=""  target="_blank">
+            <img class="float" src="/asset/public/whatsapp-white.png" class="img-fluid" alt="">
+        </a>
+
         <!-- Footer -->
         <div>
             <div class="py-4" style="background-color: black">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 mb-3">
+                    <div class="row mx-0">
+                        <div class="col-12 col-lg-5 mb-3 px-0">
                             <a href="index.html">
-                                <div class="m-auto" style="width: 110px">
+                                <div class="mx-auto mb-3" style="width: 200px">
                                     <img src="asset/public/golden-artist-wv.png" class="img-fluid" style="object-fit: contain" alt="">
                                 </div>
                             </a>
-                        </div>
 
-                        <div class="col-md-8 text-white text-center mb-3 mb-md-0">
-                            <h4 class="mb-3">CONTACTENOS</h4>
-                            <h6 class="mb-4">Comparta con nosostros sus peticiones, comentarios y opiniones por medio de nuestros canales de comunicación.</h6>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="row text-white  justify-content-md-end">
-                                <div class="col-md-3 d-flex align-items-center justify-content-center mb-2">                   
+                            <div class="row g-1 text-white  justify-content-md-end">
+                                <div class="col-12 col-md-4 col-lg-12 d-flex align-items-center justify-content-center">                   
                                     <i class="material-symbols-outlined me-2" style="font-size: 20px;">phone</i><span>310 000 0000</span>
                                 </div>
 
-                                <div class="col-md-4 d-flex align-items-center justify-content-center mb-2">
-                                    <i class="material-symbols-outlined me-2" style="font-size: 20px;">mail</i><span>goldenartist@gmail.com</span>
-                                </div>
-                            
-                                <div class="col-md-3 d-flex align-items-center justify-content-center mb-2">
+                                <div class="col-12 col-md-4 col-lg-12 d-flex align-items-center justify-content-center">
                                     <i class="material-symbols-outlined me-2" style="font-size: 20px;">location_on</i><span>Cra 00 # 00 - 00</span>
+                                </div>
+
+                                <div class="col-12 col-md-4 col-lg-12 d-flex align-items-center justify-content-center">
+                                    <i class="material-symbols-outlined me-2" style="font-size: 20px;">mail</i><span>goldenartist@gmail.com</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- <div class="col-md-7 text-white">
-                            <div class="row">
-                                <div class="col-md-5 mb-3 mb-md-0">
-                                    <input class="form-control mb-4" type="text" style="background-color: inherit; border: 1px solid white" placeholder="Name">
-                                    <input class="form-control" type="text" style="background-color: inherit; border: 1px solid white" placeholder="E-mail">
-                                </div>
+                        <div class="col-12 col-lg-7 text-white text-center mb-3 mb-md-0"> 
+                            <h4 class="mb-3 text-white">CONTACTENOS</h4>
+                            <h6 class="mb-4 text-white">Comparta con nosostros sus peticiones, 
+                                comentarios y opiniones por medio de nuestros 
+                                canales de comunicación.
+                            </h6>   
 
-                                <div class="col-md-7 mb-3">
+                            <div class="row mx-0">
+                                <div class="col-md-7 mb-3 mb-lg-0">
                                     <textarea class="form-control h-100" name="" id="" cols="30" rows="5" placeholder="Message" style="background-color: inherit;"></textarea>
                                 </div>
 
-                                <div class="col-12 d-flex justify-content-end">
-                                    <button class="btn text-white" style="border: 1px solid white">Submit</button>
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <input class="form-control mb-4" type="text" style="background-color: inherit; border: 1px solid white" placeholder="Name">
+                                    <input class="form-control" type="text" style="background-color: inherit; border: 1px solid white" placeholder="E-mail">
+
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <button class="btn text-white" style="border: 1px solid white">Submit</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="row mx-0 text-white">
                 <div class="col-3 d-flex align-items-center justify-content-center py-3" style="background-color: #334c8c">
-                    <img src="asset/public/facebook.png" style="width: 50px; height: 50px; vertical-align: text-bottom; border: 2px solid; border-radius: 50%;" alt="">
+                    <img src="/asset/public/facebook-white.png" style="width: 50px; height: 50px; vertical-align: text-bottom" alt="">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center py-3" style="background-color: #29a71a">
-                    <img src="asset/public/whatsapp.png" style="width: 50px; height: 50px; vertical-align: text-bottom; border: 2px solid; border-radius: 50%;" alt="">
+                    <img src="/asset/public/whatsapp-white.png" style="width: 50px; height: 50px; vertical-align: text-bottom" alt="">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center py-3" style="background-color: #db169e">
-                    <img src="asset/public/instagram.png" style="width:50px; height:50px; vertical-align: text-bottom; border: 2px solid; border-radius: 50%;" alt="">
+                    <img src="/asset/public/instagram-white.png" style="width:50px; height:50px; vertical-align: text-bottom" alt="">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center py-3" style="background-color: #00a6de">
-                    <img src="asset/public/gorjeo.png" style="width: 50px; height: 50px; vertical-align: text-bottom; border: 2px solid; border-radius: 50%;" alt="">
+                    <img src="/asset/public/tweter-white.png" style="width: 50px; height: 50px; vertical-align: text-bottom" alt="">
                 </div>
             </div>
         </div>
@@ -326,36 +358,25 @@
 
         <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
 
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
         <script src="script.js"></script>
+
         <script>
-            var swiper = new Swiper(".mySwiper", {
-                autoplay: {
-                  delay: 3000,
-                  disableOnInteraction: false,
-                },
-    
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-    
-                slidesPerView: 3,
-             
-                breakpoints: {
-                    // when window width is >= 768px
-                    // 768: {
-                    //     spaceBetween: 20,
-                    // },
-                    // when window width is >= 1400px
-                    // 1400: {
-                    //     slidesPerView: 3,
-                    //     spaceBetween: 24,
-                    // }
-                }
-            });
+            var textos=[
+                "Mis gafas en el escritorio",
+                "Camino a la perdición",
+                "Paseando en bicicleta",
+                "Vias de el tren"
+            ]
+
+
+            function cargarfoto(img, txt){
+                document.getElementById("galeria").src="https://picsum.photos/id/"+img+"/400/400";
+                document.getElementById("mitexto").innerHTML=textos[txt];
+            }
         </script>
     </body>
 </html>
