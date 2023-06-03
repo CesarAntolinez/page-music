@@ -1,0 +1,709 @@
+// Home - Nosotros
+.card-grid-us {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	gap: 16px;
+	.card-one {
+		grid-row: 1/2;
+		grid-column: 1/4;
+	}
+	.card-two {
+		grid-row: 2/3;
+		grid-column: 1/4;
+	}
+	.card-three {
+		grid-row: 3/4;
+		grid-column: 1/4;
+	}
+}
+.img-us-hover {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 250px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.card-us {
+	width: 270px;
+	margin: auto;
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: #fff;
+	transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+	box-shadow: 4px 7px 12px 1px rgba(107, 82, 47, .4);
+	.logo-golden-artists {
+		position: absolute;
+		padding: 16px;
+		opacity: 0;
+		img {
+			width: 100%; 
+			background-color: #3d42126b; 
+			border-radius: 8px;
+		}
+	}
+	&:hover {
+		box-shadow: 4px 7px 12px 1px rgba(107, 82, 47, .4);
+		transform: scale(1.05, 1.03);
+		.logo-golden-artists {
+			opacity: 0;
+		}
+		.img-us-zoom {
+			height: 100%;
+			opacity: 0.3;
+		}
+		.info-us {
+			background-color: transparent;
+			position: relative;
+		}
+	}
+	.img-us {
+		visibility: hidden;
+		@extend .img-us-hover;
+	}
+	.img-us-zoom {
+		top: 0;
+		position: absolute;
+		transition: 0.2s all ease-out;
+		@extend .img-us-hover;
+	}
+	.info-us {
+		background-color: #fff;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		padding: 18px 16px;
+		a{
+			border-color: #EBD1AE;
+			background-color: #6b522f;
+			color: #EBD1AE;
+			&:hover {
+				box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+				transform: scale(1.01);
+				border-color: #6b522f;
+				background-color: #EBD1AE;
+				color: #6b522f;
+			}
+		}
+	}
+}
+.card-one .card-us {
+	.img-us, .img-us-zoom {background-image: url('/asset/img-temp/home/nosotros/nosotros.jpg');}
+}
+.card-two .card-us {
+	.img-us, .img-us-zoom {background-image: url('/asset/img-temp/home/nosotros/nosotros1.jfif');}
+}
+.card-three .card-us {
+	.img-us, .img-us-zoom {background-image: url('/asset/img-temp/home/nosotros/nosotros3.avif');}
+}
+// End Nosotros Home
+
+///  Cards artistas home
+// .column{
+// //   position: absolute;
+// //   right: 0;
+//   &:hover{
+//     padding-left:0;
+//     .card .txt{
+//       margin-left: -2rem;
+//       h3, h5, p{
+//         color:rgba(255,255,255,1);
+//         opacity:1;
+//       }
+//     }
+//     a{
+//       color:rgba(255,255,255,1);
+//       &:after{
+//       width: 10%;
+//       }
+//     }
+//   }
+// }
+// .card{
+//   margin: 0;
+//   padding: 1.3rem 3rem;
+//   border: none;
+//   border-radius: 0;
+//   color:rgba(0,0,0,1);
+//   letter-spacing: .05rem;
+//   font-family: 'Oswald', sans-serif;
+//   box-shadow: 0 0 21px rgba(0,0,0,.27);
+//   .txt{
+//     margin-left:-5rem;
+//     margin-right: 3rem;
+//     z-index: 1;
+//     h1{
+//       font-size:1.5rem;
+//       font-weight: 300;
+//       text-transform: uppercase;
+//     }
+//     p{
+//       font-size:.7rem;
+//       font-family: 'Open Sans', sans-serif;
+//       letter-spacing: 0rem;
+//       margin-top:33px;
+//       opacity:0;
+//       color:rgba(255,255,255,1);
+//     }
+//   }
+//   a{
+//     z-index: 3;
+//     font-size: .7rem;
+//     color: black;
+//     margin-left: 1rem;
+//     position: relative;
+//     bottom: -0.5rem;
+//     text-transform: uppercase;
+//     display: flex;
+//     align-items: center;
+//     &:after {
+//       content: "";
+//       display: inline-block;
+//       height: 0.5em;
+//       width: 0;
+//       margin-left: 10px;
+//       border-top: 1px solid white;
+//       transition: .5s;
+//     }
+//   }
+//   .ico-card{
+//     position:absolute;
+//     top: 0;
+//     left:0;
+//     bottom:0;
+//     right: 0;
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//   }
+//   i{
+//     position: relative;
+//     right: -50%;
+//     top:60%;
+//     font-size: 12rem;
+//     line-height: 0;
+//     opacity: .2;
+//     color:rgba(255,255,255,1);
+//     z-index: 0;
+//    }
+// }
+
+// CARDS MISIÓN, VISIÓN Y NOSOTROS
+// .principal{
+// 	justify-content: space-evenly;
+//   }
+//   .content{
+// 	background: #fff;
+// 	border-right: 5px solid #6B522F;
+//   }
+  .item-nosotros {
+	font-size: 0.9509428571em;
+  }
+
+// .cards-nosotros {
+//     position: relative;
+//     top: 100px;
+// }
+.card-val-nosotros {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	gap: 12px;
+  .val-text {
+	grid-row: 1/2;
+	grid-column: 1/3;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+	.val-one {
+	grid-row: 2/3;
+	grid-column: 1/2;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-two {
+	grid-row: 2/3;
+	grid-column: 2/3;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-three {
+	grid-row: 3/4;
+	grid-column: 1/2;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+  .val-four {
+	grid-row: 3/4;
+	grid-column: 2/3;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-five {
+	grid-row: 4/5;
+	grid-column: 1/2;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-six {
+	grid-row: 4/5;
+	grid-column: 2/3;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+}
+.card-princ-nosotros {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	gap: 12px;
+  .val-text {
+	grid-row: 1/2;
+	grid-column: 1/3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+	.val-one {
+	grid-row: 2/3;
+	grid-column: 1/2;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-two {
+	grid-row: 2/3;
+	grid-column: 2/3;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-three {
+	grid-row: 3/4;
+	grid-column: 1/2;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+  .val-four {
+	grid-row: 3/4;
+	grid-column: 2/3;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-five {
+	grid-row: 4/5;
+	grid-column: 1/2;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+	.val-six {
+	grid-row: 4/5;
+	grid-column: 2/3;
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 8px;
+	}
+}
+
+//************** Cards artist **************
+.card-artist{
+	position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    transition: 0.25s;
+}
+.card-artist .bg-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.card-artist .bg-logo:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/asset/public/golden-artist-05.png');
+    transition: 0.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card-artist .content{
+	position: relative;
+	left: 0;
+	width: 100%;
+	padding: 8px;
+	transition: 0.5s;
+	visibility: hidden;
+}
+.card-artist .content a{
+    margin-top: auto;
+    width: max-content;
+    margin-left: auto;
+}
+.card-artist img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 200px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card-artist.saxo:hover img{
+    left: -14%;
+    height: 225px;
+    top: 50%;
+    transform: rotate(-3deg);
+}
+.card-artist.viol:hover img{
+    left: -14%;
+    height: 225px;
+    top: 50%;
+    transform: rotate(-3deg);
+}
+.card-artist.cant:hover img{
+    left: -25%;
+    height: 225px;
+    top: 45%;
+    transform: rotate(0deg);
+}
+.card-artist:hover .bg-logo:before{
+	background-color: #9E7A46;
+}
+.card-artist:hover{
+	margin-top: 16px;
+	padding: 16px;
+	height: 350px;
+}
+.card-artist:hover img{
+	left: -12%;
+	height: 200px;
+	top: 55%;
+	transform: rotate(-4deg);
+}
+.card-artist:hover .content{
+    left: 0;
+    visibility: visible;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.125);
+	border-radius: 8px;
+}
+.my-float{
+	margin-top:16px;
+}
+
+@media(min-width: 500px) {
+	// Nosotros 
+	.card-val-nosotros {
+		.val-text {
+		grid-row: 1/2;
+		grid-column: 1/4;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
+		.val-one {
+		grid-row: 2/3;
+		grid-column: 1/2;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-two {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-three {
+		grid-row: 2/3;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-four {
+		grid-row: 3/4;
+		grid-column: 1/2;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-five {
+		grid-row: 3/4;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-six {
+		grid-row: 3/4;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+	}
+	.card-princ-nosotros {
+		.val-text {
+		grid-row: 1/2;
+		grid-column: 1/4;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
+		.val-one {
+		grid-row: 2/3;
+		grid-column: 1/2;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-two {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-three {
+		grid-row: 2/3;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-four {
+		grid-row: 3/4;
+		grid-column: 1/2;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-five {
+		grid-row: 3/4;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-six {
+		grid-row: 3/4;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+	}
+}
+
+@media(min-width: 576px) {
+	// Home - Nosotros
+	.card-grid-us {
+		justify-content: center;
+		.card-one {
+			grid-row: 1/2;
+			grid-column: 1/2;
+		}
+		.card-two {
+			grid-row: 1/2;
+			grid-column: 2/3;
+		}
+		.card-three {
+			grid-row: 2/3;
+			grid-column: 1/3;
+		}
+	}
+}
+@media(min-width: 768px) {
+	// Home - Nosotros
+	.card-grid-us {
+		gap: 32px;
+	}
+	// Nosotros 
+	.card-val-nosotros {
+	  .val-text {
+		grid-row: 1/3;
+		grid-column: 4/5;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	  }
+		.val-one {
+		grid-row: 1/2;
+		grid-column: 1/2;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-two {
+		grid-row: 1/2;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-three {
+		grid-row: 1/2;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+	  .val-four {
+		grid-row: 2/3;
+		grid-column: 1/2;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-five {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-six {
+		grid-row: 2/3;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+	}
+	.card-princ-nosotros {
+	  .val-text {
+		grid-row: 1/3;
+		grid-column: 1/2;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	  }
+		.val-one {
+		grid-row: 1/2;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-two {
+		grid-row: 1/2;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-three {
+		grid-row: 1/2;
+		grid-column: 4/5;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+	  .val-four {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-five {
+		grid-row: 2/3;
+		grid-column: 3/4;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+		.val-six {
+		grid-row: 2/3;
+		grid-column: 4/5;
+		width: 135px;
+		padding: 24px 0;
+		text-align: center;
+		border-radius: 8px;
+		}
+	}
+}
+@media(min-width: 900px) {
+	// Home - Nosotros
+	.card-grid-us {
+		.card-one {
+			grid-row: 1/2;
+			grid-column: 1/2;
+		}
+		.card-two {
+			grid-row: 1/2;
+			grid-column: 2/3;
+		}
+		.card-three {
+			grid-row: 1/2;
+			grid-column: 3/4;
+		}
+	}
+}
