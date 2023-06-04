@@ -34,7 +34,7 @@
 	}
 }
 // ***** NAVBAR MOBILE *****
-// Check menú hamburguesa
+// Check menu
 #nav-mobile-check {
 	display: none;
 }
@@ -57,7 +57,7 @@
 	visibility: visible;
 	opacity: 1;
 }
-// Botón menú hamburguesa
+// Button menu
 .nav-m-btn {
     height: 50px;
     width: 50px;
@@ -67,14 +67,13 @@
 	@extend .nav-m-btn;
     position: absolute;
     text-align: center;
-    background-color: #FFFFFF;
     z-index: 300;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
     cursor: pointer;
 	&:hover .nav-mobile-btn-icon::before { top: 7px }
 	&:hover .nav-mobile-btn-icon::after { top: 14px }
 }
-// Icono triplebarra y equis botón menú hamburguesa
+// button - bars and ex of the menu
 .nav-m-icon {
 	display: inline-block;
 	width: 30px;
@@ -101,16 +100,15 @@
 		top: 14px;
 	}
 }
-// Background desplegable menú
+// Background menu toggle
 .nav-mobile-bg {
 	@extend .nav-m-btn;
-	background: #6B522F;
 	background-size: cover;
 	background-position: center;
 	z-index: 100;
 	transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-// Caja lista de items
+// Items box
 .nav-mobile-box-list {
 	position: fixed;
 	top: 0;

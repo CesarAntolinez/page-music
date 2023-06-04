@@ -1,21 +1,27 @@
-.img-banner-large {
-	height: 600px;
-	.carousel-item {
-		height: 100%;
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-		}
-	}
+// Extends Class
+.img-bg-fixed {
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+	background-attachment: fixed;
 }
-.img-swiper-large{
+// HOME
+.banner-fluid {
 	width: 100%;
 	height: 600px;
 	object-fit: cover;
 }
-// ********************* NOSOTROS ********************* //
+// Home Service
+.img-banner-service {
+	background-image: url('../../../asset/image-temp/home/banners/banner-service-01.jpg');
+	@extend .img-bg-fixed;
+}
+// Home Service
+.img-banner-artist {
+	background-image: url('../../../asset/image-temp/home/banners/banner-artist-01.jpg');
+	@extend .img-bg-fixed;
+}
+// ********************* US View ********************* //
 @mixin imgBgHorizontal () {
 	width: 100%;
 	height: $h-siz;
@@ -58,8 +64,8 @@
 	width: 100%;
 	height: 400px;  
 }
-@media (min-width: 1920px) {
-	.img-banner-large {
-		height: 700px;
-	}
-}
+// @media (min-width: 1920px) {
+// 	.img-banner-large {
+// 		height: 700px;
+// 	}
+// }
