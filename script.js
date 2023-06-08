@@ -1,4 +1,3 @@
-	
 // ================= Button scroll top =================
 $(document).ready(function(){"use strict";
 	var progressPath = document.querySelector('.btn-scroll-top path');
@@ -32,8 +31,6 @@ $(document).ready(function(){"use strict";
 	})
 });
 	
-
-
 
 
 
@@ -77,19 +74,3 @@ nav.addEventListener('keydown', e => {
     }
   }
 });
-
-
-
-// Gallery
-// var swiper = new Swiper(".mySwip", {
-// 	speed: 600,
-// 	parallax: true,
-// 	pagination: {
-// 	  el: ".swiper-pagination",
-// 	  clickable: true,
-// 	},
-// 	navigation: {
-// 	  nextEl: ".swiper-button-next",
-// 	  prevEl: ".swiper-button-prev",
-// 	},
-//   });
