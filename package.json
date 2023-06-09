@@ -2,24 +2,15 @@
   "name": "golden-artists",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "asset/js/script.js",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.4",
+    "scss": "^0.2.4",
     "swiper": "^9.3.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jhonf49/makingpage.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jhonf49/makingpage/issues"
-  },
-  "homepage": "https://github.com/jhonf49/makingpage#readme"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch resources/scss/style.scss asset/css/app.css"
+  }
 }

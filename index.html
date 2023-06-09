@@ -1,958 +1,988 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Golden Artists</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Golden Artists</title>
 
-        <!-- Google icons material symbols -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <!-- Swiper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-        <!-- Route style sheet -->
-        <link rel="stylesheet" href="./style.css">
-    </head>
+    <!-- Google icons material symbols -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Route style sheet -->
+    <link rel="stylesheet" href="./asset/css/app.css">
+</head>
 
-    <body>
-        <!-- Header OK -->
-        <div class="header-g-a">
-            <nav class="nav-head">
-                <a href="index.html">
-                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="215" alt="">
-                </a>
-                <!-- Desktop menu -->
-                <ul class="d-none d-lg-flex">
-                    <li class="actived"><a href="index.html">Inicio</a></li>
+<body>
+<!-- Header OK -->
+<div class="header-g-a">
+    <nav class="nav-head">
+        <a href="index.html">
+            <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="215" alt="">
+        </a>
+        <!-- Desktop menu -->
+        <ul class="d-none d-lg-flex">
+            <li class="actived"><a href="index.html">Inicio</a></li>
 
-                    <li><a href="service.html">Servicios</a></li>
+            <li><a href="service.html">Servicios</a></li>
 
-                    <li><a href="artist.html">Artistas</a></li>
+            <li><a href="artist.html">Artistas</a></li>
 
-                    <li><a href="gallery.html">Galería</a></li>
+            <li><a href="gallery.html">Galería</a></li>
 
-                    <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
 
-                    <div class="ms-3">
-                        <div class="container-2">
-                            <span class="icon"><i class="material-symbols-outlined">search</i></span>
-                            <input type="search" id="search" placeholder="Search..." />
-                        </div>
-                    </div>
-                </ul>
-                <!-- Mobile menu -->
-                <div class="navigation d-flex d-lg-none position-relative">
-                    <input id="nav-mobile-check" type="checkbox">
-
-                    <label class="nav-mobile-btn-menu bg-white" for="nav-mobile-check">
-                        <span class="nav-mobile-btn-icon" aria-label="toggle navigation menu"></span>
-                    </label>
-
-                    <div class="nav-mobile-bg bg-gold-hard"></div>
-                
-                    <nav class="nav-mobile-box-list" role="navigation">
-                        <a href="index.html">
-                            <img src="./asset/public/golden-artists-white.png" width="215" alt="" style="margin-left: 15px">
-                        </a>
-                        <ul class="nav-mobile-list">
-                            <li class="actived p-2">
-                                <a href="index.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">home</i>
-                                    <span class="h5">&nbsp;Inicio</span>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="service.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">cases</i>
-                                    <span class="h5">&nbsp;Servicios</span>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="artist.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">switch_account</i>
-                                    <span class="h5">&nbsp;Artistas</span>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="gallery.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">gallery_thumbnail</i>
-                                    <span class="h5">&nbsp;Galería</span>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="nosotros.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">group</i>
-                                    <span class="h5">&nbsp;Nosotros</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="ms-3">
+                <div class="container-2">
+                    <span class="icon"><i class="material-symbols-outlined">search</i></span>
+                    <input type="search" id="search" placeholder="Search..."/>
                 </div>
+            </div>
+        </ul>
+        <!-- Mobile menu -->
+        <div class="navigation d-flex d-lg-none position-relative">
+            <input id="nav-mobile-check" type="checkbox">
+
+            <label class="nav-mobile-btn-menu bg-white" for="nav-mobile-check">
+                <span class="nav-mobile-btn-icon" aria-label="toggle navigation menu"></span>
+            </label>
+
+            <div class="nav-mobile-bg bg-gold-hard"></div>
+
+            <nav class="nav-mobile-box-list" role="navigation">
+                <a href="index.html">
+                    <img src="./asset/image/logo/golden-artists-white-hrz.png" width="215" alt=""
+                         style="margin-left: 15px">
+                </a>
+                <ul class="nav-mobile-list">
+                    <li class="actived p-2">
+                        <a href="index.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">home</i>
+                            <span class="h5">&nbsp;Inicio</span>
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="service.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">cases</i>
+                            <span class="h5">&nbsp;Servicios</span>
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="artist.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">switch_account</i>
+                            <span class="h5">&nbsp;Artistas</span>
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="gallery.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">gallery_thumbnail</i>
+                            <span class="h5">&nbsp;Galería</span>
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="nosotros.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">group</i>
+                            <span class="h5">&nbsp;Nosotros</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
+    </nav>
+</div>
 
-        <!-- Content -->
-        <div class="content-g-a bg-white">
-            <!-- Home Banner --> 
-            <div class="swiper mySwiperBanner h-100">
+<!-- Content -->
+<div class="content-g-a bg-white">
+    <!-- Home Banner -->
+    <div class="swiper mySwiperBanner h-100">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./asset/image-temp/home/banners/banner-index-01.jpg" class="banner-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./asset/image-temp/home/banners/banner-index-02.jpg" class="banner-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./asset/image-temp/home/banners/banner-index-03.jpg" class="banner-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Us -->
+    <div class="container-fluid container-xl bg-white my-5">
+        <div class="text-center text-primary mb-5">
+            <h1 class="text-primary">Eventos Golden Artist</h1>
+            <h5>La melodía de sus recuerdos</h5>
+            <h3>El compromiso, el estilo y la elegancia, en el reflejo de su momento soñado.</h3>
+        </div>
+
+        <div class="card-grid-us">
+            <div class="card-one animate fadeInLeft three">
+                <div class="card-us">
+                    <div class="img-logo-gA">
+                        <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
+                    </div>
+
+                    <div class="img-us"></div>
+                    <div class="img-us-zoom"></div>
+
+                    <div class="info-us">
+                        <h6> Misión</h6>
+                        <h5>Crisp Spanish tortilla Matzo brei</h5>
+                        <div class="flex-box-center mt-4">
+                            <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-two animate fadeInDown two">
+                <div class="card-us">
+                    <div class="img-logo-gA">
+                        <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
+                    </div>
+
+                    <div class="img-us"></div>
+                    <div class="img-us-zoom"></div>
+
+                    <div class="info-us">
+                        <h6> Visión</h6>
+                        <h5>Crisp Spanish tortilla Matzo brei</h5>
+                        <div class="flex-box-center mt-4">
+                            <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-three animate fadeInRight four">
+                <div class="card-us">
+                    <div class="img-logo-gA">
+                        <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
+                    </div>
+
+                    <div class="img-us"></div>
+                    <div class="img-us-zoom"></div>
+
+                    <div class="info-us">
+                        <h6> Contactanos</h6>
+                        <h5>Crisp Spanish tortilla Matzo brei</h5>
+                        <div class="flex-box-center mt-4">
+                            <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="img-banner-service mt-5 py-5">
+        <div class="container-fluid px-xl-5">
+            <div class="row">
+                <div class="col-xxl-3 text-center text-gold-soft mb-5">
+                    <h2 class="fw-bold">Servicios</h2>
+                    <h5 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                        blanditiis.</h5>
+                    <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
+                </div>
+
+                <div class="col-xxl-9 bg-black py-5">
+                    <div class="testimonial">
+                        <div class="swiper mySwiperServ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="cardd text-white">
+                                        <div class="layer"></div>
+                                        <div class="content">
+                                            <h2>Bodas</h2>
+
+                                            <div class="imgBx mb-3">
+                                                <img src="./asset/image-temp/services/bodas/boda-04.jpg"
+                                                     class="w-100 h-100" style="object-fit: cover;" alt="">
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                repellat odit quo iure eaque.
+                                            </p>
+
+                                            <div class="d-flex justify-content-center">
+                                                <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="cardd text-white">
+                                        <div class="layer"></div>
+                                        <div class="content">
+                                            <h2>Quinces</h2>
+
+                                            <div class="imgBx mb-3">
+                                                <img src="./asset/image-temp/home/services/home-service-02.jpg"
+                                                     class="w-100 h-100" style="object-fit: cover;" alt="">
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                repellat odit quo iure eaque.
+                                            </p>
+
+                                            <div class="d-flex justify-content-center">
+                                                <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="cardd text-white">
+                                        <div class="layer"></div>
+                                        <div class="content">
+                                            <h2>Evento Privado</h2>
+
+                                            <div class="imgBx mb-3">
+                                                <img src="./asset/image-temp/home/services/home-service-03.jpeg"
+                                                     class="w-100 h-100" style="object-fit: cover;" alt="">
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                repellat odit quo iure eaque.
+                                            </p>
+
+                                            <div class="d-flex justify-content-center">
+                                                <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="cardd text-white">
+                                        <div class="layer"></div>
+                                        <div class="content">
+                                            <h2>Evento Empresarial</h2>
+
+                                            <div class="imgBx mb-3">
+                                                <img src="./asset/image-temp/home/services/home-service-04.jpg"
+                                                     class="w-100 h-100" style="object-fit: cover;" alt="">
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                repellat odit quo iure eaque.
+                                            </p>
+
+                                            <div class="d-flex justify-content-center">
+                                                <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="cardd text-white">
+                                        <div class="layer"></div>
+                                        <div class="content">
+                                            <h2>Magia</h2>
+
+                                            <div class="imgBx mb-3">
+                                                <img src="./asset/image-temp/home/services/home-service-05.jpg"
+                                                     class="w-100 h-100" style="object-fit: cover;" alt="">
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Doloremque sed kodak
+                                                repellat odit quo iure eaque.
+                                            </p>
+
+                                            <div class="d-flex justify-content-center">
+                                                <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="py-5">
+        <div class="container mt-4 mb-5">
+            <div class="text-center mb-5">
+                <h2>Skills</h2>
+                <h5>OUR BEST SIDE</h5>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h3>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+
+            <div class="row conta mx-0 gy-3 gy-xl-0 pt-4">
+                <div class="col-md-6 col-xl-3">
+                    <div class="progri-card">
+                        <div class="progri-circle">
+                            <div class="progri-content">
+                                <h5 class="progText" data-count="75">0</h5>
+                            </div>
+                            <div class="progri"></div>
+                        </div>
+
+                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="progri-card">
+                        <div class="progri-circle">
+                            <div class="progri-content">
+                                <h5 class="progText" data-count="100">0</h5>
+                            </div>
+                            <div class="progri"></div>
+                        </div>
+
+                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="progri-card">
+                        <div class="progri-circle">
+                            <div class="progri-content">
+                                <h5 class="progText" data-count="50">0</h5>
+                            </div>
+                            <div class="progri"></div>
+                        </div>
+
+                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="progri-card">
+                        <div class="progri-circle">
+                            <div class="progri-content">
+                                <h5 class="progText" data-count="37">0</h5>
+                            </div>
+                            <div class="progri"></div>
+                        </div>
+
+                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artist -->
+    <div class="img-banner-artist position-relative py-5">
+        <div class="container-fluid container-xxl">
+            <div class="swiper mySwiperArtist py-5">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./asset/image-temp/home/banners/banner-index-01.jpg" class="banner-fluid" alt="">
+                        <div class="kardd">
+                            <img src="./asset/image-temp/home/artists/home-artist-01.webp" alt="" class="kard-img">
+
+                            <div class="car-body">
+                                <h2 class="kard-title">CANTANTES</h2>
+                                <h6 class="kard-subtitle">nuestros artistas</h6>
+                                <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                    ipsa
+                                    voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                </h5>
+                                <a class="btn btn-primary" href="/artist.html">Ver más</a>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="swiper-slide">
-                        <img src="./asset/image-temp/home/banners/banner-index-02.jpg" class="banner-fluid" alt="">
+                        <div class="kardd">
+                            <img src="./asset/image-temp/home/artists/home-artist-02.jpg" alt="" class="kard-img">
+
+                            <div class="car-body">
+                                <h2 class="kard-title">Saxofonistas</h2>
+                                <h6 class="kard-subtitle">nuestros artistas</h6>
+                                <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                    ipsa
+                                    voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                </h5>
+                                <a class="btn btn-primary" href="/artist.html">Ver más</a>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="swiper-slide">
-                        <img src="./asset/image-temp/home/banners/banner-index-03.jpg" class="banner-fluid" alt="">
+                        <div class="kardd">
+                            <img src="./asset/image-temp/home/artists/home-artist-03.jpg" alt="" class="kard-img">
+
+                            <div class="car-body">
+                                <h2 class="kard-title">Violinistas</h2>
+                                <h6 class="kard-subtitle">nuestros artistas</h6>
+                                <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                    ipsa
+                                    voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                </h5>
+                                <a class="btn btn-primary" href="/artist.html">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="kardd">
+                            <img src="./asset/image-temp/home/artists/home-artist-04.webp" alt="" class="kard-img">
+
+                            <div class="car-body">
+                                <h2 class="kard-title">Dj's</h2>
+                                <h6 class="kard-subtitle">nuestros artistas</h6>
+                                <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                    ipsa
+                                    voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                </h5>
+                                <a class="btn btn-primary" href="/artist.html">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="kardd">
+                            <img src="./asset/image-temp/home/artists/home-artist-05.jpg" alt="" class="kard-img">
+
+                            <div class="car-body">
+                                <h2 class="kard-title">Pianistas</h2>
+                                <h6 class="kard-subtitle">nuestros artistas</h6>
+                                <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                    ipsa
+                                    voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                </h5>
+                                <a class="btn btn-primary" href="/artist.html">Ver más</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-next swiper-btn"></div>
+                <div class="swiper-button-prev swiper-btn"></div>
+                <div class="swiper-pagination" style="position: absolute; bottom: 8px;"></div>
             </div>
+        </div>
+    </div>
 
-            <!-- Us -->
-            <div class="container-fluid container-xl bg-white my-5">
-                <div class="text-center text-primary mb-5">
-                    <h1 class="text-primary">Eventos Golden Artist</h1>
-                    <h5>La melodía de sus recuerdos</h5>
-                    <h3>El compromiso, el estilo y la elegancia, en el reflejo de su momento soñado.</h3>
+    <!-- Clients -->
+    <div class="container">
+        <div class="text-center my-5">
+            <h5>Nuestros clientes</h5>
+            <h3>QUIÉN TRABAJA CON NOSOTROS</h3>
+        </div>
+
+        <div class="swiper mySwiper h-100">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide text-center">
+                    <img src="./asset/image-temp/home/customers/home-customer-01.png"
+                         style="width: 150px; height: 100px; object-fit: contain;" alt="">
                 </div>
-                
-                <div class="card-grid-us">
-                    <div class="card-one animate fadeInLeft three">
-                        <div class="card-us">
-                            <div class="img-logo-gA">    
-                                <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
-                            </div>
-
-                            <div class="img-us"></div>
-                            <div class="img-us-zoom"></div>
-                        
-                            <div class="info-us">
-                                <h6> Misión</h6>
-                                <h5>Crisp Spanish tortilla Matzo brei</h5>
-                                <div class="flex-box-center mt-4">
-                                    <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-two animate fadeInDown two">
-                        <div class="card-us">
-                            <div class="img-logo-gA">
-                                <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
-                            </div>
-
-                            <div class="img-us"></div>
-                            <div class="img-us-zoom"></div>
-
-                            <div class="info-us">
-                                <h6> Visión</h6>
-                                <h5>Crisp Spanish tortilla Matzo brei</h5>
-                                <div class="flex-box-center mt-4">
-                                    <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-three animate fadeInRight four">
-                        <div class="card-us">
-                            <div class="img-logo-gA">
-                                <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
-                            </div>
-
-                            <div class="img-us"></div>
-                            <div class="img-us-zoom"></div>
-
-                            <div class="info-us">
-                                <h6> Contactanos</h6>
-                                <h5>Crisp Spanish tortilla Matzo brei</h5>
-                                <div class="flex-box-center mt-4">
-                                    <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-slide text-center">
+                    <img src="./asset/image-temp/home/customers/home-customer-02.jpeg"
+                         style="width: 150px; height: 100px; object-fit: contain;" alt="">
                 </div>
-            </div>           
-
-            <!-- Services -->
-            <div class="img-banner-service mt-5 py-5">
-                <div class="container-fluid px-xl-5">
-                    <div class="row">
-                        <div class="col-xxl-3 text-center text-gold-soft mb-5">
-                            <h2 class="fw-bold">Servicios</h2>
-                            <h5 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h5>
-                            <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
-                        </div>
-
-                        <div class="col-xxl-9 bg-black py-5">
-                            <div class="testimonial">
-                                <div class="swiper mySwiperServ">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="cardd text-white">
-                                                <div class="layer"> </div>
-                                                <div class="content">        
-                                                    <h2>Bodas</h2>
-                                                 
-                                                    <div class="imgBx mb-3">
-                                                        <img src="./asset/image-temp/services/bodas/boda-04.jpg" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <div class="swiper-slide">
-                                            <div class="cardd text-white">
-                                                <div class="layer"> </div>
-                                                <div class="content">        
-                                                    <h2>Quinces</h2>
-                                                 
-                                                    <div class="imgBx mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-02.jpg" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <div class="swiper-slide">
-                                            <div class="cardd text-white">
-                                                <div class="layer"> </div>
-                                                <div class="content">        
-                                                    <h2>Evento Privado</h2>
-                                                 
-                                                    <div class="imgBx mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-03.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <div class="swiper-slide">
-                                            <div class="cardd text-white">
-                                                <div class="layer"> </div>
-                                                <div class="content">        
-                                                    <h2>Evento Empresarial</h2>
-                                                 
-                                                    <div class="imgBx mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-04.jpg" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="cardd text-white">
-                                                <div class="layer"> </div>
-                                                <div class="content">        
-                                                    <h2>Magia</h2>
-                                                 
-                                                    <div class="imgBx mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-05.jpg" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="/service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>                                
+                <div class="swiper-slide text-center">
+                    <img src="./asset/image-temp/home/customers/home-customer-03.jpg"
+                         style="width: 150px; height: 100px; object-fit: contain;" alt="">
                 </div>
-            </div>
-
-            <!-- Skills -->
-            <div class="py-5" >
-                <div class="container mt-4 mb-5">
-                    <div class="text-center mb-5">
-                        <h2>Skills</h2>
-                        <h5>OUR BEST SIDE</h5>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h3>
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                    </div>
-        
-                    <div class="row conta mx-0 gy-3 gy-xl-0 pt-4">
-                        <div class="col-md-6 col-xl-3">
-                            <div class="progri-card">
-                                <div class="progri-circle">
-                                    <div class="progri-content">
-                                        <h5 class="progText" data-count="75">0</h5>
-                                    </div>
-                                    <div class="progri"></div>
-                                </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-                            </div>
-                        </div>
-        
-                        <div class="col-md-6 col-xl-3">
-                            <div class="progri-card">
-                                <div class="progri-circle">
-                                    <div class="progri-content">
-                                        <h5 class="progText" data-count="100">0</h5>
-                                    </div>
-                                    <div class="progri"></div>
-                                </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-                            </div>
-                        </div>
-        
-                        <div class="col-md-6 col-xl-3">
-                            <div class="progri-card">
-                                <div class="progri-circle">
-                                    <div class="progri-content">
-                                        <h5 class="progText" data-count="50">0</h5>
-                                    </div>
-                                    <div class="progri"></div>
-                                </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-                            </div>
-                        </div>
-        
-                        <div class="col-md-6 col-xl-3">
-                            <div class="progri-card">
-                                <div class="progri-circle">
-                                    <div class="progri-content">
-                                        <h5 class="progText" data-count="37">0</h5>
-                                    </div>
-                                    <div class="progri"></div>
-                                </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-slide text-center">
+                    <img src="./asset/image-temp/home/customers/home-customer-04.jpg"
+                         style="width: 150px; height: 100px; object-fit: contain;" alt="">
                 </div>
-            </div>
-
-            <!-- Artist -->             
-            <div class="img-banner-artist position-relative py-5">
-                <div class="container-fluid container-xxl">
-                    <div class="swiper mySwiperArtist py-5">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">            
-                                <div class="kardd">
-                                <img src="./asset/image-temp/home/artists/home-artist-01.webp" alt="" class="kard-img">
-                
-                                <div class="car-body">
-                                    <h2 class="kard-title">CANTANTES</h2>
-                                    <h6 class="kard-subtitle">nuestros artistas</h6>
-                                    <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="/artist.html">Ver más</a>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">            
-                                <div class="kardd">
-                                <img src="./asset/image-temp/home/artists/home-artist-02.jpg" alt="" class="kard-img">
-                
-                                <div class="car-body">
-                                    <h2 class="kard-title">Saxofonistas</h2>
-                                    <h6 class="kard-subtitle">nuestros artistas</h6>
-                                    <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="/artist.html">Ver más</a>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">            
-                                <div class="kardd">
-                                <img src="./asset/image-temp/home/artists/home-artist-03.jpg" alt="" class="kard-img">
-                
-                                <div class="car-body">
-                                    <h2 class="kard-title">Violinistas</h2>
-                                    <h6 class="kard-subtitle">nuestros artistas</h6>
-                                    <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="/artist.html">Ver más</a>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">            
-                                <div class="kardd">
-                                <img src="./asset/image-temp/home/artists/home-artist-04.webp" alt="" class="kard-img">
-                
-                                <div class="car-body">
-                                    <h2 class="kard-title">Dj's</h2>
-                                    <h6 class="kard-subtitle">nuestros artistas</h6>
-                                    <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="/artist.html">Ver más</a>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">            
-                                <div class="kardd">
-                                <img src="./asset/image-temp/home/artists/home-artist-05.jpg" alt="" class="kard-img">
-                
-                                <div class="car-body">
-                                    <h2 class="kard-title">Pianistas</h2>
-                                    <h6 class="kard-subtitle">nuestros artistas</h6>
-                                    <h5 class="kard-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="/artist.html">Ver más</a>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next swiper-btn"></div>
-                        <div class="swiper-button-prev swiper-btn"></div>
-                        <div class="swiper-pagination" style="position: absolute; bottom: 8px;"></div>
-                    </div>
+                <div class="swiper-slide text-center">
+                    <img src="./asset/image-temp/home/customers/home-customer-05.jpg"
+                         style="width: 150px; height: 100px; object-fit: contain;" alt="">
                 </div>
-            </div>    
-
-            <!-- Clients -->
-            <div class="container">   
-                <div class="text-center my-5">
-                    <h5>Nuestros clientes</h5>
-                    <h3>QUIÉN TRABAJA CON NOSOTROS</h3>
-                </div>
-
-                <div class="swiper mySwiper h-100">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-01.png" style="width: 150px; height: 100px; object-fit: contain;" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-02.jpeg" style="width: 150px; height: 100px; object-fit: contain;" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-03.jpg" style="width: 150px; height: 100px; object-fit: contain;" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-04.jpg" style="width: 150px; height: 100px; object-fit: contain;" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-05.jpg" style="width: 150px; height: 100px; object-fit: contain;" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-06.png" style="width: 150px; height: 100px; object-fit: contain;" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center my-5">
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h6>
-                    <h6>Lorem ipsum dolor sit amet.</h6>
+                <div class="swiper-slide text-center">
+                    <img src="./asset/image-temp/home/customers/home-customer-06.png"
+                         style="width: 150px; height: 100px; object-fit: contain;" alt="">
                 </div>
             </div>
         </div>
 
-        <!-- btn scroll -->
-        <div class="btn-scroll-top actived-scroll">
-            <svg class="btn-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-            </svg>
-            <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
+        <div class="text-center my-5">
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h6>
+            <h6>Lorem ipsum dolor sit amet.</h6>
         </div>
-        <!-- btn whatsapp -->
-        <a href=""  target="_blank">
-            <img class="btn-float-whp" src="./asset/image/iconos/whatsapp-white.png" alt="">
-        </a>
+    </div>
+</div>
 
-        <!-- Footer OK  -->
-        <div class="footer-g-a bg-black">
-            <div class="container-fluid container-lg  py-5 px-lg-0">
-                <div class="row text-white">
-                    <h3 class="text-center fw-bold mb-3">Contáctenos</h3>
-                    <h5 class="text-center mb-5 px-sm-3">por medio de nuestros canales de comunicación.</h5>
+<!-- btn scroll -->
+<div class="btn-scroll-top actived-scroll">
+    <svg class="btn-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+    <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
+</div>
+<!-- btn whatsapp -->
+<a href="" target="_blank">
+    <img class="btn-float-whp" src="./asset/image/iconos/whatsapp-white.png" alt="">
+</a>
 
-                    <div class="col-md-7 col-lg-6">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-12 d-flex flex-column align-items-center mb-4 p-0">
-                                <a href="index.html">
-                                    <img src="./asset/image/logo/golden-artist-golden-vert.png" width="150" alt="">
-                                </a>
-                                <span class="d-block">administrativo@goldenartist.co</span>
-                            </div>
+<!-- Footer OK  -->
+<div class="footer-g-a bg-black">
+    <div class="container-fluid container-lg  py-5 px-lg-0">
+        <div class="row text-white">
+            <h3 class="text-center fw-bold mb-3">Contáctenos</h3>
+            <h5 class="text-center mb-5 px-sm-3">por medio de nuestros canales de comunicación.</h5>
 
-                            <div class="col-9 col-sm-5 col-md-7  me-auto me-sm-0 ms-sm-auto mb-4">
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Dario Sánchez</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Administrativo</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;312-4195-993</h6>
-                            </div>
-
-                            <div class="col-9 col-sm-5  ms-auto mb-4">
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Alex Casas</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Musical</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;319-4734-057</h6>
-                            </div>
-                        </div>
+            <div class="col-md-7 col-lg-6">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 d-flex flex-column align-items-center mb-4 p-0">
+                        <a href="index.html">
+                            <img src="./asset/image/logo/golden-artist-golden-vert.png" width="150" alt="">
+                        </a>
+                        <span class="d-block">administrativo@goldenartist.co</span>
                     </div>
 
-                    <div class="col-md-5 col-lg-6"> 
-                        <div class="row g-3 mx-0">
-                            <div class="col-12">
-                                <input class="form-control" type="text" placeholder="Name">
-                            </div>
+                    <div class="col-9 col-sm-5 col-md-7  me-auto me-sm-0 ms-sm-auto mb-4">
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Dario Sánchez
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor
+                            Administrativo</h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;312-4195-993
+                        </h6>
+                    </div>
 
-                            <div class="col-12">
-                                <input class="form-control" type="text" placeholder="E-mail">
-                            </div>
-
-                            <div class="col-12">
-                                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
-                            </div>
-
-                            <div class="col-12 d-flex justify-content-end">
-                                <button type="button" class="btn btn-outline-gold-soft w-50">Enviar</button>
-                            </div>
-                        </div>
+                    <div class="col-9 col-sm-5  ms-auto mb-4">
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Alex Casas
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Musical
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;319-4734-057
+                        </h6>
                     </div>
                 </div>
             </div>
-            <!-- Redes sociales -->
-            <div>
-                <div class="row mx-0 text-white">
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
-                        <img src="./asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+
+            <div class="col-md-5 col-lg-6">
+                <div class="row g-3 mx-0">
+                    <div class="col-12">
+                        <input class="form-control" type="text" placeholder="Name">
                     </div>
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
-                        <img src="./asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+
+                    <div class="col-12">
+                        <input class="form-control" type="text" placeholder="E-mail">
                     </div>
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
-                        <img src="./asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
+
+                    <div class="col-12">
+                        <textarea class="form-control" name="" id="" cols="30" rows="5"
+                                  placeholder="Message"></textarea>
                     </div>
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
-                        <img src="./asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-gold-soft w-50">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- bootstrap 5.2 file.js -->
-        <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </div>
+    <!-- Redes sociales -->
+    <div>
+        <div class="row mx-0 text-white">
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
+                <img src="./asset/image/iconos/facebook-white.png"
+                     style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
+                <img src="./asset/image/iconos/whatsapp-white.png"
+                     style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
+                <img src="./asset/image/iconos/instagram-white.png"
+                     style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
+                <img src="./asset/image/iconos/tweter-white.png"
+                     style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        
-        <script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-        <!-- Carrusel Banner top -->
-        <script>
-            var swiper = new Swiper(".mySwiperBanner", {
-                effect: "fade",
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-    
-                // Navigation arrows
-                // navigation: {
-                //     nextEl: '.swiper-button-next',
-                //     prevEl: '.swiper-button-prev',
-                // },
-    
-                slidesPerView: 1,
-                
-                breakpoints: {
-                    // when window width is >= 768px
-                    // 400: {
-                    //     slidesPerView: 2,
-                    // },
-                    // 768: {
-                    //     slidesPerView: 3,
-                    // },
-                    // when window width is >= 1400px
-                    // 1400: {
-                    //     slidesPerView: 3,
-                    //     spaceBetween: 24,
-                    // }
-                }
-            });
-        </script>
-        <!-- Carrusel SERVICIOS -->
-        <!-- <script>
-            (function() {
+<script src="./asset/js/script.js"></script>
 
-            function init(item) {
-                var items = item.querySelectorAll('li'),
-                current = 0,
-                autoUpdate = true,
-                timeTrans = 5000;
-                
-                //create nav
-                var nav = document.getElementById('nav');
-                nav.className = 'nav_arrows';
+<!-- Carrusel Banner top -->
+<script>
+    var swiper = new Swiper(".mySwiperBanner", {
+        effect: "fade",
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
 
-                //create button prev
-                var prevbtn = document.createElement('button');
-                prevbtn.className = 'prev';
-                prevbtn.setAttribute('aria-label', 'Prev');
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
 
-                //create button next
-                var nextbtn = document.createElement('button');
-                nextbtn.className = 'next';
-                nextbtn.setAttribute('aria-label', 'Next');
+        slidesPerView: 1,
 
-                //create counter
-                var counter = document.createElement('div');
-                counter.className = 'counter';
-                counter.innerHTML = "<span>1</span><span>"+items.length+"</span>";
+        breakpoints: {
+            // when window width is >= 768px
+            // 400: {
+            //     slidesPerView: 2,
+            // },
+            // 768: {
+            //     slidesPerView: 3,
+            // },
+            // when window width is >= 1400px
+            // 1400: {
+            //     slidesPerView: 3,
+            //     spaceBetween: 24,
+            // }
+        }
+    });
+</script>
+<!-- Carrusel SERVICIOS -->
+<!-- <script>
+    (function() {
 
-                if (items.length > 1) {
-                    nav.appendChild(prevbtn);
-                    nav.appendChild(counter);
-                    nav.appendChild(nextbtn);
-                    item.appendChild(nav);
-                }
+    function init(item) {
+        var items = item.querySelectorAll('li'),
+        current = 0,
+        autoUpdate = true,
+        timeTrans = 5000;
 
-                items[current].className = "current";
-                if (items.length > 1) items[items.length-1].className = "prev_slide";
+        //create nav
+        var nav = document.getElementById('nav');
+        nav.className = 'nav_arrows';
 
-                var navigate = function(dir) {
-                    items[current].className = "";
+        //create button prev
+        var prevbtn = document.createElement('button');
+        prevbtn.className = 'prev';
+        prevbtn.setAttribute('aria-label', 'Prev');
 
-                    if (dir === 'right') {
-                        current = current < items.length-1 ? current + 1 : 0;
-                    } else {
-                        current = current > 0 ? current - 1 : items.length-1;
-                    }
+        //create button next
+        var nextbtn = document.createElement('button');
+        nextbtn.className = 'next';
+        nextbtn.setAttribute('aria-label', 'Next');
 
-                    var	nextCurrent = current < items.length-1 ? current + 1 : 0,
-                        prevCurrent = current > 0 ? current - 1 : items.length-1;
+        //create counter
+        var counter = document.createElement('div');
+        counter.className = 'counter';
+        counter.innerHTML = "<span>1</span><span>"+items.length+"</span>";
 
-                    items[current].className = "current";
-                    items[prevCurrent].className = "prev_slide";
-                    items[nextCurrent].className = "";
+        if (items.length > 1) {
+            nav.appendChild(prevbtn);
+            nav.appendChild(counter);
+            nav.appendChild(nextbtn);
+            item.appendChild(nav);
+        }
 
-                    //update counter
-                    counter.firstChild.textContent = current + 1;
-                }
+        items[current].className = "current";
+        if (items.length > 1) items[items.length-1].className = "prev_slide";
 
-                item.addEventListener('mouseenter', function() {
-                    autoUpdate = false;
-                });
+        var navigate = function(dir) {
+            items[current].className = "";
 
-                item.addEventListener('mouseleave', function() {
-                    autoUpdate = true;
-                });
-
-                setInterval(function() {
-                    if (autoUpdate) navigate('right');
-                },timeTrans);
-
-                prevbtn.addEventListener('click', function() {
-                    navigate('left');
-                });
-
-                nextbtn.addEventListener('click', function() {
-                    navigate('right');
-                });
-
-                //keyboard navigation
-                document.addEventListener('keydown', function(ev) {
-                    var keyCode = ev.keyCode || ev.which;
-                    switch (keyCode) {
-                        case 37:
-                            navigate('left');
-                            break;
-                        case 39:
-                            navigate('right');
-                            break;
-                    }
-                });
-
-                // swipe navigation
-                // from http://stackoverflow.com/a/23230280
-                item.addEventListener('touchstart', handleTouchStart, false);        
-                item.addEventListener('touchmove', handleTouchMove, false);
-                var xDown = null;
-                var yDown = null;
-                function handleTouchStart(evt) {
-                    xDown = evt.touches[0].clientX;
-                    yDown = evt.touches[0].clientY;
-                };
-                function handleTouchMove(evt) {
-                    if ( ! xDown || ! yDown ) {
-                        return;
-                    }
-
-                    var xUp = evt.touches[0].clientX;
-                    var yUp = evt.touches[0].clientY;
-
-                    var xDiff = xDown - xUp;
-                    var yDiff = yDown - yUp;
-
-                    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-                        if ( xDiff > 0 ) {
-                            /* left swipe */
-                            navigate('right');
-                        } else {
-                            navigate('left');
-                        }
-                    } 
-                    /* reset values */
-                    xDown = null;
-                    yDown = null;
-                };
-
-
+            if (dir === 'right') {
+                current = current < items.length-1 ? current + 1 : 0;
+            } else {
+                current = current > 0 ? current - 1 : items.length-1;
             }
 
-            [].slice.call(document.querySelectorAll('.slider-serv')).forEach( function(item) {
-                init(item);
-            });
+            var	nextCurrent = current < items.length-1 ? current + 1 : 0,
+                prevCurrent = current > 0 ? current - 1 : items.length-1;
 
-            })();
-        </script>  -->
-        <!-- Carrusel CLIENTES -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                autoplay: {
-                  delay: 3000,
-                  disableOnInteraction: false,
-                },
-    
-                // Navigation arrows
-                // navigation: {
-                //     nextEl: '.swiper-button-next',
-                //     prevEl: '.swiper-button-prev',
-                // },
-    
-                slidesPerView: 1,
-                
-                breakpoints: {
-                    // when window width is >= 768px
-                    400: {
-                        slidesPerView: 2,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                    },
-                    // when window width is >= 1400px
-                    // 1400: {
-                    //     slidesPerView: 3,
-                    //     spaceBetween: 24,
-                    // }
+            items[current].className = "current";
+            items[prevCurrent].className = "prev_slide";
+            items[nextCurrent].className = "";
+
+            //update counter
+            counter.firstChild.textContent = current + 1;
+        }
+
+        item.addEventListener('mouseenter', function() {
+            autoUpdate = false;
+        });
+
+        item.addEventListener('mouseleave', function() {
+            autoUpdate = true;
+        });
+
+        setInterval(function() {
+            if (autoUpdate) navigate('right');
+        },timeTrans);
+
+        prevbtn.addEventListener('click', function() {
+            navigate('left');
+        });
+
+        nextbtn.addEventListener('click', function() {
+            navigate('right');
+        });
+
+        //keyboard navigation
+        document.addEventListener('keydown', function(ev) {
+            var keyCode = ev.keyCode || ev.which;
+            switch (keyCode) {
+                case 37:
+                    navigate('left');
+                    break;
+                case 39:
+                    navigate('right');
+                    break;
+            }
+        });
+
+        // swipe navigation
+        // from http://stackoverflow.com/a/23230280
+        item.addEventListener('touchstart', handleTouchStart, false);
+        item.addEventListener('touchmove', handleTouchMove, false);
+        var xDown = null;
+        var yDown = null;
+        function handleTouchStart(evt) {
+            xDown = evt.touches[0].clientX;
+            yDown = evt.touches[0].clientY;
+        };
+        function handleTouchMove(evt) {
+            if ( ! xDown || ! yDown ) {
+                return;
+            }
+
+            var xUp = evt.touches[0].clientX;
+            var yUp = evt.touches[0].clientY;
+
+            var xDiff = xDown - xUp;
+            var yDiff = yDown - yUp;
+
+            if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+                if ( xDiff > 0 ) {
+                    /* left swipe */
+                    navigate('right');
+                } else {
+                    navigate('left');
                 }
-            });
-        </script>
-        <!-- Carrusel Artistas -->
-        <script>
-            var swiper = new Swiper('.elswiper', {
-                // slidesPerView: 3,
-                centeredSlides: true,
-                loop: true,
-                spaceBetween: 10,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + '</span>';
-                    },
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                slidesPerView: 1,
-                breakpoints: {
-                    // when window width is >= 768px
-                    500: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 1,
-                    spaceBetween: 20,
-                    },
-                    // 768: {
-                    //     slidesPerView: 3,
-                    // },
-                    // 992: {
-                    //     slidesPerView: 2,
-                    // },
-                    // // when window width is >= 1400px
-                    '@1.00': {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                    },
+            }
+            /* reset values */
+            xDown = null;
+            yDown = null;
+        };
 
-                }
-            });
-        </script>
-        <!-- Skills -->
-        <script>
-            const progText = document.querySelectorAll('.progText');
-            const progress = document.querySelectorAll('.progri');
-            const progContainer = document.querySelector('.conta'); 
 
-            let bole = false;
+    }
 
-            window.addEventListener("scroll", function (){
-                if (pageYOffset > progContainer.offsetTop - 800 && bole === false) {
-                    for(let i = 0; i < progText.length; i++) {
-                        progText[i].innerText = 0;
-                        count = 0;
-                        progress[i].style.bottom = "100%";
-                        progress[i].style.bottom = progText[i].dataset.count - 100 + "%";
+    [].slice.call(document.querySelectorAll('.slider-serv')).forEach( function(item) {
+        init(item);
+    });
 
-                        function updateCount() {
-                            target = parseInt(progText[i].dataset.count);
+    })();
+</script>  -->
+<!-- Carrusel CLIENTES -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
 
-                            if (count < target) {
-                                count++;
-                                progText[i].innerText = count;
-                                setTimeout(updateCount, 50)
-                            } else  {
-                                progText[i].innerText = target + "%";
-                            }
-                        }
-                        
-                        updateCount();
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
 
-                        bole = true;
+        slidesPerView: 1,
+
+        breakpoints: {
+            // when window width is >= 768px
+            400: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            // when window width is >= 1400px
+            // 1400: {
+            //     slidesPerView: 3,
+            //     spaceBetween: 24,
+            // }
+        }
+    });
+</script>
+<!-- Carrusel Artistas -->
+<script>
+    var swiper = new Swiper('.elswiper', {
+        // slidesPerView: 3,
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1,
+        breakpoints: {
+            // when window width is >= 768px
+            500: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+            },
+            // 768: {
+            //     slidesPerView: 3,
+            // },
+            // 992: {
+            //     slidesPerView: 2,
+            // },
+            // // when window width is >= 1400px
+            '@1.00': {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+
+        }
+    });
+</script>
+<!-- Skills -->
+<script>
+    const progText = document.querySelectorAll('.progText');
+    const progress = document.querySelectorAll('.progri');
+    const progContainer = document.querySelector('.conta');
+
+    let bole = false;
+
+    window.addEventListener("scroll", function () {
+        if (pageYOffset > progContainer.offsetTop - 800 && bole === false) {
+            for (let i = 0; i < progText.length; i++) {
+                progText[i].innerText = 0;
+                count = 0;
+                progress[i].style.bottom = "100%";
+                progress[i].style.bottom = progText[i].dataset.count - 100 + "%";
+
+                function updateCount() {
+                    target = parseInt(progText[i].dataset.count);
+
+                    if (count < target) {
+                        count++;
+                        progText[i].innerText = count;
+                        setTimeout(updateCount, 50)
+                    } else {
+                        progText[i].innerText = target + "%";
                     }
                 }
-            });
-        </script>
-        <!-- Services -->
-        <script>
-            var swiper = new Swiper(".mySwiperServ", {
-                effect: "coverflow",
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: 1,
-                spaceBetween: 8,
-                coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 0,
-                modifier: 1,
-                slideShadows: true,
-                },
-                loop: true,
-                breakpoints: {
-                        // when window width is >= 600px
-                        600: {
-                            slidesPerView: 2,
-                        },
-                          // when window width is >= 1024px
-                          1024: {
-                            slidesPerView: 3,
-                        },
-                    }
-            });
-        </script>
 
-        <!-- Swiper Artistas -->
-        <script>
-            var swiper = new Swiper(".mySwiperArtist", {
-                slidesPerView: 1,
-                // spaceBetween: 15,
-                // loop: true,
-                centerSlide: true,
-                fade: true,
-                grabCursor: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    dynamicBullets: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    // when window width is >= 768px
-                    768: {
-                        slidesPerView: 2,
-                    },
-                    
-                    1200: {
-                        slidesPerView: 3,
-                    },
-                    // when window width is >= 1400px
-                    // 1400: {
-                    //     slidesPerView: 3,
-                    //     spaceBetween: 24,
-                    // }
-                },
-            });
-        </script>
-    </body>
+                updateCount();
+
+                bole = true;
+            }
+        }
+    });
+</script>
+<!-- Services -->
+<script>
+    var swiper = new Swiper(".mySwiperServ", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 8,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop: true,
+        breakpoints: {
+            // when window width is >= 600px
+            600: {
+                slidesPerView: 2,
+            },
+            // when window width is >= 1024px
+            1024: {
+                slidesPerView: 3,
+            },
+        }
+    });
+</script>
+
+<!-- Swiper Artistas -->
+<script>
+    var swiper = new Swiper(".mySwiperArtist", {
+        slidesPerView: 1,
+        // spaceBetween: 15,
+        // loop: true,
+        centerSlide: true,
+        fade: true,
+        grabCursor: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 2,
+            },
+
+            1200: {
+                slidesPerView: 3,
+            },
+            // when window width is >= 1400px
+            // 1400: {
+            //     slidesPerView: 3,
+            //     spaceBetween: 24,
+            // }
+        },
+    });
+</script>
+</body>
 </html>

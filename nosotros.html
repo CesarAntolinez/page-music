@@ -1,407 +1,428 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Golden Artists</title>
-        <!-- Route style sheet -->
-        <link rel="stylesheet" href="./style.css">
-        <!-- Google icons material symbols -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <!-- Swiper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Golden Artists</title>
+    <!-- Route style sheet -->
+    <link rel="stylesheet" href="./asset/css/app.css">
+    <!-- Google icons material symbols -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
 
-    <body id="body">
-        <!-- Header OK -->
-        <div class="header-g-a">
-            <nav class="nav-head">
-                <a href="index.html">
-                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="215" alt="">
-                </a>
-                <!-- Desktop menu -->
-                <ul class="d-none d-lg-flex">
-                    <li><a href="index.html">Inicio</a></li>
+<body id="body">
+<!-- Header OK -->
+<div class="header-g-a">
+    <nav class="nav-head">
+        <a href="index.html">
+            <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="215" alt="">
+        </a>
+        <!-- Desktop menu -->
+        <ul class="d-none d-lg-flex">
+            <li><a href="index.html">Inicio</a></li>
 
-                    <li><a href="service.html">Servicios</a></li>
+            <li><a href="service.html">Servicios</a></li>
 
-                    <li><a href="artist.html">Artistas</a></li>
+            <li><a href="artist.html">Artistas</a></li>
 
-                    <li><a href="gallery.html">Galería</a></li>
+            <li><a href="gallery.html">Galería</a></li>
 
-                    <li class="actived"><a href="nosotros.html">Nosotros</a></li>
+            <li class="actived"><a href="nosotros.html">Nosotros</a></li>
 
-                    <div class="ms-3">
-                        <div class="container-2">
-                            <span class="icon"><i class="material-symbols-outlined">search</i></span>
-                            <input type="search" id="search" placeholder="Search..." />
-                        </div>
-                    </div>
-                </ul>
-                <!-- Mobile menu -->
-                <div class="navigation d-flex d-lg-none position-relative">
-                    <input id="nav-mobile-check" type="checkbox">
-
-                    <label class="nav-mobile-btn-menu bg-white" for="nav-mobile-check">
-                        <span class="nav-mobile-btn-icon" aria-label="toggle navigation menu"></span>
-                    </label>
-
-                    <div class="nav-mobile-bg bg-gold-hard"></div>
-                
-                    <nav class="nav-mobile-box-list" role="navigation">
-                        <a href="index.html">
-                            <img src="./asset/public/golden-artists-white.png" width="215" alt="" style="margin-left: 15px">
-                        </a>
-                        <ul class="nav-mobile-list">
-                            <li class="p-2">
-                                <a href="index.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">home</i>
-                                    <span class="h5">&nbsp;Inicio</span>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="service.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">cases</i>
-                                    <span class="h5">&nbsp;Servicios</span>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="artist.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">switch_account</i>
-                                    <span class="h5">&nbsp;Artistas</span>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="gallery.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">gallery_thumbnail</i>
-                                    <span class="h5">&nbsp;Galería</span>
-                                </a>
-                            </li>
-                            <li class="actived p-2">
-                                <a href="nosotros.html" class="nav-mobile-item-link">
-                                    <i class="material-symbols-outlined">group</i>
-                                    <span class="h5">&nbsp;Nosotros</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="ms-3">
+                <div class="container-2">
+                    <span class="icon"><i class="material-symbols-outlined">search</i></span>
+                    <input type="search" id="search" placeholder="Search..."/>
                 </div>
+            </div>
+        </ul>
+        <!-- Mobile menu -->
+        <div class="navigation d-flex d-lg-none position-relative">
+            <input id="nav-mobile-check" type="checkbox">
+
+            <label class="nav-mobile-btn-menu bg-white" for="nav-mobile-check">
+                <span class="nav-mobile-btn-icon" aria-label="toggle navigation menu"></span>
+            </label>
+
+            <div class="nav-mobile-bg bg-gold-hard"></div>
+
+            <nav class="nav-mobile-box-list" role="navigation">
+                <a href="index.html">
+                    <img src="./asset/image/logo/golden-artists-white-hrz.png" width="215" alt=""
+                         style="margin-left: 15px">
+                </a>
+                <ul class="nav-mobile-list">
+                    <li class="p-2">
+                        <a href="index.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">home</i>
+                            <span class="h5">&nbsp;Inicio</span>
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="service.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">cases</i>
+                            <span class="h5">&nbsp;Servicios</span>
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="artist.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">switch_account</i>
+                            <span class="h5">&nbsp;Artistas</span>
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="gallery.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">gallery_thumbnail</i>
+                            <span class="h5">&nbsp;Galería</span>
+                        </a>
+                    </li>
+                    <li class="actived p-2">
+                        <a href="nosotros.html" class="nav-mobile-item-link">
+                            <i class="material-symbols-outlined">group</i>
+                            <span class="h5">&nbsp;Nosotros</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
-  
-        <!-- US -->
-        <div class="position-relative">
-            <!-- Top image -->
-            <div class="img-parallax"></div>
-            <div class="bg"></div>
-            <div class="bg bg2"></div>
-            <div class="bg bg3"></div>
-        
-            <!-- Content -->
-            <div class="container-fluid  p-0">   
-                <!-- Nosotros -->
+    </nav>
+</div>
+
+<!-- US -->
+<div class="position-relative">
+    <!-- Top image -->
+    <div class="img-parallax"></div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <!-- Content -->
+    <div class="container-fluid  p-0">
+        <!-- Nosotros -->
+        <div class="row mx-0">
+            <div class="col-12 border-0  p-0"
+                 style="background: #ffffff38; box-shadow: 0 14px 25px 0 rgba(0,0,0,.5), 0 0 0 0 rgba(0,0,0,.6);">
                 <div class="row mx-0">
-                    <div class="col-12 border-0  p-0" 
-                        style="background: #ffffff38; box-shadow: 0 14px 25px 0 rgba(0,0,0,.5), 0 0 0 0 rgba(0,0,0,.6);">
+                    <div class="col-12 col-md-5  p-0">
+                        <div class="img-nosotros" style="border-radius: 0; height: 500px"></div>
+                    </div>
+
+                    <div class="col-12 col-md-7 d-flex align-items-center  p-md-5">
                         <div class="row mx-0">
-                            <div class="col-12 col-md-5  p-0">
-                                <div class="img-nosotros" style="border-radius: 0; height: 500px"></div>
-                            </div>
-
-                            <div class="col-12 col-md-7 d-flex align-items-center  p-md-5">
-                                <div class="row mx-0">
-                                    <div class="col-12  my-5 my-md-5">
-                                        <h3 class="text-center  mb-4">NOSOTROS</h3>
-                                        <h5 class="px-xxl-5">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsum? Maxime 
-                                            iusto laborum aperiam magnam atque eveniet excepturi quibusdam fugiat nisi doloribus 
-                                            repudiandae sint nulla quas, consequatur laboriosam eum ducimus.
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-                <!-- Misión y Visión -->
-                <div class="row mx-0 bg-white justify-content-center justify-content-xl-around  py-5">
-                    <div class="border-4 border-primary border-end col-11 col-sm-8 col-md-10 col-xl-5 my-5" 
-                        style="box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);">
-                        <div class="row">
-                            <div class="col-md-7 p-0">
-                                <div class="img-mision-nosotros"></div>
-                            </div>
-
-                            <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center  my-5 my-md-5">
-                                <h2>Misión</h2>
-                                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-4 border-primary border-end col-11 col-sm-8 col-md-10 col-xl-5 my-5" style="box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);">
-                        <div class="row">
-                            <div class="col-md-7 p-0">
-                                <div class="img-vision-nosotros"></div>
-                            </div>
-
-                            <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center  my-5 my-md-5">
-                                <h2>Visión</h2>
-                                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido.</p>
+                            <div class="col-12  my-5 my-md-5">
+                                <h3 class="text-center  mb-4">NOSOTROS</h3>
+                                <h5 class="px-xxl-5">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsum? Maxime
+                                    iusto laborum aperiam magnam atque eveniet excepturi quibusdam fugiat nisi doloribus
+                                    repudiandae sint nulla quas, consequatur laboriosam eum ducimus.
+                                </h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Principios y Valores -->
-                <div class="mt-4" style="box-shadow: 0 -14px 25px 0 rgba(0,0,0,.5), 0 0 0 0 rgba(0,0,0,.6);">
-                    <div class="row mx-0 justify-content-between position-relative">
-                        <!-- Imagen -->
-                        <div class="col-xl-5  p-0">
-                            <div style="height: 500px; width: 100%;">
-                                <img src="./asset/image-temp/us/us-card-01.jpg" class="w-100 h-100" style="object-fit: cover" alt="">
-                            </div>
-                        </div>
-                        <!-- Tarjeta golden artists -->
-                        <div class="d-none d-xl-flex mx-auto" style="width: 515px; height: 300px; position: absolute; top: 40%; left: 2%; padding: 45px 0;
+            </div>
+        </div>
+        <!-- Misión y Visión -->
+        <div class="row mx-0 bg-white justify-content-center justify-content-xl-around  py-5">
+            <div class="border-4 border-primary border-end col-11 col-sm-8 col-md-10 col-xl-5 my-5"
+                 style="box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);">
+                <div class="row">
+                    <div class="col-md-7 p-0">
+                        <div class="img-mision-nosotros"></div>
+                    </div>
+
+                    <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center  my-5 my-md-5">
+                        <h2>Misión</h2>
+                        <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el
+                            contenido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-4 border-primary border-end col-11 col-sm-8 col-md-10 col-xl-5 my-5"
+                 style="box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);">
+                <div class="row">
+                    <div class="col-md-7 p-0">
+                        <div class="img-vision-nosotros"></div>
+                    </div>
+
+                    <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center  my-5 my-md-5">
+                        <h2>Visión</h2>
+                        <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el
+                            contenido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Principios y Valores -->
+        <div class="mt-4" style="box-shadow: 0 -14px 25px 0 rgba(0,0,0,.5), 0 0 0 0 rgba(0,0,0,.6);">
+            <div class="row mx-0 justify-content-between position-relative">
+                <!-- Imagen -->
+                <div class="col-xl-5  p-0">
+                    <div style="height: 500px; width: 100%;">
+                        <img src="./asset/image-temp/us/us-card-01.jpg" class="w-100 h-100" style="object-fit: cover"
+                             alt="">
+                    </div>
+                </div>
+                <!-- Tarjeta golden artists -->
+                <div class="d-none d-xl-flex mx-auto" style="width: 515px; height: 300px; position: absolute; top: 40%; left: 2%; padding: 45px 0;
                             background-image: url('./asset/image-temp/us/us-card-02.jpg');  background-repeat: no-repeat; box-shadow: 16px 16px 25px 0 rgba(0,0,0,4.5);
                             background-size: contain; background-color: white;border-radius: 16px; display: flex;">
-                            <img src="./asset/image/logo/golden-artist-golden-vert.png" style="width: 175px; height: fit-content; margin-left: auto;" alt="">
+                    <img src="./asset/image/logo/golden-artist-golden-vert.png"
+                         style="width: 175px; height: fit-content; margin-left: auto;" alt="">
+                </div>
+                <!-- Principios y valores -->
+                <div class="col-xl-7  p-0">
+                    <div class="row mx-0 d-flex flex-column align-items-center">
+                        <div class="col-12 bg-black text-gold-soft ms-auto p-5">
+                            <h4 class="text-center">Nuestros</h4>
+                            <h4 class="text-center">Principios y valores</h4>
                         </div>
-                        <!-- Principios y valores -->
-                        <div class="col-xl-7  p-0">
-                            <div class="row mx-0 d-flex flex-column align-items-center">
-                                <div class="col-12 bg-black text-gold-soft ms-auto p-5">
-                                    <h4 class="text-center">Nuestros</h4>
-                                    <h4 class="text-center">Principios y valores</h4>
-                                </div>
 
-                                <div class="col-12 ms-auto p-0 d-flex justify-content-center bg-white rounded-top pb-4 p-5">
-                                    <div class="card-val-nosotros">            
-                                        <div class="val-one" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">diversity_4</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Honestidad</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="val-two" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">diversity_1</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Respeto</small>
-                                            </div>
-                                        </div>
-    
-                                        <div class="val-three" style="box-shadow: 0 3px 6px #00000038">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">clinical_notes</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Responsabilidad</small>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="val-four" style="box-shadow: 0 3px 6px #00000038">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">handshake</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Compromiso</small>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="val-five" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">schedule</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Puntualidad</small>
-                                            </div>
-                                        </div>
-                
-                                        <div class="val-six" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">real_estate_agent</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Confianza</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="val-text">
-                                            <h5>Valores</h5>
-                                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                                Quae vero, aperiam dicta ea ullam quam.
-                                            </h6>
-                                        </div>
+                        <div class="col-12 ms-auto p-0 d-flex justify-content-center bg-white rounded-top pb-4 p-5">
+                            <div class="card-val-nosotros">
+                                <div class="val-one" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">diversity_4</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Honestidad</small>
                                     </div>
                                 </div>
 
-                                <div class="col-12 ms-auto p-0 d-flex justify-content-center pt-4 p-5" style="background-color: white;">
-                                    <div class="card-princ-nosotros">            
-                                        <div class="val-one" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">workspace_premium</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Calidad</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="val-two" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">groups</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Liderazgo</small>
-                                            </div>
-                                        </div>
-    
-                                        <div class="val-three" style="box-shadow: 0 3px 6px #00000038">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">engineering</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Profesionalismo</small>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="val-four" style="box-shadow: 0 3px 6px #00000038">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">diversity_3</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Trabajo en equipo</small>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="val-five" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">psychology</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Iniciativa</small>
-                                            </div>
-                                        </div>
-                
-                                        <div class="val-six" style="box-shadow: 0 3px 6px #00000038;">
-                                            <div class="rounded-circle">
-                                                <i class="material-symbols-outlined md-36 text-primary">favorite</i>
-                                            </div>
-                                            <div class="">
-                                                <small class="text-primary">Pasión</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="val-text">
-                                            <h5>Principios</h5>
-                                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                                Quae vero, aperiam dicta ea ullam quam.
-                                            </h6>
-                                        </div>
+                                <div class="val-two" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">diversity_1</i>
                                     </div>
+                                    <div class="">
+                                        <small class="text-primary">Respeto</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-three" style="box-shadow: 0 3px 6px #00000038">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">clinical_notes</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Responsabilidad</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-four" style="box-shadow: 0 3px 6px #00000038">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">handshake</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Compromiso</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-five" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">schedule</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Puntualidad</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-six" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">real_estate_agent</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Confianza</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-text">
+                                    <h5>Valores</h5>
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quae vero, aperiam dicta ea ullam quam.
+                                    </h6>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>   
-        
-        <!-- btn scroll -->
-        <div class="btn-scroll-top actived-scroll">
-            <svg class="btn-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-            </svg>
-            <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
-        </div>
-        <!-- btn whatsapp -->
-        <a href=""  target="_blank">
-            <img class="btn-float-whp" src="./asset/image/iconos/whatsapp-white.png" alt="">
-        </a>
 
-        <!-- Footer OK  -->
-        <div class="footer-g-a bg-black">
-            <div class="container-fluid container-lg  py-5 px-lg-0">
-                <div class="row text-white">
-                    <h3 class="text-center fw-bold mb-3">Contáctenos</h3>
-                    <h5 class="text-center mb-5 px-sm-3">por medio de nuestros canales de comunicación.</h5>
+                        <div class="col-12 ms-auto p-0 d-flex justify-content-center pt-4 p-5"
+                             style="background-color: white;">
+                            <div class="card-princ-nosotros">
+                                <div class="val-one" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">workspace_premium</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Calidad</small>
+                                    </div>
+                                </div>
 
-                    <div class="col-md-7 col-lg-6">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-12 d-flex flex-column align-items-center mb-4 p-0">
-                                <a href="index.html">
-                                    <img src="./asset/image/logo/golden-artist-golden-vert.png" width="150" alt="">
-                                </a>
-                                <span class="d-block">administrativo@goldenartist.co</span>
-                            </div>
+                                <div class="val-two" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">groups</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Liderazgo</small>
+                                    </div>
+                                </div>
 
-                            <div class="col-9 col-sm-5 col-md-7  me-auto me-sm-0 ms-sm-auto mb-4">
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Dario Sánchez</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Administrativo</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;312-4195-993</h6>
-                            </div>
+                                <div class="val-three" style="box-shadow: 0 3px 6px #00000038">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">engineering</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Profesionalismo</small>
+                                    </div>
+                                </div>
 
-                            <div class="col-9 col-sm-5  ms-auto mb-4">
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Alex Casas</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Musical</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;319-4734-057</h6>
+                                <div class="val-four" style="box-shadow: 0 3px 6px #00000038">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">diversity_3</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Trabajo en equipo</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-five" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">psychology</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Iniciativa</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-six" style="box-shadow: 0 3px 6px #00000038;">
+                                    <div class="rounded-circle">
+                                        <i class="material-symbols-outlined md-36 text-primary">favorite</i>
+                                    </div>
+                                    <div class="">
+                                        <small class="text-primary">Pasión</small>
+                                    </div>
+                                </div>
+
+                                <div class="val-text">
+                                    <h5>Principios</h5>
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quae vero, aperiam dicta ea ullam quam.
+                                    </h6>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-5 col-lg-6"> 
-                        <div class="row g-3 mx-0">
-                            <div class="col-12">
-                                <input class="form-control" type="text" placeholder="Name">
-                            </div>
-
-                            <div class="col-12">
-                                <input class="form-control" type="text" placeholder="E-mail">
-                            </div>
-
-                            <div class="col-12">
-                                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
-                            </div>
-
-                            <div class="col-12 d-flex justify-content-end">
-                                <button type="button" class="btn btn-outline-gold-soft w-50">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Redes sociales -->
-            <div>
-                <div class="row mx-0 text-white">
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
-                        <img src="./asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-                    </div>
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
-                        <img src="./asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-                    </div>
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
-                        <img src="./asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
-                    </div>
-                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
-                        <img src="./asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <!-- bootstrap 5.2 file.js -->
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- btn scroll -->
+<div class="btn-scroll-top actived-scroll">
+    <svg class="btn-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+    <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
+</div>
+<!-- btn whatsapp -->
+<a href="" target="_blank">
+    <img class="btn-float-whp" src="./asset/image/iconos/whatsapp-white.png" alt="">
+</a>
 
-        <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- Footer OK  -->
+<div class="footer-g-a bg-black">
+    <div class="container-fluid container-lg  py-5 px-lg-0">
+        <div class="row text-white">
+            <h3 class="text-center fw-bold mb-3">Contáctenos</h3>
+            <h5 class="text-center mb-5 px-sm-3">por medio de nuestros canales de comunicación.</h5>
 
-        <script src="./script.js"></script>
-    </body>
+            <div class="col-md-7 col-lg-6">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 d-flex flex-column align-items-center mb-4 p-0">
+                        <a href="index.html">
+                            <img src="./asset/image/logo/golden-artist-golden-vert.png" width="150" alt="">
+                        </a>
+                        <span class="d-block">administrativo@goldenartist.co</span>
+                    </div>
+
+                    <div class="col-9 col-sm-5 col-md-7  me-auto me-sm-0 ms-sm-auto mb-4">
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Dario Sánchez
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor
+                            Administrativo</h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;312-4195-993
+                        </h6>
+                    </div>
+
+                    <div class="col-9 col-sm-5  ms-auto mb-4">
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Alex Casas
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Musical
+                        </h6>
+                        <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;319-4734-057
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-lg-6">
+                <div class="row g-3 mx-0">
+                    <div class="col-12">
+                        <input class="form-control" type="text" placeholder="Name">
+                    </div>
+
+                    <div class="col-12">
+                        <input class="form-control" type="text" placeholder="E-mail">
+                    </div>
+
+                    <div class="col-12">
+                        <textarea class="form-control" name="" id="" cols="30" rows="5"
+                                  placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-gold-soft w-50">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Redes sociales -->
+    <div>
+        <div class="row mx-0 text-white">
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
+                <img src="./asset/image/iconos/facebook-white.png"
+                     style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
+                <img src="./asset/image/iconos/whatsapp-white.png"
+                     style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
+                <img src="./asset/image/iconos/instagram-white.png"
+                     style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
+                <img src="./asset/image/iconos/tweter-white.png"
+                     style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- bootstrap 5.2 file.js -->
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./asset/js/script.js"></script>
+</body>
 </html>

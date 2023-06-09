@@ -13,12 +13,12 @@
 }
 // Home Service
 .img-banner-service {
-	background-image: url('../../image-temp/home/banners/banner-service-01.jpg');
+	background-image: url('../../../asset/image-temp/home/banners/banner-service-01.jpg');
 	@extend .img-bg-fixed;
 }
 // Home Service
 .img-banner-artist {
-	background-image: url('../../image-temp/home/banners/banner-artist-01.jpg');
+	background-image: url('../../../asset/image-temp/home/banners/banner-artist-01.jpg');
 	@extend .img-bg-fixed;
 }
 // ********************* US View ********************* //
@@ -32,7 +32,7 @@
 }
 // imagenes Nosotros
 .img-parallax {
-    background-image: url('../../image-temp/us/us-banner-01.png');
+    background-image: url('../../../asset/image-temp/us/us-banner-01.png');
 	background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
@@ -41,7 +41,7 @@
     background-repeat: no-repeat;
 }
 .img-nosotros{
-	background-image: url('../../image-temp/us/us-info-01.webp');
+	background-image: url('../../../asset/image-temp/us/us-info-01.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 0 0 350px 0;
@@ -49,7 +49,7 @@
 	height: 400px;  
 }
 .img-mision-nosotros {
-	background-image: url('../../image-temp/us/us-mision.jpg');
+	background-image: url('../../../asset/image-temp/us/us-mision.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 0 0 350px 0;
@@ -57,7 +57,7 @@
 	height: 400px;  
 }
 .img-vision-nosotros {
-	background-image: url('../../image-temp/us/us-vision.jpg');
+	background-image: url('../../../asset/image-temp/us/us-vision.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 0 0 350px 0;

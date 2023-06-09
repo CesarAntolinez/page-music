@@ -4,19 +4,19 @@
 
 // SCSS FILES
 // components
-@import 'asset/scss/_variables.scss';
-@import 'asset/scss/components/animations.scss';
-@import 'asset/scss/components/buttons.scss';
-@import 'asset/scss/components/cards.scss';
-@import 'asset/scss/components/flex-box.scss';
-@import 'asset/scss/components/gallery-temporal.scss';
-@import 'asset/scss/components/images.scss';
-@import 'asset/scss/components/layouts.scss';
-@import 'asset/scss/components/navbar.scss';
-@import 'asset/scss/components/tabs.scss';
-@import 'asset/scss/components/themes.scss';
+@import 'variables';
+@import 'components/animations';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/flex-box';
+@import 'components/gallery-temporal';
+@import 'components/images';
+@import 'components/layouts';
+@import 'components/navbar';
+@import 'components/tabs';
+//@import 'components/themes';
 // plugins
-@import 'asset/scss/plugins/swiper.scss';
+//@import 'plugins/swiper';
 
 // Customize Bootstrap
 $primary: #6B522F;
@@ -26,9 +26,9 @@ $theme-colors: (
 );
 
 // Changes and add bootstrap
-@import "./node_modules/bootstrap/scss/functions";
-@import "./node_modules/bootstrap/scss/variables";
-@import "./node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
 // Create your own map
 $custom-colors: (
@@ -41,7 +41,7 @@ $custom-colors: (
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-@import './node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 /* Rules for sizing the icon. */
 .material-symbols-outlined.md-18 { font-size: 18px; }
