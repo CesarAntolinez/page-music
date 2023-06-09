@@ -4,19 +4,19 @@
 
 // SCSS FILES
 // components
-@import 'resources/scss/_variables.scss';
-@import 'resources/scss/components/animations.scss';
-@import 'resources/scss/components/buttons.scss';
-@import 'resources/scss/components/cards.scss';
-@import 'resources/scss/components/flex-box.scss';
-@import 'resources/scss/components/gallery-temporal.scss';
-@import 'resources/scss/components/images.scss';
-@import 'resources/scss/components/layouts.scss';
-@import 'resources/scss/components/navbar.scss';
-@import 'resources/scss/components/tabs.scss';
-@import 'resources/scss/components/themes.scss';
+@import 'asset/scss/_variables.scss';
+@import 'asset/scss/components/animations.scss';
+@import 'asset/scss/components/buttons.scss';
+@import 'asset/scss/components/cards.scss';
+@import 'asset/scss/components/flex-box.scss';
+@import 'asset/scss/components/gallery-temporal.scss';
+@import 'asset/scss/components/images.scss';
+@import 'asset/scss/components/layouts.scss';
+@import 'asset/scss/components/navbar.scss';
+@import 'asset/scss/components/tabs.scss';
+@import 'asset/scss/components/themes.scss';
 // plugins
-@import 'resources/scss/plugins/swiper.scss';
+@import 'asset/scss/plugins/swiper.scss';
 
 // Customize Bootstrap
 $primary: #6B522F;
