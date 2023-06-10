@@ -538,15 +538,15 @@
 }
 
 .card-one .card-us .img-us, .card-one .card-us .img-us-zoom {
-  background-image: url("../../../asset/image-temp/home/us/home-us-001.jpg");
+  background-image: url("../image-temp/home/us/home-us-001.jpg");
 }
 
 .card-two .card-us .img-us, .card-two .card-us .img-us-zoom {
-  background-image: url("../../../asset/image-temp/home/us/home-us-02.jfif");
+  background-image: url("../image-temp/home/us/home-us-02.jfif");
 }
 
 .card-three .card-us .img-us, .card-three .card-us .img-us-zoom {
-  background-image: url("../../../asset/image-temp/home/us/home-us-03.webp");
+  background-image: url("../image-temp/home/us/home-us-03.webp");
 }
 
 .card-val-nosotros {
@@ -1342,15 +1342,15 @@
 }
 
 .img-banner-service {
-  background-image: url("../../../asset/image-temp/home/banners/banner-service-01.jpg");
+  background-image: url("../image-temp/home/banners/banner-service-01.jpg");
 }
 
 .img-banner-artist {
-  background-image: url("../../../asset/image-temp/home/banners/banner-artist-01.jpg");
+  background-image: url("../image-temp/home/banners/banner-artist-01.jpg");
 }
 
 .img-parallax {
-  background-image: url("../../../asset/image-temp/us/us-banner-01.png");
+  background-image: url("../image-temp/us/us-banner-01.png");
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
@@ -1360,7 +1360,7 @@
 }
 
 .img-nosotros {
-  background-image: url("../../../asset/image-temp/us/us-info-01.webp");
+  background-image: url("../image-temp/us/us-info-01.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 350px 0;
@@ -1369,7 +1369,7 @@
 }
 
 .img-mision-nosotros {
-  background-image: url("../../../asset/image-temp/us/us-mision.jpg");
+  background-image: url("../image-temp/us/us-mision.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 350px 0;
@@ -1378,7 +1378,7 @@
 }
 
 .img-vision-nosotros {
-  background-image: url("../../../asset/image-temp/us/us-vision.jpg");
+  background-image: url("../image-temp/us/us-vision.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 350px 0;
