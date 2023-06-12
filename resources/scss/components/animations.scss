@@ -3,7 +3,7 @@
   0% { transform:translateX(-25%) }
   100% { transform:translateX(25%) }
 }
-.bg {
+.dinamic-bg-color {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #FFEFBA 50%, #FFFFFF 50%);
   bottom:0;
@@ -14,11 +14,11 @@
   top:0;
   z-index:-1;
 } 
-.bg2 {
+.dinamic-bg-color2 {
 animation-direction:alternate-reverse;
 animation-duration:4s;
 }
-.bg3 { animation-duration:5s }
+.dinamic-bg-color3 { animation-duration:5s }
 
 // Animation In Cards Us - Home
 //=== FADE IN LEFT ===
