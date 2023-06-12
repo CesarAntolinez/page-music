@@ -1,4 +1,8 @@
-// Animación background NOSOTROS
+// Animation view US
+@keyframes slide {
+  0% { transform:translateX(-25%) }
+  100% { transform:translateX(25%) }
+}
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #FFEFBA 50%, #FFFFFF 50%);
@@ -14,104 +18,14 @@
 animation-direction:alternate-reverse;
 animation-duration:4s;
 }
-.bg3 {
-animation-duration:5s;
-}
-@keyframes slide {
-0% {
-    transform:translateX(-25%);
-}
-100% {
-    transform:translateX(25%);
-}
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+.bg3 { animation-duration:5s }
 
-  to {
-    opacity: 1;
-  }
+// Animation In Cards Us - Home
+//=== FADE IN LEFT ===
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-/*=== FADE IN DOWN ===*/
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-/*==== FADE IN UP ===*/
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-/*=== FADE IN LEFT ===*/
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -138,12 +52,37 @@ animation-duration:5s;
     transform: none;
   }
 }
-
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
+//=== FADE IN DOWN ===
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
-/*==== FADE IN RIGHT ===*/
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+//==== FADE IN RIGHT ===
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
@@ -174,195 +113,54 @@ animation-duration:5s;
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
+.animate {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.three {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}  
+.four {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
 
-
-
-
-
-// cards nosotros HOME   revisar clases repetidas en la animación fadeInRight
-  /*=== Trigger  ===*/
-  .animate {
-    -webkit-animation-duration: .3s;
-    animation-duration: .3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    
-    /*=== Optional Delays, change values here  ===*/
-    .one {
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-    }
-    
-    .two {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
-    }
-    
-    .three {
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-    }
-    
-    .four {
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
-    }
-    
-    /*=== Animations start here  ===*/
-    /*=== FADE IN  ===*/
-    @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-    }
-    @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-    }
-    .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    }
-    
-    
-    /*=== FADE IN DOWN ===*/
-    @-webkit-keyframes fadeInDown {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    .fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-    }
-    
-    /*==== FADE IN UP ===*/
-    @-webkit-keyframes fadeInUp {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    .fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    }
-    
-    /*=== FADE IN LEFT ===*/
-    @-webkit-keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    .fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    }
-    
-    /*==== FADE IN RIGHT ===*/
-    @-webkit-keyframes fadeInRight {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-    }
-    
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-    }
-    .fadeInRight {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    }
+// Animation Skill progress
+.circular-progress-bar {
+	background: linear-gradient(0deg, #080808 0%, #111111 100%);
+	position: absolute;
+	width: 6.5em;
+	height: 6.5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	z-index: 1;
+  h5 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+}
+.circular-progress-effect {
+	position: absolute;
+	width: 7.3em;
+	height: 7.3em;
+	bottom: -100%;
+	background: linear-gradient(0deg, #335bf4 0%, #16ff86 100%);
+	transition: bottom 6s;
+}

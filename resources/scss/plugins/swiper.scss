@@ -1,3 +1,58 @@
+// Swiper Services - Home
+.swiper-content-services {
+	position: relative;
+	max-width: 100%;
+	margin: 30px 0;
+	-webkit-box-reflect: below 1px linear-gradient(transparent 65%, #0009);
+}
+.swiper-content-services .swiper-services .swiper-wrapper {
+	justify-content: start;
+}
+.swiper-content-services .swiper-services .swiper-wrapper .swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 350px;
+	min-height: 350px;
+	background-color: #fff;
+}
+.swiper-content-services .swiper-3d .swiper-slide-shadow-left,
+.swiper-content-services .swiper-3d .swiper-slide-shadow-right
+{ background-image: none }
+// Swiper Artists - Home
+.swiper-artists .swiper-btn {
+color: #EBB467;
+transition: color .3s ease;
+&:hover { color: #AE9B81; }
+}
+.swiper-artists .swiper-pagination-bullet {
+background-color: #EBB467;
+width: 24px;
+height: 24px;
+opacity: 1;
+}
+.swiper-artists .swiper-pagination-bullet-active {
+background-color: #9E7A46;
+width: 26px;
+height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider-serv {
 	position: relative;
 	width: 100%;
@@ -173,162 +228,7 @@
 	background-image: radial-gradient(circle at top left,#000,#3c4858)
 }
 
-// ************************ Inicio Slider artistas HOME ************************
-// .swiper-artist {
-// 	position: relative;
-// 	// Buttons arrows
-	
-// 	.swiper-button-prev,
-// 	.swiper-button-next {
-// 		color: #f69259;
-// 		// border-radius: 50%;
-// 		// background: burlywood;
-// 		// padding: 30px 30px 30px 30px;
-// 	}
-	
-// 	// pagination
-// 	.swiper-pagination-bullet {
-// 		width: 20px;
-// 		height: 20px;
-// 		text-align: center;
-// 		line-height: 20px;
-// 		font-size: 12px;
-// 		color:#fff;
-// 		opacity: 1;
-// 		background: rgba(0,0,0,0.2);
-// 		border-radius: 4px;
-// 		&.swiper-pagination-bullet-active {
-// 			background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
-// 			border-radius: 4px;
-// 			width: 20px;
-// 			height: 20px;
-// 		}
-// 	}
-// }
-// .elswiper {
-// 	// width: 100%;
-// 	// height: 400px;
-// 	// .swiper-wrapper {
-// 	//   height: 100%;
-// 	// }
-// 	.swiper-slide {
-// 	  display: flex;
-// 	  align-items: center;
-// 	  background-color: #faebd75e;
-// 	  border-radius: 4px;
-// 	  transition: all .3s ease;
-// 	  height: 90%;
-// 	  &.swiper-slide-active {
-// 		background: linear-gradient(45deg, #f69259, #f16975c7);
-// 		border-radius: 4px;
-// 		z-index: 2;
-// 		padding: 16px;
-// 		// height: 100%;
-// 	  }
-// 	}
-// }
-// // cards artists
-// // .column {
-// // 	// float: left;
-// // 	padding: 10px;
-// // 	width: 300px;
-// // 	height: 100%;
-// // 	// display: block;
-// // 	// height: 100%;
-// // }
-// .cardd {
-// 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-// 	padding: 4px;
-// 	text-align: center;
-// 	background-color: #fff;
-// 	border-radius:10px;
-// 	cursor:pointer;
-// 	width: 100%;
-// }
-// .cardd .profile{
-// 	width: 100%;
-// 	height: 100%;
-// 	object-fit: cover;
-// 	border-radius:10px;
-// 	transition: 0.2s;
-// }
-// .cardd:hover .profile{
-// 	transform:scale(1.4);
-// 	border-top-right-radius:50px;
-// 	border-top-left-radius:50px;
-// }
-
-// .cardd .content{
-// 	// width:100%;
-// 	// height:100%;
-// 	position:relative;
-// 	overflow:hidden;
-// }
-// .cardd .content .back{
-// 	position:absolute;
-// 	width:100%;
-// 	height:100%;
-// 	background-color: #f1f1f1e6;
-// 	transition:1s;
-// 	z-index:1;
-// 	padding:0 10px;
-// 	display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-// }
-// .from-left{
-// 	top:0;
-// 	left:-100%;
-// }
-// .cardd:hover .content .from-left {
-// 	left:0%;
-// }
-
-// .from-bottom{
-// 	top:100%;
-// 	left:0;
-// }
-// .cardd:hover .content .from-bottom {
-// 	top:0%;
-// }
-
-// .from-right{
-// 	top:0%;
-// 	right:-100%;
-// }
-// .cardd:hover .content .from-right {
-// 	right:0;
-// }
-// .cardd .content .back h3{
-// 	font-size:15px;
-// 	letter-spacing:2px;
-// }
-// .cardd .content .back .tem-img{
-// 	border-radius:100%;
-// }
-// .cardd .content .back .des{
-// 	font-size:13px;
-// 	padding:20px 0px;
-// }
-// .cardd .content .back .social-icon{
-// 	list-style:none;
-// 	margin:0px;
-// 	padding:0px;
-// }
-// .cardd .content .back .social-icon li{
-// 	display:inline-block;
-// }
-
-// .cardd .content .back .social-icon li a{
-// 	display:block;
-// 	background:#333;
-// 	color:#fff;
-// 	width:40px;
-// 	height:40px;
-// 	text-align:center;
-// 	line-height:40px;
-// 	border-radius:100%;
-// }
+// ************************ Inicio Slider artistas HOME *********************
 // ************************ End Slider artistas home ************************
 
 @media (min-width: 576px) {
@@ -388,138 +288,30 @@
 	min-height: 100vh;
 	color: #fff;
 }
-.conta {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.progri-card {
-	display: inline-block;
-	text-align: center;
-}
-.progri-card h5 {
-	color: #fff;
-	font-weight: 500;
-	letter-spacing: 2px;
-}
-.progri-circle {
-	position: relative;
-	background: transparent;
-	border: 8px solid #1b1b1b;
-	border-radius: 50%;
-	width: 8em;
-	height: 8em;
-	overflow: hidden;
-	margin: auto;
-}
-.progri {
-	position: absolute;
-	width: 7.3em;
-	height: 7.3em;
-	bottom: -100%;
-	background: linear-gradient(0deg, #335bf4 0%, #16ff86 100%);
-	transition: bottom 6s;
-}
-.progri-content {
-	background: linear-gradient(0deg, #080808 0%, #111111 100%);
-	position: absolute;
-	width: 6.5em;
-	height: 6.5em;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #000;
-	z-index: 1;
-}
-.progri-content h5 {
-	font-size: 2em;
-	font-weight: 500;
-}
 
 
 
 
-// Service home
-.testimonial {
-	position: relative;
-	max-width: 100%;
-	margin: 30px 0;
-	-webkit-box-reflect: below 1px linear-gradient(transparent 65%, #0009);
-}
-.mySwiperServ .swiper-wrapper {
-	justify-content: start;
-}
-.mySwiperServ .swiper-wrapper .swiper-slide {
-	background-position: center;
-	background-size: cover;
-	width: 350px;
-	min-height: 350px;
-	background-color: #fff;
-	// margin: 0 20px;
-}
-.testimonial .swiper-3d .swiper-slide-shadow-left,
-.testimonial .swiper-3d .swiper-slide-shadow-right
- {
-    background-image: none;
-}
-.testimonial .cardd {
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	background-color: #333;
-	padding: 40px;
-	text-align: center;
-	overflow: hidden;
-}
-.testimonial .cardd .layer {
-	position: absolute;
-	top: calc(100% - 2px);
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(#03a9f4, #e91ee3);
-	z-index: 1;
-	transition: 0.5s;
-}
-.testimonial .cardd:hover .layer {
-	top: 0;
-}
-.testimonial .cardd .content {
-	position: relative;
-	z-index: 2;
-}
-// .testimonial .cardd .content p {
-// 	font-size: 18px;
-// 	line-height: 24px;
-// 	margin-bottom: 20px;
+
+
+// .card-skill h5 {
 // 	color: #fff;
+// 	font-weight: 500;
+// 	letter-spacing: 2px;
 // }
-.testimonial .cardd .content .imgBx {
-	width: 150px;
-	height: 150px;
-	margin: 0 auto 10px;
-	border-radius: 50%;
-	overflow: hidden;
-	border: 4px solid #fff;
-	box-shadow: 010px 20px rgba(0,0,0,0.2);
-}
-// .testimonial .cardd .content h2 {
-// 	font-size: 18px;
-// 	color: #fff;
-// }
-// .testimonial .cardd .content h2 span {
-// 	font-size: 14px;
-// 	color: #9E7A46;
-// 	transition: 0.5s;
-// }
-// .testimonial .cardd:hover .content h2 span {
-// 	color: #EBB467;
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -677,84 +469,40 @@
 // 	height: 100%;
 // 	object-fit: cover;
 //   }
-  .kardd {
-	width: 320px;
-	height: 500px;
-	margin: auto;
-	border-radius: 20px;
-	overflow: hidden;
-	border: 8px solid #fff;
-	position: relative;
-  }
-  .kard-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 15px;
-  }
-  .car-body {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	right: -100%;
-	position: absolute;
-	background-color: #1f3d4738;
-	backdrop-filter: blur(5px);
-	border-radius: 15px;
-	color: #fff;
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	transition: 1.5s;
-  }
-  .kardd:hover .car-body {
-	right: 0;
-  }
-  .kard-title {
-	text-transform: uppercase;
-	font-weight: 500;
-  }
-  .kard-subtitle {
-	text-transform: capitalize;
-	font-weight: 300;
-  }
-  .kard-subtitle {
-	line-height: 25px;
-	margin: 20px 0;
-	font-weight: 400;
-  }
-  .kard-btn {
-	width: 120px;
-	color: #1f3d47;
-	background-color: #8fabba;
-	padding: 10px 20px;
-	border-radius: 4px;
-	text-transform: capitalize;
-	border: none;
-	outline: none;
-	font-weight: 500;
-	margin-top: 16px;
-  }
-  .swiper-btn {
-	color: #EBB467;
-	transition: color .3s ease;
-  }
-  .swiper-btn:hover {
-	color: #AE9B81;
-  }
-  .swiper-btn::before,
-  .swiper-btn::after {
-	font-size: 48PX;
-  }
-  .mySwiperArtist .swiper-pagination-bullet {
-	background-color: #EBB467;
-	width: 24px;
-	height: 24px;
-	opacity: 1;
-  }
-  .mySwiperArtist .swiper-pagination-bullet-active {
-	background-color: #9E7A46;
-	width: 26px;
-	height: 26px;
-  }
+
+//   .kard-img {
+// 	width: 100%;
+// 	height: 100%;
+// 	object-fit: cover;
+// 	// border-radius: 15px;
+//   }
+
+
+//   .kard-title {
+// 	text-transform: uppercase;
+// 	font-weight: 500;
+//   }
+//   .kard-subtitle {
+// 	text-transform: capitalize;
+// 	font-weight: 300;
+// 	line-height: 25px;
+// 	margin: 20px 0;
+//   }
+
+
+
+//   .kard-btn {
+// 	width: 120px;
+// 	color: #1f3d47;
+// 	background-color: #8fabba;
+// 	padding: 10px 20px;
+// 	border-radius: 4px;
+// 	text-transform: capitalize;
+// 	border: none;
+// 	outline: none;
+// 	font-weight: 500;
+// 	margin-top: 16px;
+//   }
+
+
+
