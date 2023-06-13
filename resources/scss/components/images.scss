@@ -27,6 +27,7 @@
 	background-repeat: no-repeat;
 	border-radius: 0 0 350px 0;
 }
+
 //********** HOME **********//
 // Banner top
 .img-banner-fluid {
@@ -79,6 +80,7 @@
 	background-image: url('../../../asset/image-temp/home/banners/banner-artist-01.jpg');
 	@extend .img-bg-fixed;
 }
+
 //********** US VIEW **********//
 // Us View
 .img-parallax {
@@ -99,4 +101,11 @@
 .img-vision-us {
 	background-image: url('../../../asset/image-temp/us/us-vision.jpg');  
 	@extend .img-rounded-right-bottom;
+}
+
+//********** Service VIEW **********//
+.img-size-service {
+	width: 100%; 
+	height: 350px;
+	object-fit: cover;
 }
