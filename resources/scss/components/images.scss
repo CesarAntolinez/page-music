@@ -81,7 +81,7 @@
 	@extend .img-bg-fixed;
 }
 
-//********** US VIEW **********//
+//********** US View **********//
 // Us View
 .img-parallax {
     background-image: url('../../../asset/image-temp/us/us-banner-01.png');
@@ -103,9 +103,22 @@
 	@extend .img-rounded-right-bottom;
 }
 
-//********** Service VIEW **********//
+//********** Service View **********//
 .img-size-service {
 	width: 100%; 
 	height: 350px;
+	object-fit: cover;
+}
+
+//********** Artists View **********//
+.img-user-artist {
+	height: 90px; 
+	width: 90px; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	margin: auto;
+	border-radius: 50%; 
+	border: 1px solid gold; 
 	object-fit: cover;
 }
