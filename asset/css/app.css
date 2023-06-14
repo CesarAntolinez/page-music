@@ -373,15 +373,15 @@
 }
 
 .card-one .card-us .img-bg-us, .card-one .card-us .img-bg-us-zoom {
-  background-image: url("./asset/image-temp/home/us/home-us-001.jpg");
+  background-image: url("../image-temp/home/us/home-us-001.jpg");
 }
 
 .card-two .card-us .img-bg-us, .card-two .card-us .img-bg-us-zoom {
-  background-image: url("./asset/image-temp/home/us/home-us-02.jfif");
+  background-image: url("../image-temp/home/us/home-us-02.jfif");
 }
 
 .card-three .card-us .img-bg-us, .card-three .card-us .img-bg-us-zoom {
-  background-image: url("./asset/image-temp/home/us/home-us-03.webp");
+  background-image: url("../image-temp/home/us/home-us-03.webp");
 }
 
 .card-service {
@@ -472,7 +472,7 @@
   left: 2%;
   padding: 45px 0;
   background-color: white;
-  background-image: url("./asset/image-temp/us/us-card-02.jpg");
+  background-image: url("../image-temp/us/us-card-02.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 16px 16px 25px 0 rgb(0, 0, 0);
