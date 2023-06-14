@@ -58,7 +58,7 @@
 }
 // Services - Home
 .img-bg-service {
-	background-image: url('../../../asset/image-temp/home/banners/banner-service-01.jpg');
+	background-image: url('../image-temp/home/banners/banner-service-01.jpg');
 	@extend .img-bg-fixed;
 }
 .img-card-service {
@@ -77,29 +77,29 @@
 }
 // Artists - Home
 .img-bg-artists {
-	background-image: url('../../../asset/image-temp/home/banners/banner-artist-01.jpg');
+	background-image: url('../image-temp/home/banners/banner-artist-01.jpg');
 	@extend .img-bg-fixed;
 }
 
 //********** US View **********//
 // Us View
 .img-parallax {
-    background-image: url('../../../asset/image-temp/us/us-banner-01.png');
+    background-image: url('../image-temp/us/us-banner-01.png');
 	height: 600px;
 	@extend .img-bg-fixed;
 }
 .img-info-us {
-	background-image: url('../../../asset/image-temp/us/us-info-01.webp');
+	background-image: url('../image-temp/us/us-info-01.webp');
 	border-radius: 0 !important; 
 	height: 500px !important;
 	@extend .img-rounded-right-bottom; 
 }
 .img-mision-us {
-	background-image: url('../../../asset/image-temp/us/us-mision.jpg');
+	background-image: url('../image-temp/us/us-mision.jpg');
 	@extend .img-rounded-right-bottom;
 }
 .img-vision-us {
-	background-image: url('../../../asset/image-temp/us/us-vision.jpg');  
+	background-image: url('../image-temp/us/us-vision.jpg');
 	@extend .img-rounded-right-bottom;
 }
 
