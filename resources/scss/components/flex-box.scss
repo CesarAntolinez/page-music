@@ -5,7 +5,13 @@
 }
 .flex-box-column-center {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.flex-box-column-start {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }

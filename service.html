@@ -4,16 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Golden Artists</title>
-        <!-- Route style sheet -->
-        <link rel="stylesheet" href="./style.css">
+
         <!-- Google icons material symbols -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <!-- Swiper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <!-- Route style sheet -->
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
-        <!-- Header OK -->
+        <!-- Header OK  -->
         <div class="header-g-a">
             <nav class="nav-head">
                 <a href="index.html">
@@ -90,55 +89,94 @@
         </div>
 
         <!-- Service -->
-        <div class="content-g-a position-relative" style="margin-top: 120px">
-            <!-- Top image -->
-            <div class="bg"></div>
-            <div class="bg bg2"></div>
-            <div class="bg bg3"></div>
+        <div class="mt-main-content">
+            <!-- background-dinamyc -->
+            <div class="dinamic-bg-color"></div>
+            <div class="dinamic-bg-color dinamic-bg-color2"></div>
+            <div class="dinamic-bg-color dinamic-bg-color3"></div>
 
             <div class="container my-5">
                 <div class="row justify-content-center">                    
-                    <div class="tab-content mt-5" id="myTabContent">
+                    <div class="tab-content mt-4" id="myTabContent">
                         <!-- Matrimonios -->
                         <div class="tab-pane fade show active" id="boda-tab-pane" role="tabpanel" aria-labelledby="boda-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="wrapper">                                       
-                                        <div class="row image-gallery">
-                                            <div class="col-12 primary" style="background-image: url('./asset/image-temp/services/bodas/boda-01.jpeg');"></div>
+                                <div class="col-12 mb-3">
+                                    <h1 class="text-center">Matrimonios</h1>
+                                </div>
 
-                                            <aside class="col-12 thumbnails p-0" style="overflow: auto;">
-                                                <a href="#" class="selected thumbnail" data-big="./asset/image-temp/services/bodas/boda-02.jpeg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/bodas/boda-02.jpeg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/bodas/boda-03.jpeg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/bodas/boda-03.jpeg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/bodas/boda-04.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/bodas/boda-04.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="selected thumbnail" data-big="./asset/image-temp/services/bodas/boda-05.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/bodas/boda-05.jpg')"></div>
-                                                </a>
-                                            </aside>
+                                <div class="col-lg-6">
+                                    <div class="wrapper w-100">                                       
+                                        <div class="row">
+                                            <div class="col-sm-10 tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="img-serv-boda-01-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-boda-01-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/bodas/boda-01.jpeg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-boda-02-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-boda-02-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/bodas/boda-02.jpeg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-boda-03-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-boda-03-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/bodas/boda-03.jpeg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-boda-04-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-boda-04-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/bodas/boda-04.jpg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2 p-0">
+                                                <ul class="nav nav-tabs border-0 justify-content-center px-2 mt-3 mt-sm-0" id="myTab" role="tablist">
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 active btn-tab-serv" id="img-serv-boda-01-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-boda-01-tab-pane" role="tab" aria-controls="img-serv-boda-01-tab-pane" aria-selected="true">
+                                                            <img src="./asset/image-temp/services/bodas/boda-01.jpeg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-boda-02-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-boda-02-tab-pane" role="tab" aria-controls="img-serv-boda-02-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/bodas/boda-02.jpeg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-boda-03-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-boda-03-tab-pane" role="tab" aria-controls="img-serv-boda-03-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/bodas/boda-03.jpeg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-0" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-boda-04-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-boda-04-tab-pane" role="tab" aria-controls="img-serv-boda-04-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/bodas/boda-04.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <h4>Matrimonios</h4>
-                                    <div class="text-gold-thin">
+                                <div class="col-lg-6 mt-4">
+                                    <!-- <div class="text-gold-thin">
                                         <i class="material-symbols-outlined fill-1">star</i>
                                         <i class="material-symbols-outlined fill-1">star</i>
                                         <i class="material-symbols-outlined fill-1">star</i>
                                         <i class="material-symbols-outlined fill-1">star</i>
                                         <i class="material-symbols-outlined fill-1">star</i>
-                                    </div>
+                                    </div> -->
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio quaerat in aperiam aspernatur earum 
-                                        obcaecati ab facilis tempora. Corrupti quam iste, totam, voluptatem autem dicta error labore, sunt fugiat repellat 
-                                        dolores quod beatae rerum soluta in corporis perspiciatis obcaecati id. Eos excepturi ducimus adipisci, optio 
-                                        reiciendis assumenda debitis! Iure.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio 
+                                        quaerat in aperiam aspernatur earum obcaecati ab facilis tempora. Corrupti quam 
+                                        iste, totam, voluptatem autem dicta error labore.
                                     </p>
 
                                     <div class="d-flex justify-content-end">
@@ -151,39 +189,82 @@
                         <!-- Quince años -->
                         <div class="tab-pane fade" id="years-tab-pane" role="tabpanel" aria-labelledby="years-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="wrapper">                                       
-                                        <div class="row image-gallery">
-                                            <div class="col-12 primary" style="background-image: url('./asset/image-temp/services/quinces/quince-01.jpg');"></div>
+                                <div class="col-12 mb-3">
+                                    <h1 class="text-center">Quince Años</h1>
+                                </div>
 
-                                            <aside class="col-12 thumbnails">
-                                                <a href="#" class="selected thumbnail" data-big="./asset/image-temp/services/quinces/quince-02.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/quinces/quince-02.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/quinces/quince-03.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/quinces/quince-03.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/quinces/quince-04.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/quinces/quince-04.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/quinces/quince-05.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/quinces/quince-05.jpg')"></div>
-                                                </a>
-                                            </aside>
+                                <div class="col-lg-6">
+                                    <div class="wrapper w-100">                                       
+                                        <div class="row">
+                                            <div class="col-sm-10 tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="img-serv-years-01-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-years-01-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/quinces/quince-01.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-years-02-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-years-02-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/quinces/quince-02.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-years-03-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-years-03-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/quinces/quince-03.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-years-04-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-years-04-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/quinces/quince-04.jpg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2 p-0">
+                                                <ul class="nav nav-tabs border-0 justify-content-center px-2 mt-3 mt-sm-0" id="myTab" role="tablist">
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 active btn-tab-serv" id="img-serv-years-01-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-years-01-tab-pane" role="tab" aria-controls="img-serv-years-01-tab-pane" aria-selected="true">
+                                                            <img src="./asset/image-temp/services/quinces/quince-01.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-years-02-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-years-02-tab-pane" role="tab" aria-controls="img-serv-years-02-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/quinces/quince-02.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-years-03-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-years-03-tab-pane" role="tab" aria-controls="img-serv-years-03-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/quinces/quince-03.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-0" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-years-04-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-years-04-tab-pane" role="tab" aria-controls="img-serv-years-04-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/quinces/quince-04.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <h4>Quince Años</h4>
-                                    <div>
-                                        <img src="./asset/public/estrellas.png" style="height: 60px; width: 70px; position: absolute; top: -15px; right: 12px;" alt="">
-                                    </div>
+                                <div class="col-lg-6 mt-4">
+                                    <!-- <div class="text-gold-thin">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                    </div> -->
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio quaerat in aperiam aspernatur earum 
-                                        obcaecati ab facilis tempora. Corrupti quam iste, totam, voluptatem autem dicta error labore, sunt fugiat repellat 
-                                        dolores quod beatae rerum soluta in corporis perspiciatis obcaecati id. Eos excepturi ducimus adipisci, optio 
-                                        reiciendis assumenda debitis! Iure.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio 
+                                        quaerat in aperiam aspernatur earum obcaecati ab facilis tempora. Corrupti quam 
+                                        iste, totam, voluptatem autem dicta error labore.
                                     </p>
 
                                     <div class="d-flex justify-content-end">
@@ -196,39 +277,82 @@
                         <!-- Eventos prinvados -->
                         <div class="tab-pane fade" id="private-tab-pane" role="tabpanel" aria-labelledby="private-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="wrapper">                                       
-                                        <div class="row image-gallery">
-                                            <div class="col-12 primary" style="background-image: url('./asset/image-temp/services/event-privados/event-priv-01.jpg');"></div>
+                                <div class="col-12 mb-3">
+                                    <h1 class="text-center">Eventos Privados</h1>
+                                </div>
 
-                                            <aside class="col-12 thumbnails">
-                                                <a href="#" class="selected thumbnail" data-big="./asset/image-temp/services/event-privados/event-priv-02.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-privados/event-priv-02.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-privados/event-priv-03.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-privados/event-priv-03.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-privados/event-priv-04.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-privados/event-priv-04.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-privados/event-priv-05.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-privados/event-priv-05.jpg')"></div>
-                                                </a>
-                                            </aside>
+                                <div class="col-lg-6">
+                                    <div class="wrapper w-100">                                       
+                                        <div class="row">
+                                            <div class="col-sm-10 tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="img-serv-private-01-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-private-01-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-privados/event-priv-01.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-private-02-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-private-02-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-privados/event-priv-02.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-private-03-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-private-03-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-privados/event-priv-03.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-private-04-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-private-04-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-privados/event-priv-04.jpg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2 p-0">
+                                                <ul class="nav nav-tabs border-0 justify-content-center px-2 mt-3 mt-sm-0" id="myTab" role="tablist">
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 active btn-tab-serv" id="img-serv-private-01-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-private-01-tab-pane" role="tab" aria-controls="img-serv-private-01-tab-pane" aria-selected="true">
+                                                            <img src="./asset/image-temp/services/event-privados/event-priv-01.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-private-02-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-private-02-tab-pane" role="tab" aria-controls="img-serv-private-02-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-privados/event-priv-02.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-private-03-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-private-03-tab-pane" role="tab" aria-controls="img-serv-private-03-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-privados/event-priv-03.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-0" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-private-04-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-private-04-tab-pane" role="tab" aria-controls="img-serv-private-04-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-privados/event-priv-04.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <h4>Eventos privados</h4>
-                                    <div>
-                                        <img src="./asset/public/estrellas.png" style="height: 60px; width: 70px; position: absolute; top: -15px; right: 12px;" alt="">
-                                    </div>
+                                <div class="col-lg-6 mt-4">
+                                    <!-- <div class="text-gold-thin">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                    </div> -->
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio quaerat in aperiam aspernatur earum 
-                                        obcaecati ab facilis tempora. Corrupti quam iste, totam, voluptatem autem dicta error labore, sunt fugiat repellat 
-                                        dolores quod beatae rerum soluta in corporis perspiciatis obcaecati id. Eos excepturi ducimus adipisci, optio 
-                                        reiciendis assumenda debitis! Iure.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio 
+                                        quaerat in aperiam aspernatur earum obcaecati ab facilis tempora. Corrupti quam 
+                                        iste, totam, voluptatem autem dicta error labore.
                                     </p>
 
                                     <div class="d-flex justify-content-end">
@@ -241,39 +365,82 @@
                         <!-- Eventos empresariales -->
                         <div class="tab-pane fade" id="company-tab-pane" role="tabpanel" aria-labelledby="company-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="wrapper">                                       
-                                        <div class="row image-gallery">
-                                            <div class="col-12 primary" style="background-image: url('./asset/image-temp/services/event-empresa/event-emp-01.jpg');"></div>
+                                <div class="col-12 mb-3">
+                                    <h1 class="text-center">Eventos Empresariales</h1>
+                                </div>
 
-                                            <aside class="col-12 thumbnails">
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-empresa/event-emp-02.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-empresa/event-emp-02.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-empresa/event-emp-03.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-empresa/event-emp-03.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-empresa/event-emp-04.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-empresa/event-emp-04.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-empresa/event-emp-05.jpg">
-                                                    <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-empresa/event-emp-05.jpg')"></div>
-                                                </a>
-                                            </aside>
+                                <div class="col-lg-6">
+                                    <div class="wrapper w-100">                                       
+                                        <div class="row">
+                                            <div class="col-sm-10 tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="img-serv-empresarial-01-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-empresarial-01-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-empresa/event-emp-01.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-empresarial-02-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-empresarial-02-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-empresa/event-emp-02.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-empresarial-03-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-empresarial-03-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-empresa/event-emp-03.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-empresarial-04-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-empresarial-04-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-empresa/event-emp-04.jpg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2 p-0">
+                                                <ul class="nav nav-tabs border-0 justify-content-center px-2 mt-3 mt-sm-0" id="myTab" role="tablist">
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 active btn-tab-serv" id="img-serv-empresarial-01-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-empresarial-01-tab-pane" role="tab" aria-controls="img-serv-empresarial-01-tab-pane" aria-selected="true">
+                                                            <img src="./asset/image-temp/services/event-empresa/event-emp-01.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-empresarial-02-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-empresarial-02-tab-pane" role="tab" aria-controls="img-serv-empresarial-02-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-empresa/event-emp-02.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-empresarial-03-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-empresarial-03-tab-pane" role="tab" aria-controls="img-serv-empresarial-03-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-empresa/event-emp-03.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-0" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-empresarial-04-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-empresarial-04-tab-pane" role="tab" aria-controls="img-serv-empresarial-04-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-empresa/event-emp-04.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <h4>Eventos empresariales</h4>
-                                    <div>
-                                        <img src="./asset/public/estrellas.png" style="height: 60px; width: 70px; position: absolute; top: -15px; right: 12px;" alt="">
-                                    </div>
+                                <div class="col-lg-6 mt-4">
+                                    <!-- <div class="text-gold-thin">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                    </div> -->
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio quaerat in aperiam aspernatur earum 
-                                        obcaecati ab facilis tempora. Corrupti quam iste, totam, voluptatem autem dicta error labore, sunt fugiat repellat 
-                                        dolores quod beatae rerum soluta in corporis perspiciatis obcaecati id. Eos excepturi ducimus adipisci, optio 
-                                        reiciendis assumenda debitis! Iure.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio 
+                                        quaerat in aperiam aspernatur earum obcaecati ab facilis tempora. Corrupti quam 
+                                        iste, totam, voluptatem autem dicta error labore.
                                     </p>
 
                                     <div class="d-flex justify-content-end">
@@ -286,39 +453,82 @@
                         <!-- Eventos de magia -->
                         <div class="tab-pane fade" id="magic-tab-pane" role="tabpanel" aria-labelledby="magic-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="wrapper">                                       
-                                        <div class="row image-gallery">
-                                            <div class="col-12 primary" style="background-image: url('./asset/image-temp/services/event-magia/magia-01.jpg');"></div>
+                                <div class="col-12 mb-3">
+                                    <h1 class="text-center">Eventos de Magia</h1>
+                                </div>
 
-                                            <aside class="col-12 thumbnails">
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-magia/magia-02.jpg">
-                                                <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-magia/magia-02.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-magia/magia-03.jpg">
-                                                <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-magia/magia-03.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-magia/magia-04.jpg">
-                                                <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-magia/magia-04.jpg')"></div>
-                                                </a>
-                                                <a href="#" class="thumbnail" data-big="./asset/image-temp/services/event-magia/magia-05.jpg">
-                                                <div class="thumbnail-image" style="background-image: url('./asset/image-temp/services/event-magia/magia-05.jpg')"></div>
-                                                </a>
-                                            </aside>
+                                <div class="col-lg-6">
+                                    <div class="wrapper w-100">                                       
+                                        <div class="row">
+                                            <div class="col-sm-10 tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="img-serv-magia-01-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-magia-01-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-magia/magia-01.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-magia-02-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-magia-02-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-magia/magia-02.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-magia-03-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-magia-03-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-magia/magia-03.jpg" alt="">
+                                                </div>
+
+                                                <div class="tab-pane fade" id="img-serv-magia-04-tab-pane" 
+                                                role="tabpanel" aria-labelledby="img-serv-magia-04-tab" tabindex="0">
+                                                    <img class="img-size-service" src="./asset/image-temp/services/event-magia/magia-04.jpg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2 p-0">
+                                                <ul class="nav nav-tabs border-0 justify-content-center px-2 mt-3 mt-sm-0" id="myTab" role="tablist">
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 active btn-tab-serv" id="img-serv-magia-01-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-magia-01-tab-pane" role="tab" aria-controls="img-serv-magia-01-tab-pane" aria-selected="true">
+                                                            <img src="./asset/image-temp/services/event-magia/magia-01.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-magia-02-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-magia-02-tab-pane" role="tab" aria-controls="img-serv-magia-02-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-magia/magia-02.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-sm-0 pb-sm-2" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-magia-03-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-magia-03-tab-pane" role="tab" aria-controls="img-serv-magia-03-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-magia/magia-03.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="nav-item px-1 px-0" role="presentation">
+                                                        <button class="nav-link p-0 btn-tab-serv" id="img-serv-magia-04-tab" data-bs-toggle="tab" type="button"
+                                                            data-bs-target="#img-serv-magia-04-tab-pane" role="tab" aria-controls="img-serv-magia-04-tab-pane" aria-selected="false">
+                                                            <img src="./asset/image-temp/services/event-magia/magia-04.jpg" class="w-100 h-100" alt="">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <h4>Eventos de magia</h4>
-                                    <div>
-                                        <img src="./asset/public/estrellas.png" style="height: 60px; width: 70px; position: absolute; top: -15px; right: 12px;" alt="">
-                                    </div>
+                                <div class="col-lg-6 mt-4">
+                                    <!-- <div class="text-gold-thin">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                    </div> -->
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio quaerat in aperiam aspernatur earum 
-                                        obcaecati ab facilis tempora. Corrupti quam iste, totam, voluptatem autem dicta error labore, sunt fugiat repellat 
-                                        dolores quod beatae rerum soluta in corporis perspiciatis obcaecati id. Eos excepturi ducimus adipisci, optio 
-                                        reiciendis assumenda debitis! Iure.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio 
+                                        quaerat in aperiam aspernatur earum obcaecati ab facilis tempora. Corrupti quam 
+                                        iste, totam, voluptatem autem dicta error labore.
                                     </p>
 
                                     <div class="d-flex justify-content-end">
@@ -329,61 +539,51 @@
                         </div>
                     </div>
 
-                    <div class="text-center my-5">
+                    <div class="text-center mt-5 mb-3">
                         <h3>Otros Servicios</h3>
                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, 
                             blanditiis.Lorem ipsum dolor sit amet.
                         </h6>
                     </div>
 
-                    <ul class="nav nav-tabs justify-content-center border-0" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs justify-content-center border-0 btns-group-serv p-0 px-md-5" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active border-0 py-0 px-3" id="boda-tab" data-bs-toggle="tab" data-bs-target="#boda-tab-pane" type="button" 
+                            <button class="nav-link btn-other-serv p-2 active" id="boda-tab" data-bs-toggle="tab" data-bs-target="#boda-tab-pane" type="button" 
                                 role="tab" aria-controls="boda-tab-pane" aria-selected="true">
-                                <h5 class="my-3">Matimonios</h5> 
-                                <div class="boton">
-                                    <div class="card_image"> <img src="./asset/image-temp/services/bodas/boda-01.jpeg" /> </div>
-                                </div>   
+                                <h6 class="">Bodas</h6> 
+                                <img src="./asset/image-temp/services/bodas/boda-01.jpeg"/>   
                             </button>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link border-0 py-0 px-3" id="years-tab" data-bs-toggle="tab" data-bs-target="#years-tab-pane" type="button" 
+                            <button class="nav-link btn-other-serv p-2" id="years-tab" data-bs-toggle="tab" data-bs-target="#years-tab-pane" type="button" 
                                 role="tab" aria-controls="years-tab-pane" aria-selected="false">
-                                <h5 class="my-3">15 Años</h5> 
-                                <div class="boton">
-                                    <div class="card_image"> <img src="./asset/image-temp/services/quinces/quince-01.jpg" /> </div>
-                                </div>
+                                <h6 class="">Quinces</h6> 
+                                <img src="./asset/image-temp/services/quinces/quince-01.jpg"/>
                             </button>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link border-0 py-0 px-3" id="private-tab" data-bs-toggle="tab" data-bs-target="#private-tab-pane" type="button" 
-                                role="tab" aria-controls="private-tab-pane" aria-selected="true">
-                                <h5 class="my-3">Eventos privados</h5> 
-                                <div class="boton">
-                                    <div class="card_image"> <img src="./asset/image-temp/services/event-privados/event-priv-01.jpg" /> </div>
-                                </div>    
+                            <button class="nav-link btn-other-serv p-2" id="private-tab" data-bs-toggle="tab" data-bs-target="#private-tab-pane" type="button" 
+                                role="tab" aria-controls="private-tab-pane" aria-selected="false">
+                                <h6 class="">Privados</h6> 
+                                <img src="./asset/image-temp/services/event-privados/event-priv-01.jpg"/>   
                             </button>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link border-0 py-0 px-3" id="company-tab" data-bs-toggle="tab" data-bs-target="#company-tab-pane" type="button" 
+                            <button class="nav-link btn-other-serv p-2" id="company-tab" data-bs-toggle="tab" data-bs-target="#company-tab-pane" type="button" 
                                 role="tab" aria-controls="company-tab-pane" aria-selected="false">
-                                <h5 class="my-3">Eventos empresariales</h5> 
-                                <div class="boton">
-                                    <div class="card_image"> <img src="./asset/image-temp/services/event-empresa/event-emp-01.jpg" /> </div>
-                                </div>
+                                <h6 class="">Empresarial</h6> 
+                                <img src="./asset/image-temp/services/event-empresa/event-emp-01.jpg"/>
                             </button>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link border-0 py-0 px-3" id="magic-tab" data-bs-toggle="tab" data-bs-target="#magic-tab-pane" type="button" 
-                                role="tab" aria-controls="magic-tab-pane" aria-selected="true">
-                                <h5 class="my-3">Show de magia</h5> 
-                                <div class="boton">
-                                    <div class="card_image"> <img src="./asset/image-temp/services/event-magia/magia-01.jpg" /> </div>
-                                </div>    
+                            <button class="nav-link btn-other-serv p-2" id="magic-tab" data-bs-toggle="tab" data-bs-target="#magic-tab-pane" type="button" 
+                                role="tab" aria-controls="magic-tab-pane" aria-selected="false">
+                                <h6 class="">Magicos</h6> 
+                                <img src="./asset/image-temp/services/event-magia/magia-01.jpg"/>  
                             </button>
                         </li>
                     </ul>
@@ -396,95 +596,115 @@
                     <h6>Lorem ipsum dolor sit amet.</h6>
                 </div>
     
-                <div class="row gy-3 gy-xl-0">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="position-relative">
-                            <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-01.jpg" 
-                            style="height: 60px; width: 60px; object-fit: cover; position: absolute; top: -3px; left: 0; z-index: 1;"/>
-                            <div style="width: calc(100% - 70px); margin-left: auto;">
-                                <h6 class="mb-0" style="font-weight: 700;">Marisol Gutierrez</h6>
-                                <h6 class="mb-1">Bogotá D.C.</h6>
-                            </div>
-                            <div class="border border-1 rounded-1 p-2 position-relative">
-                                <div class="text-gold-thin">
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
+                <div class="row ">
+                    <div class="col-md-6 col-xl-3 mb-3 p-xl-1">
+                        <div class="rounded-1 box-shadow-dark p-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="mb-1">Marisol Gutierrez</h6>
+                                    <h6 class="mb-0" style="font-size: 14px;">Bogotá D.C.</h6>
                                 </div>
-                                <P class="mb-0">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
-                                </P>
+                                <div class="col-auto">
+                                    <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-01.jpg" width="60" height="60" style="object-fit: cover;"/>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="d-flex text-gold-thin mb-2">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>   
+                                    </div>                           
+
+                                    <P class="mb-0 lh-sm">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
+                                    </P>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="position-relative">
-                            <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-02.jpg" 
-                            style="height: 60px; width: 60px; object-fit: cover; position: absolute; top: -3px; left: 0; z-index: 1;"/>
-                            <div style="width: calc(100% - 70px); margin-left: auto;">
-                                <h6 class="mb-0" style="font-weight: 700;">Laura Zapata</h6>
-                                <h6 class="mb-1">Bogotá D.C.</h6>
-                            </div>
-                            <div class="border border-1 rounded-1 p-2 position-relative">
-                                <div class="text-gold-thin">
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
+                    <div class="col-md-6 col-xl-3 mb-3 p-xl-1">
+                        <div class="rounded-1 box-shadow-dark p-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="mb-1">Laura Toledo</h6>
+                                    <h6 class="mb-0" style="font-size: 14px;">Bogotá D.C.</h6>
                                 </div>
-                                <P class="mb-0">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
-                                </P>
+                                <div class="col-auto">
+                                    <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-02.jpg" width="60" height="60" style="object-fit: cover;"/>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="d-flex text-gold-thin mb-2">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>   
+                                    </div>                           
+
+                                    <P class="mb-0 lh-sm">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
+                                    </P>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="position-relative">
-                            <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-03.jpg" 
-                            style="height: 60px; width: 60px; object-fit: cover; position: absolute; top: -3px; left: 0; z-index: 1;"/>
-                            <div style="width: calc(100% - 70px); margin-left: auto;">
-                                <h6 class="mb-0" style="font-weight: 700;">Rosa Molina</h6>
-                                <h6 class="mb-1">Bogotá D.C.</h6>
-                            </div>
-                            <div class="border border-1 rounded-1 p-2 position-relative">
-                                <div class="text-gold-thin">
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
+                    <div class="col-md-6 col-xl-3 mb-3 p-xl-1">
+                        <div class="rounded-1 box-shadow-dark p-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="mb-1">Sofia Castiblanco</h6>
+                                    <h6 class="mb-0" style="font-size: 14px;">Bogotá D.C.</h6>
                                 </div>
-                                <P class="mb-0">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
-                                </P>
+                                <div class="col-auto">
+                                    <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-03.jpg" width="60" height="60" style="object-fit: cover;"/>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="d-flex text-gold-thin mb-2">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>   
+                                    </div>                           
+
+                                    <P class="mb-0 lh-sm">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
+                                    </P>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="position-relative">
-                            <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-04.jpg" 
-                            style="height: 60px; width: 60px; object-fit: cover; position: absolute; top: -3px; left: 0; z-index: 1;"/>
-                            <div style="width: calc(100% - 70px); margin-left: auto;">
-                                <h6 class="mb-0" style="font-weight: 700;">Ivonne Sepulveda</h6>
-                                <h6 class="mb-1">Bogotá D.C.</h6>
-                            </div>
-                            <div class="border border-1 rounded-1 p-2 position-relative">
-                                <div class="text-gold-thin">
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
-                                    <i class="material-symbols-outlined fill-1">star</i>
+                    <div class="col-md-6 col-xl-3 mb-3 p-xl-1">
+                        <div class="rounded-1 box-shadow-dark p-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="mb-1">Sandra Sandoval</h6>
+                                    <h6 class="mb-0" style="font-size: 14px;">Bogotá D.C.</h6>
                                 </div>
-                                <P class="mb-0">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
-                                </P>
+                                <div class="col-auto">
+                                    <img class="rounded-circle" src="./asset/image-temp/services/coment/coment-04.jpg" width="60" height="60" style="object-fit: cover;"/>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="d-flex text-gold-thin mb-2">
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>
+                                        <i class="material-symbols-outlined fill-1">star</i>   
+                                    </div>                           
+
+                                    <P class="mb-0 lh-sm">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis dolorum.
+                                    </P>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -493,14 +713,13 @@
         </div>
 
         <!-- btn scroll -->
-        <div class="btn-scroll-top actived-scroll">
-            <svg class="btn-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-            </svg>
-            <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
+        <div class="btn-scroll-top">
+            <div class="btn-scroll">
+                <i class="material-symbols-outlined md-18">keyboard_double_arrow_up</i>
+            </div>
         </div>
         <!-- btn whatsapp -->
-        <a href=""  target="_blank">
+        <a href="" target="_blank">
             <img class="btn-float-whp" src="./asset/image/iconos/whatsapp-white.png" alt="">
         </a>
 
@@ -575,26 +794,10 @@
                 </div>
             </div>
         </div>
-        
-        <!-- bootstrap 5.2 file.js -->
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-
-        <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        
-        <script src="./script.js"></script>
-        
-        <script>
-            $('.thumbnail').on('click', function() {
-            var clicked = $(this);
-            var newSelection = clicked.data('big');
-            var $img = $('.primary').css("background-image","url(" + newSelection + ")");
-            clicked.parent().find('.thumbnail').removeClass('selected');
-            clicked.addClass('selected');
-            $('.primary').empty().append($img.hide().fadeIn('slow'));
-            });
-        </script>
+        <!-- Bootstrap 5.2 cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Files.js -->
+        <script src="./resources/js/function.js"></script>
     </body>
 </html>

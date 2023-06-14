@@ -1,71 +1,124 @@
-// Extends Class
-.img-bg-fixed {
+// Global class
+.img-fluid-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+// Extends class 
+.img-bg-fixed { // extends class
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center; 
 	background-attachment: fixed;
 }
-// HOME
-.banner-fluid {
+.img-bg-us-hover { // extend class
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 250px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.img-rounded-right-bottom { // extends class
+	width: 100%;
+	height: 400px; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 0 0 350px 0;
+}
+
+//********** HOME **********//
+// Banner top
+.img-banner-fluid {
 	width: 100%;
 	height: 600px;
 	object-fit: cover;
 }
-// Home Service
-.img-banner-service {
+// Us - Home
+.img-logo-us {
+	position: absolute;
+	padding: 16px;
+	opacity: 0;
+	img {
+		width: 100%; 
+		background-color: #3d42126b; 
+		border-radius: 8px;
+	}
+}
+.img-bg-us {
+	visibility: hidden;
+	@extend .img-bg-us-hover;
+}
+.img-bg-us-zoom {
+	top: 0;
+	position: absolute;
+	transition: 0.2s all ease-out;
+	@extend .img-bg-us-hover;
+}
+// Services - Home
+.img-bg-service {
 	background-image: url('../../../asset/image-temp/home/banners/banner-service-01.jpg');
 	@extend .img-bg-fixed;
 }
-// Home Service
-.img-banner-artist {
+.img-card-service {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto 10px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 4px solid #fff;
+	box-shadow: 010px 20px rgba(0,0,0,0.2);
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+// Artists - Home
+.img-bg-artists {
 	background-image: url('../../../asset/image-temp/home/banners/banner-artist-01.jpg');
 	@extend .img-bg-fixed;
 }
-// ********************* US View ********************* //
-@mixin imgBgHorizontal () {
-	width: 100%;
-	height: $h-siz;
-	background-attachment: $bg-att;
-    background-position: $bg-pos;
-    background-size: $bg-siz;
-	background-repeat: $bg-rep;
-}
-// imagenes Nosotros
+
+//********** US View **********//
+// Us View
 .img-parallax {
     background-image: url('../../../asset/image-temp/us/us-banner-01.png');
-	background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
+	height: 600px;
+	@extend .img-bg-fixed;
 }
-.img-nosotros{
+.img-info-us {
 	background-image: url('../../../asset/image-temp/us/us-info-01.webp');
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 0 0 350px 0;
-	width: 100%;
-	height: 400px;  
+	border-radius: 0 !important; 
+	height: 500px !important;
+	@extend .img-rounded-right-bottom; 
 }
-.img-mision-nosotros {
+.img-mision-us {
 	background-image: url('../../../asset/image-temp/us/us-mision.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 0 0 350px 0;
-	width: 100%;
-	height: 400px;  
+	@extend .img-rounded-right-bottom;
 }
-.img-vision-nosotros {
-	background-image: url('../../../asset/image-temp/us/us-vision.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 0 0 350px 0;
-	width: 100%;
-	height: 400px;  
+.img-vision-us {
+	background-image: url('../../../asset/image-temp/us/us-vision.jpg');  
+	@extend .img-rounded-right-bottom;
 }
-// @media (min-width: 1920px) {
-// 	.img-banner-large {
-// 		height: 700px;
-// 	}
-// }
+
+//********** Service View **********//
+.img-size-service {
+	width: 100%; 
+	height: 350px;
+	object-fit: cover;
+}
+
+//********** Artists View **********//
+.img-user-artist {
+	height: 90px; 
+	width: 90px; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	margin: auto;
+	border-radius: 50%; 
+	border: 1px solid gold; 
+	object-fit: cover;
+}
