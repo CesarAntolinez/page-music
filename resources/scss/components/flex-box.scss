@@ -15,3 +15,9 @@
     align-items: flex-start;
     justify-content: center;
 }
+@media(min-width: 1920px) {
+    .px-xlargets { 
+        padding-left: 116px;
+        padding-right: 116px;
+    }
+}

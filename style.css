@@ -22,93 +22,6 @@
 .dinamic-bg-color3 {
   animation-duration: 5s; }
 
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft; }
-
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown; }
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight; }
-
-.animate {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.three {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  animation-delay: 1.5s; }
-
-.two {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s; }
-
-.four {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s; }
-
 .circular-progress-bar {
   background: linear-gradient(0deg, #080808 0%, #111111 100%);
   position: absolute;
@@ -149,14 +62,14 @@
 
 /* ================= Button Whatsapp fixed ================= */
 .btn-float-whp {
-  bottom: 115px;
+  bottom: 10px;
   background-color: #25d366;
   padding: 2px 0 0 2px; }
 
 /* ================= Button float scroll top ================= */
 .btn-scroll-top {
   position: fixed;
-  bottom: 50px;
+  bottom: 60px;
   right: 28px;
   width: 40px;
   height: 40px;
@@ -827,7 +740,7 @@
   transition: 0.2s all ease-out; }
 
 .img-bg-service {
-  background-image: url("../../../asset/image-temp/home/banners/banner-service-01.jpg"); }
+  background-image: url("../image-temp/home/banners/banner-service-01.jpg"); }
 
 .img-card-service {
   width: 150px;
@@ -843,22 +756,22 @@
     object-fit: cover; }
 
 .img-bg-artists {
-  background-image: url("../../../asset/image-temp/home/banners/banner-artist-01.jpg"); }
+  background-image: url("../image-temp/home/banners/banner-artist-01.jpg"); }
 
 .img-parallax {
-  background-image: url("../../../asset/image-temp/us/us-banner-01.png");
+  background-image: url("../image-temp/us/us-banner-01.png");
   height: 600px; }
 
 .img-info-us {
-  background-image: url("../../../asset/image-temp/us/us-info-01.webp");
+  background-image: url("../image-temp/us/us-info-01.webp");
   border-radius: 0 !important;
   height: 500px !important; }
 
 .img-mision-us {
-  background-image: url("../../../asset/image-temp/us/us-mision.jpg"); }
+  background-image: url("../image-temp/us/us-mision.jpg"); }
 
 .img-vision-us {
-  background-image: url("../../../asset/image-temp/us/us-vision.jpg"); }
+  background-image: url("../image-temp/us/us-vision.jpg"); }
 
 .img-size-service {
   width: 100%;
