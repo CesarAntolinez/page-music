@@ -1,3 +1,7 @@
+// Enlace entre botones y contenedores - Servicios
+#link-scroll-top {
+  scroll-margin-top: 120px;
+}
 // Animation view US
 @keyframes slide {
   0% { transform:translateX(-25%) }
@@ -19,121 +23,6 @@ animation-direction:alternate-reverse;
 animation-duration:4s;
 }
 .dinamic-bg-color3 { animation-duration:5s }
-
-// Animation In Cards Us - Home
-//=== FADE IN LEFT ===
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-//=== FADE IN DOWN ===
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-//==== FADE IN RIGHT ===
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
-.animate {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.three {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-}
-.two {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-}  
-.four {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s;
-}
 
 // Animation Skill progress
 .circular-progress-bar {
@@ -163,4 +52,61 @@ animation-duration:4s;
 	bottom: -100%;
 	background: linear-gradient(0deg, #335bf4 0%, #16ff86 100%);
 	transition: bottom 6s;
+}
+
+// Search Bar - Header
+.Search-bar-toggle{
+	max-width: 250px;
+	display: flex;
+	position: relative;
+}
+.Search-bar-toggle input#search{
+	width: 50px;
+	height: 45px;
+	background: #a3a5a940;
+	border: none;
+	font-size: 10pt;
+	color: #262626;
+	padding-left: 40px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+
+	-webkit-transition: width .55s ease;
+	-moz-transition: width .55s ease;
+	-ms-transition: width .55s ease;
+	-o-transition: width .55s ease;
+	transition: width .55s ease;
+}
+.Search-bar-toggle input#search::-webkit-input-placeholder {
+	color: #65737e;
+}
+.Search-bar-toggle input#search:-moz-placeholder { /* Firefox 18- */
+	color: #65737e;  
+}  
+.Search-bar-toggle input#search::-moz-placeholder {  /* Firefox 19+ */
+	color: #657e6a;  
+}
+.Search-bar-toggle input#search:-ms-input-placeholder {  
+	color: #65737e;  
+} 
+.Search-bar-toggle .icon{
+	position: absolute;
+	z-index: 1;
+	color: #c0c2c5;
+	top: 0;
+	left: 0;
+	height: inherit;
+	transform: translate(8px, 10px);
+}
+.Search-bar-toggle input#search:focus, .Search-bar-toggle input#search:active{
+	outline:none;
+	width: 250px;
+} 
+.Search-bar-toggle:hover input#search{
+	width: 250px;
+}
+.Search-bar-toggle:hover .icon{
+	color: #93ad97;
 }

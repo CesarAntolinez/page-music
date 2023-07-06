@@ -1,33 +1,7 @@
-// Skills progress circle dynamic
-const progText = document.querySelectorAll('.circular-progress-text');
-const progress = document.querySelectorAll('.circular-progress-effect');
-const progContainer = document.querySelector('.card-content-skill'); 
-let bole = false;
-window.addEventListener("scroll", function (){
-    if (pageYOffset > progContainer.offsetTop - 800 && bole === false) {
-        for(let i = 0; i < progText.length; i++) {
-            progText[i].innerText = 0;
-            count = 0;
-            progress[i].style.bottom = "100%";
-            progress[i].style.bottom = progText[i].dataset.count - 100 + "%";
-
-            function updateCount() {
-                target = parseInt(progText[i].dataset.count);
-
-                if (count < target) {
-                    count++;
-                    progText[i].innerText = count;
-                    setTimeout(updateCount, 50)
-                } else  {
-                    progText[i].innerText = target + "%";
-                }
-            }
-            
-            updateCount();
-
-            bole = true;
-        }
-    }
+// AOS Animation
+AOS.init({
+    duration: 1500,
+    once: false
 });
 
 // Button fixed - Scroll Top 

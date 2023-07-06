@@ -1,6 +1,7 @@
 // Banner top
 var swiper = new Swiper(".mySwiperBanner", {
     effect: "fade",
+    loop: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -31,6 +32,11 @@ var swiper = new Swiper(".swiper-services", {
                 // when window width is >= 1024px
                 1024: {
                 slidesPerView: 3,
+            },
+            // when window width is >= 1920px
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 24,
             },
         }
 }); 

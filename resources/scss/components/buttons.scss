@@ -13,14 +13,14 @@
 /* ================= Button Whatsapp fixed ================= */
 .btn-float-whp{
 	@extend .btn-circle-float;
-	bottom:115px;
+	bottom:10px;
 	background-color: $green-wapp;
 	padding: 2px 0 0 2px;
 }
 /* ================= Button float scroll top ================= */
 .btn-scroll-top {
 	position: fixed;
-    bottom: 50px;
+    bottom: 60px;
     right: 28px;
     width: 40px;
     height: 40px;

@@ -11,7 +11,8 @@
         <title>Golden Artists</title>
 
         <!-- Google icons material symbols -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
         <!-- Route style sheet -->
         <link rel="stylesheet" href="./asset/css/app.css">
     </head>
@@ -36,7 +37,7 @@
                     <li><a href="nosotros.html">Nosotros</a></li>
 
                     <div class="ms-3">
-                        <div class="container-2">
+                        <div class="Search-bar-toggle">
                             <span class="icon"><i class="material-symbols-outlined">search</i></span>
                             <input type="search" id="search" placeholder="Search..." />
                         </div>
@@ -54,7 +55,7 @@
                 
                     <nav class="nav-mobile-box-list" role="navigation">
                         <a href="index.html">
-                            <img src="./asset/public/golden-artists-white.png" width="215" alt="" style="margin-left: 15px">
+                            <img src="./asset/image/logo/golden-artists-white-hrz.png" width="215" alt="" style="margin-left: 15px">
                         </a>
                         <ul class="nav-mobile-list">
                             <li class="p-2">
@@ -100,7 +101,7 @@
             <div class="dinamic-bg-color dinamic-bg-color2"></div>
             <div class="dinamic-bg-color dinamic-bg-color3"></div>
 
-            <div class="container my-5">
+            <div class="container" id="link-scroll-top">
                 <div class="row justify-content-center">                    
                     <div class="tab-content mt-4" id="myTabContent">
                         <!-- Matrimonios -->
@@ -553,43 +554,53 @@
 
                     <ul class="nav nav-tabs justify-content-center border-0 btns-group-serv p-0 px-md-5" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-other-serv p-2 active" id="boda-tab" data-bs-toggle="tab" data-bs-target="#boda-tab-pane" type="button" 
-                                role="tab" aria-controls="boda-tab-pane" aria-selected="true">
-                                <h6 class="">Bodas</h6> 
-                                <img src="./asset/image-temp/services/bodas/boda-01.jpeg"/>   
-                            </button>
+                            <a href="#link-scroll-top">
+                                <div class="nav-link btn-other-serv p-2 active" id="boda-tab" data-bs-toggle="tab" data-bs-target="#boda-tab-pane" type="button" 
+                                    role="tab" aria-controls="boda-tab-pane" aria-selected="true">
+                                    <h6 class="">Bodas</h6> 
+                                    <img src="./asset/image-temp/services/bodas/boda-01.jpeg"/>   
+                                </div>
+                            </a>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-other-serv p-2" id="years-tab" data-bs-toggle="tab" data-bs-target="#years-tab-pane" type="button" 
-                                role="tab" aria-controls="years-tab-pane" aria-selected="false">
-                                <h6 class="">Quinces</h6> 
-                                <img src="./asset/image-temp/services/quinces/quince-01.jpg"/>
-                            </button>
+                            <a href="#link-scroll-top">
+                                <div class="nav-link btn-other-serv p-2" id="years-tab" data-bs-toggle="tab" data-bs-target="#years-tab-pane" type="button" 
+                                    role="tab" aria-controls="years-tab-pane" aria-selected="false">
+                                    <h6 class="">Quinces</h6> 
+                                    <img src="./asset/image-temp/services/quinces/quince-01.jpg"/>
+                                </div>
+                            </a>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-other-serv p-2" id="private-tab" data-bs-toggle="tab" data-bs-target="#private-tab-pane" type="button" 
-                                role="tab" aria-controls="private-tab-pane" aria-selected="false">
-                                <h6 class="">Privados</h6> 
-                                <img src="./asset/image-temp/services/event-privados/event-priv-01.jpg"/>   
-                            </button>
+                            <a href="#link-scroll-top">
+                                <div class="nav-link btn-other-serv p-2" id="private-tab" data-bs-toggle="tab" data-bs-target="#private-tab-pane" type="button" 
+                                    role="tab" aria-controls="private-tab-pane" aria-selected="false">
+                                    <h6 class="">Privados</h6> 
+                                    <img src="./asset/image-temp/services/event-privados/event-priv-01.jpg"/>   
+                                </div>
+                            </a>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-other-serv p-2" id="company-tab" data-bs-toggle="tab" data-bs-target="#company-tab-pane" type="button" 
-                                role="tab" aria-controls="company-tab-pane" aria-selected="false">
-                                <h6 class="">Empresarial</h6> 
-                                <img src="./asset/image-temp/services/event-empresa/event-emp-01.jpg"/>
-                            </button>
+                            <a href="#link-scroll-top">
+                                <div class="nav-link btn-other-serv p-2" id="company-tab" data-bs-toggle="tab" data-bs-target="#company-tab-pane" type="button" 
+                                    role="tab" aria-controls="company-tab-pane" aria-selected="false">
+                                    <h6 class="">Empresarial</h6> 
+                                    <img src="./asset/image-temp/services/event-empresa/event-emp-01.jpg"/>
+                                </div>
+                            </a>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-other-serv p-2" id="magic-tab" data-bs-toggle="tab" data-bs-target="#magic-tab-pane" type="button" 
-                                role="tab" aria-controls="magic-tab-pane" aria-selected="false">
-                                <h6 class="">Magicos</h6> 
-                                <img src="./asset/image-temp/services/event-magia/magia-01.jpg"/>  
-                            </button>
+                            <a href="#link-scroll-top">
+                                <div class="nav-link btn-other-serv p-2" id="magic-tab" data-bs-toggle="tab" data-bs-target="#magic-tab-pane" type="button" 
+                                    role="tab" aria-controls="magic-tab-pane" aria-selected="false">
+                                    <h6 class="">Magicos</h6> 
+                                    <img src="./asset/image-temp/services/event-magia/magia-01.jpg"/>  
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -730,54 +741,54 @@
 
         <!-- Footer OK  -->
         <div class="footer-g-a bg-black">
-            <div class="container-fluid container-lg  py-5 px-lg-0">
-                <div class="row text-white">
-                    <h3 class="text-center fw-bold mb-3">Contáctenos</h3>
-                    <h5 class="text-center mb-5 px-sm-3">por medio de nuestros canales de comunicación.</h5>
+            <div class="container-fluid container-xl  py-5">
+                <div class="row text-white g-4">
+                    <h3 class="text-center fw-bold mb-0">Contáctenos</h3>
+                    <h5 class="text-center mt-1 mb-4 px-sm-3">por medio de nuestros canales de comunicación.</h5>
 
-                    <div class="col-md-7 col-lg-6">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-12 d-flex flex-column align-items-center mb-4 p-0">
+                    <div class="col-12 col-xl-4 d-flex justify-content-center align-items-lg-start">
+                        <div class="row g-4 g-md-0">
+                            <div class="col-auto m-auto">
                                 <a href="index.html">
                                     <img src="./asset/image/logo/golden-artist-golden-vert.png" width="150" alt="">
                                 </a>
-                                <span class="d-block">administrativo@goldenartist.co</span>
                             </div>
 
-                            <div class="col-9 col-sm-5 col-md-7  me-auto me-sm-0 ms-sm-auto mb-4">
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Dario Sánchez</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Administrativo</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;312-4195-993</h6>
-                            </div>
-
-                            <div class="col-9 col-sm-5  ms-auto mb-4">
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">person</i>&nbsp;&nbsp;Alex Casas</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">music_note</i>&nbsp;&nbsp;Saxofonista</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">badge</i>&nbsp;&nbsp;Asesor Musical</h6>
-                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">phone_iphone</i>&nbsp;&nbsp;319-4734-057</h6>
+                            <div class="col d-flex flex-column mt-4 ps-md-5">
+                                <h6 class="d-flex mb-2 mb-xxl-3"><img  src="./asset/image/iconos/whatsapp-white.png" style="width:24px; height: 24px" alt="">&nbsp;&nbsp;
+                                    319 650 3791
+                                </h6>
+                                <h6 class="d-flex mb-2 mb-xxl-3">
+                                    <img src="./asset/image/iconos/instagram-white.png" style="width:20px; height: 20px" alt="">&nbsp;&nbsp;
+                                    @GoldenArtistsCo
+                                </h6>
+                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">mail</i>&nbsp;&nbsp;administrativo@goldenartist.co</h6>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-5 col-lg-6"> 
-                        <div class="row g-3 mx-0">
-                            <div class="col-12">
-                                <input class="form-control" type="text" placeholder="Name">
-                            </div>
+                    <div class="col-md-10 col-xl-8 px-sm-4 mx-auto">
+                        <form action=""> 
+                            <div class="row g-4">
+                                <div class="col-12 col-xxl-12">
+                                    <div class="mt-xl-1">
+                                        <input class="form-control" type="text" placeholder="Name">
+                                    </div>
 
-                            <div class="col-12">
-                                <input class="form-control" type="text" placeholder="E-mail">
-                            </div>
+                                    <div class="mt-4">
+                                        <input class="form-control" type="text" placeholder="E-mail">
+                                    </div>
+                                </div>
 
-                            <div class="col-12">
-                                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
-                            </div>
+                                <div class="col-12 col-xxl-12">
+                                    <textarea class="form-control" name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+                                </div>
 
-                            <div class="col-12 d-flex justify-content-end">
-                                <button type="button" class="btn btn-outline-gold-soft w-50">Enviar</button>
+                                <div class="col-12 d-flex justify-content-start">
+                                    <button type="button" class="btn btn-outline-gold-soft w-50">Enviar</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -802,7 +813,29 @@
 
         <!-- Bootstrap 5.2 cdn -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Files.js -->
         <script src="./resources/js/function.js"></script>
+        
+        <script>
+            // Button fixed - Scroll Top 
+            window.onscroll = function(){
+                if(document.documentElement.scrollTop > 100){
+                    document.querySelector('.btn-scroll-top')
+                    .classList.add('btn-show');
+                }
+                else{
+                    document.querySelector('.btn-scroll-top')
+                    .classList.remove('btn-show');
+                }
+            }
+            document.querySelector('.btn-scroll-top')
+                .addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                }); 
+            });
+        </script>
     </body>
 </html>
