@@ -1,3 +1,30 @@
+// // Balls
+// .animation__ball-sm {
+//     display: block;
+//     width: 75px;
+//     height: 75px;
+//     border-radius: 50%;
+// }
+// .animation__ball-lg {
+//     display: block;
+//     width: 125px;
+//     height: 125px;
+//     border-radius: 50%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Enlace entre botones y contenedores - Servicios
 #link-scroll-top {
   scroll-margin-top: 120px;
@@ -109,4 +136,11 @@ animation-duration:4s;
 }
 .Search-bar-toggle:hover .icon{
 	color: #93ad97;
+}
+
+@media ( min-width: 768px ) {
+	.animation__ball-sm {
+        width: 145px;
+        height: 145px;
+    }
 }

@@ -1,4 +1,13 @@
 // Gradientes
+.theme__gradiente-gold-1-145deg { background: linear-gradient(145deg, rgba(71, 56, 35, 0.9) 20%, rgba(119, 88, 44, 0.66) 50%, rgba(206, 148, 67, 0.66) 70%, rgba(247, 143, 8, 0.66) 90%) }
+.theme__gradiente-gold-2-45deg { background: linear-gradient(45deg, rgba(71, 56, 35, 0.9) 20%, rgba(119, 88, 44, 0.66) 50%, rgba(206, 148, 67, 0.66) 70%, rgba(250, 203, 143, 0.66) 90%) }
+.theme__gradiente-gold-3-45deg { background-image: linear-gradient(45deg, #22221cc2, #72480fd1) }
+
+.theme__gradiente-gold-1-90deg { background-image: linear-gradient(90deg, #fcf595, #EBB467) }
+.theme__gradiente-gold-2-90deg { background-image: linear-gradient(90deg, #fcf595, #9E7A46) }
+
+
+
 .fill-purple { background-image: linear-gradient(90deg, #4addff, #a34dfe) }
 
 .fill-green { background-image: linear-gradient(90deg, #ffe40c, #33d497) }
@@ -6,6 +15,8 @@
 .fill-blue { background-image: linear-gradient(90deg, #285ca5, #18d5ff) }
 
 .fill-orange { background-image: linear-gradient(90deg, #fcf595, #ff954d) }
+
+
 
 $gr-1:linear-gradient(170deg, #01E4F8 0%, #1D3EDE 100%);
 $gr-2:linear-gradient(170deg, #B4EC51 0%, #429321 100%);

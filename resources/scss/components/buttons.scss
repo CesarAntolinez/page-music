@@ -4,7 +4,7 @@
 	height:40px;
 	display: block;
 	border-radius:50%;
-	box-shadow: 2px 2px 3px $shadow-gray;
+	box-shadow: 2px 2px 3px #999;
 	position:fixed;
 	right:28px;
 	z-index: 100;
@@ -14,7 +14,7 @@
 .btn-float-whp{
 	@extend .btn-circle-float;
 	bottom:10px;
-	background-color: $green-wapp;
+	background-color: #25d366;
 	padding: 2px 0 0 2px;
 }
 /* ================= Button float scroll top ================= */

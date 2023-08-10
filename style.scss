@@ -4,12 +4,13 @@
 
 // SCSS FILES
 // components
-@import 'resources/scss/_variables.scss';
 @import 'resources/scss/components/animations.scss';
 @import 'resources/scss/components/buttons.scss';
 @import 'resources/scss/components/cards.scss';
+@import 'resources/scss/components/customized.scss';
 @import 'resources/scss/components/flex-box.scss';
 @import 'resources/scss/components/gallery-temporal.scss';
+@import 'resources/scss/components/grids.scss';
 @import 'resources/scss/components/images.scss';
 @import 'resources/scss/components/layouts.scss';
 @import 'resources/scss/components/navbar.scss';
@@ -17,6 +18,8 @@
 @import 'resources/scss/components/themes.scss';
 // plugins
 @import 'resources/scss/plugins/swiper.scss';
+// Variables
+@import 'resources/scss/_variables.scss';
 
 // Customize Bootstrap
 $primary: #6B522F;
@@ -33,7 +36,7 @@ $theme-colors: (
 // Create your own map
 $custom-colors: (
   "gold-soft": #EBD1AE,
-  "gold-thin": #EBB467,
+  "gold-thin": rgb(235, 180, 103),
   "gold-matt": #AE9B81,
   "gold-dark": #9E7A46,
   "gold-hard": #6B522F
@@ -51,23 +54,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .material-symbols-outlined.md-48 { font-size: 48px; }
 
 .material-symbols-outlined.fill-1 { font-variation-settings: 'FILL' 1 }
-
-// colors
-:root {
-	font-size: 20px;
-	--red: #da2c4d;
-	--yellow: #f8ab37;
-	--green: #2ecc71;
-	--white: #ffffff;
-	--grey-light: #f2f7f9;
-	--grey: #ecedf3;
-	--black: #080808;
-	--black-blue: #1f2029;
-	--black-blue-light: #353746;
-	--black-blue-light-2: #404255;
-	--black-blue-light-3: #4b4d64;
-	--black-light: #424455;
-}
 
 // Main Font Family
 body {

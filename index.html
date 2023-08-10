@@ -28,26 +28,43 @@
                     <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="215" alt="">
                 </a>
                 <!-- Desktop menu -->
-                <ul class="d-none d-lg-flex">
+                <ul class="nav-golden d-none d-md-flex">
                     <li class="actived"><a href="index.html">Inicio</a></li>
 
-                    <li><a href="service.html">Servicios</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle arrow-ancla pe-4" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="position-relative">Servicios</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item active" href="#">Bodas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Eventos empresariales</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Música restorán</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Quince años</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Eventos privados</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Clases de música</a></li>
+                        </ul>
+                    </li>
 
-                    <li><a href="artist.html">Artistas</a></li>
+                    <li><a href="/views/artistas/djs.html">Artistas</a></li>
 
                     <li><a href="gallery.html">Galería</a></li>
 
                     <li><a href="nosotros.html">Nosotros</a></li>
 
-                    <div class="ms-3">
+                    <!-- <div class="ms-3">
                         <div class="Search-bar-toggle">
                             <span class="icon"><i class="material-symbols-outlined">search</i></span>
                             <input type="search" id="search" placeholder="Search..." />
                         </div>
-                    </div>
+                    </div> -->
                 </ul>
                 <!-- Mobile menu -->
-                <div class="navigation d-flex d-lg-none position-relative">
+                <div class="navigation d-flex d-md-none position-relative">
                     <input id="nav-mobile-check" type="checkbox">
 
                     <label class="nav-mobile-btn-menu bg-white" for="nav-mobile-check">
@@ -98,444 +115,485 @@
         </div>
 
         <!-- Content -->
-        <div class="bg-white mt-main-content">
+        <div class="mt-main-content">
             <!-- Home Banner --> 
             <div class="swiper mySwiperBanner h-100">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide position-relative">
-                        <img src="./asset/image-temp/home/banners/banner-index-01.jpg" class="img-banner-fluid" alt="">
-                        <div class="position-absolute text-white" style="top: 50%; left: 10%; font-weight: bold;">
+                        <img src="./asset/image-temp/home/banners/banner-top01.jpg" class="img-banner-fluid" alt="">
+                        <!-- <div class="position-absolute text-white" style="top: 50%; left: 10%; font-weight: bold;">
                             <div class="display-1"  data-aos="fade-right">GOLDEN</div>
                             <div class="display-4"  data-aos="fade-down">Artists</div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="swiper-slide">
-                        <img src="./asset/image-temp/home/banners/banner-index-02.jpg" class="img-banner-fluid" alt="">
+                        <img src="./asset/image-temp/home/banners/banner-top02.jpg" class="img-banner-fluid" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./asset/image-temp/home/banners/banner-index-03.jpg" class="img-banner-fluid" alt="">
+                        <img src="./asset/image-temp/home/banners/banner-boda-ga.jpg" class="img-banner-fluid" alt="">
                     </div>
                 </div>
-            </div>
 
-            <!-- Us -->
-            <div class="container-fluid container-xl bg-white overflow-hidden my-5">
-                <div class="text-center text-primary mb-5">
-                    <h1 class="text-primary">Eventos Golden Artist</h1>
-                    <h5>La melodía de sus recuerdos</h5>
-                    <h3>El compromiso, el estilo y la elegancia, en el reflejo de su momento soñado.</h3>
-                </div>
                 
-                <div class="card-grid-us py-4">
-                    <div class="card-one" data-aos="fade-right">
-                        <div class="card-us">
-                            <div class="img-logo-us">    
-                                <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
-                            </div>
-
-                            <div class="img-bg-us"></div>
-                            <div class="img-bg-us-zoom"></div>
-                        
-                            <div class="card-body">
-                                <h6> Misión</h6>
-                                <h5>Crisp Spanish tortilla Matzo brei</h5>
-                                <div class="flex-box-center mt-4">
-                                    <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-two" data-aos="fade-up">
-                        <div class="card-us">
-                            <div class="img-logo-us">
-                                <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
-                            </div>
-
-                            <div class="img-bg-us"></div>
-                            <div class="img-bg-us-zoom"></div>
-
-                            <div class="card-body">
-                                <h6> Visión</h6>
-                                <h5>Crisp Spanish tortilla Matzo brei</h5>
-                                <div class="flex-box-center mt-4">
-                                    <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-three" data-aos="fade-left">
-                        <div class="card-us">
-                            <div class="img-logo-us">
-                                <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
-                            </div>
-
-                            <div class="img-bg-us"></div>
-                            <div class="img-bg-us-zoom"></div>
-
-                            <div class="card-body">
-                                <h6> Contactanos</h6>
-                                <h5>Crisp Spanish tortilla Matzo brei</h5>
-                                <div class="flex-box-center mt-4">
-                                    <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>           
-
-            <!-- Services -->
-            <div class="img-bg-service mt-5 py-5">
-                <div class="container-fluid px-xlargets">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center text-gold-soft mb-4">
-                            <h2 class="fw-bold">Servicios</h2>
-                            <h5 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h5>
-                            <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
-                        </div>
-
-                        <div class="col-xxl-9 bg-black py-5 px-xxl-0">
-                            <div class="swiper-content-services">
-                                <div class="swiper swiper-services">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="card-service text-white">
-                                                <div class="card-curtain"> </div>
-                                                <div class="card-body">        
-                                                    <h2>Bodas</h2>
-                                                 
-                                                    <div class="img-card-service mb-3">
-                                                        <img src="./asset/image-temp/services/bodas/boda-04.jpg" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <div class="swiper-slide">
-                                            <div class="card-service text-white">
-                                                <div class="card-curtain"> </div>
-                                                <div class="card-body">        
-                                                    <h2>Quinces</h2>
-                                                 
-                                                    <div class="img-card-service mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-02.jpg" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <div class="swiper-slide">
-                                            <div class="card-service text-white">
-                                                <div class="card-curtain"> </div>
-                                                <div class="card-body">        
-                                                    <h2>Evento Privado</h2>
-                                                 
-                                                    <div class="img-card-service mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-03.jpeg" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <div class="swiper-slide">
-                                            <div class="card-service text-white">
-                                                <div class="card-curtain"> </div>
-                                                <div class="card-body">        
-                                                    <h2>Evento Empresarial</h2>
-                                                 
-                                                    <div class="img-card-service mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-04.jpg" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="card-service text-white">
-                                                <div class="card-curtain"> </div>
-                                                <div class="card-body">        
-                                                    <h2>Magia</h2>
-                                                 
-                                                    <div class="img-card-service mb-3">
-                                                        <img src="./asset/image-temp/home/services/home-service-05.jpg" alt="">
-                                                    </div>
-
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Doloremque sed kodak
-                                                        repellat odit quo iure eaque.
-                                                    </p>
-                                                 
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="service.html" class="btn btn-primary w-75">Ver más</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>                                
-                </div>
+                <div class="swiper-button-next d-none d-md-block pe-5"></div>
+                <div class="swiper-button-prev d-none d-md-block ps-5"></div>
+                <div class="swiper-pagination"></div>
             </div>
 
-            <!-- Skills -->
-            <div class="py-5" >
-                <div class="container mt-4 mb-5">
-                    <div class="text-center mb-5">
-                        <h2>Skills</h2>
-                        <h5>OUR BEST SIDE</h5>
+            <!-- Services -->   
+            <div class="container-fluid px-0 bg-black bg-opacity-50 position-relative">  
+                <img src="https://img.freepik.com/fotos-premium/saxofon-palabra-jazz_916191-2643.jpg"
+				style="object-position:top; position:absolute; z-index:-1;  object-fit: cover; width: 100%; height: 100%; filter: sepia(1);">
+
+                <div class="py-5">
+                    <div class=" text-center text-gold-soft">
+                        <h1 class="my-5">Golden Artists</h1>
+                        <h4>OUR BEST SERVICES</h4>
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h3>
                         <h3>Lorem ipsum dolor sit amet.</h3>
+                    </div>  
+
+                    <div class="row mx-0">
+                        <div class="col-sm-9 col-md-12 col-lg-10 col-xl-11 swiper swiper-services py-5 px-2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">            
+                                    <div class="eff mx-auto"
+                                    style="background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%);">
+                                        <div class="effect">
+                                            <div class="effect-img">
+                                                <img src="./asset/image-temp/services/bodas/boda-04.jpg" alt="">
+                                            </div>
+                                            <div class="effect-text">
+                                                <div class="inner">
+                                                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gold-thin bg-black bg-opacity-50 p-3 py-5">
+                                            <h5 class="text-center">Bodas</h5>
+                                            <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
+                                            <div class="d-flex effect-btn mt-3">
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">            
+                                    <div class="eff mx-auto"
+                                        style="background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%);">
+                                        <div class="effect">
+                                            <div class="effect-img">
+                                                <img src="./asset/image-temp/home/services/home-service-04.jpg" alt="">
+                                            </div>
+                                            <div class="effect-text">
+                                                <div class="inner">
+                                                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gold-thin bg-black bg-opacity-50 p-3 py-5">
+                                            <h5 class="text-center">Bodas</h5>
+                                            <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
+                                            <div class="d-flex effect-btn mt-3">
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">            
+                                    <div class="eff mx-auto"
+                                        style="background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%);">
+                                        <div class="effect">
+                                            <div class="effect-img">
+                                                <img src="./asset/image-temp/home/services/music-restoran.jpg" alt="">
+                                            </div>
+                                            <div class="effect-text">
+                                                <div class="inner">
+                                                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gold-thin bg-black bg-opacity-50 p-3 py-5">
+                                            <h5 class="text-center">Bodas</h5>
+                                            <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
+                                            <div class="d-flex effect-btn mt-3">
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">            
+                                    <div class="eff mx-auto"
+                                        style="background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%);">
+                                        <div class="effect">
+                                            <div class="effect-img">
+                                                <img src="./asset/image-temp/home/services/home-service-02.jpg" alt="">
+                                            </div>
+                                            <div class="effect-text">
+                                                <div class="inner">
+                                                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gold-thin bg-black bg-opacity-50 p-3 py-5">
+                                            <h5 class="text-center">Bodas</h5>
+                                            <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
+                                            <div class="d-flex effect-btn mt-3">
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">            
+                                    <div class="eff mx-auto"
+                                        style="background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%);">
+                                        <div class="effect">
+                                            <div class="effect-img">
+                                                <img src="./asset/image-temp/home/services/home-service-03.jpeg" alt="">
+                                            </div>
+                                            <div class="effect-text">
+                                                <div class="inner">
+                                                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gold-thin bg-black bg-opacity-50 p-3 py-5">
+                                            <h5 class="text-center">Bodas</h5>
+                                            <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
+                                            <div class="d-flex effect-btn mt-3">
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">            
+                                    <div class="eff mx-auto"
+                                        style="background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%);">
+                                        <div class="effect">
+                                            <div class="effect-img">
+                                                <img src="./asset/image-temp/home/services/music-class.avif" alt="">
+                                            </div>
+                                            <div class="effect-text">
+                                                <div class="inner">
+                                                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gold-thin bg-black bg-opacity-50 p-3 py-5">
+                                            <h5 class="text-center">Bodas</h5>
+                                            <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
+                                            <div class="d-flex effect-btn mt-3">
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next swiper-btn"></div>
+                            <div class="swiper-button-prev swiper-btn"></div>
+                            <div class="swiper-pagination" style="position: absolute; bottom: 16px;"></div>
+                        </div>
                     </div>
-        
-                    <div class="row card-content-skill gy-3 gy-xl-0 pt-4">
-                        <div class="col-md-6 col-xl-3">
-                            <div class="card-skill">
-                                <div class="card-body">
-                                    <div class="circular-progress-bar">
-                                        <h5 class="text-white circular-progress-text" data-count="75">0</h5>
-                                    </div>
-                                    <div class="circular-progress-effect"></div>
-                                </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+
+                    <div class="mt-5">
+                        <div class="container py-5">
+                            <div class="text-center text-gold-soft mb-5">
+                                <h2>Skills</h2>
+                                <h5>OUR BEST SIDE</h5>
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h3>
+                                <h3>Lorem ipsum dolor sit amet.</h3>
                             </div>
-                        </div>
-        
-                        <div class="col-md-6 col-xl-3">
-                            <div class="card-skill">
-                                <div class="card-body">
-                                    <div class="circular-progress-bar">
-                                        <h5 class="text-white circular-progress-text" data-count="100">0</h5>
+                
+                            <div class="row card-content-skill gy-3 gy-xl-0 pt-4">
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card-skill text-gold-thin">
+                                        <div class="card-body">
+                                            <div class="circular-progress-bar">
+                                                <h5 class="text-white circular-progress-text" data-count="75">0</h5>
+                                            </div>
+                                            <div class="circular-progress-effect"></div>
+                                        </div>
+                                        
+                                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
                                     </div>
-                                    <div class="circular-progress-effect"></div>
                                 </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-                            </div>
-                        </div>
-        
-                        <div class="col-md-6 col-xl-3">
-                            <div class="card-skill">
-                                <div class="card-body">
-                                    <div class="circular-progress-bar">
-                                        <h5 class="text-white circular-progress-text" data-count="50">0</h5>
+                
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card-skill text-gold-thin">
+                                        <div class="card-body">
+                                            <div class="circular-progress-bar">
+                                                <h5 class="text-white circular-progress-text" data-count="100">0</h5>
+                                            </div>
+                                            <div class="circular-progress-effect"></div>
+                                        </div>
+                                        
+                                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
                                     </div>
-                                    <div class="circular-progress-effect"></div>
                                 </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-                            </div>
-                        </div>
-        
-                        <div class="col-md-6 col-xl-3">
-                            <div class="card-skill">
-                                <div class="card-body">
-                                    <div class="circular-progress-bar">
-                                        <h5 class="text-white circular-progress-text" data-count="37">0</h5>
+                
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card-skill text-gold-thin">
+                                        <div class="card-body">
+                                            <div class="circular-progress-bar">
+                                                <h5 class="text-white circular-progress-text" data-count="50">0</h5>
+                                            </div>
+                                            <div class="circular-progress-effect"></div>
+                                        </div>
+                                        
+                                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
                                     </div>
-                                    <div class="circular-progress-effect"></div>
                                 </div>
-                                
-                                <h4 class="mt-4">HAPPY CLIENTS</h4>
-                                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+                
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card-skill text-gold-thin">
+                                        <div class="card-body">
+                                            <div class="circular-progress-bar">
+                                                <h5 class="text-white circular-progress-text" data-count="37">0</h5>
+                                            </div>
+                                            <div class="circular-progress-effect"></div>
+                                        </div>
+                                        
+                                        <h4 class="mt-4">HAPPY CLIENTS</h4>
+                                        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>                              
 
-            <!-- Artist -->             
-            <div class="img-bg-artists position-relative py-5">
-                <div class="container-fluid container-xxl">
-                    <div class="col-12 text-center text-gold-soft mb-4">
-                        <h2 class="fw-bold">Artistas</h2>
-                        <h5 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h5>
-                        <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
+            <!-- Artist -->  
+            <div class="position-relative bg-black py-5">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-sm-10 col-md-11 col-lg-7 text-center text-gold-soft padd-y-xxl position-relative bg-black bg-opacity-25" style="margin-top: -140px;">
+                            <div style="height: 90%; width: 90%; box-shadow: 0 0 16px #EBB467 inset; position: absolute; top: 50%;
+                            left: 50%; transform: translate(-50%, -50%);">
+                            </div>
+                            <!-- <h2 class="mb-5">OUR ARTISTS</h2> -->
+                            <h5>OUR BEST SIDE</h5>
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h3>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div>
+
+                        <div class="col-12 col-sm-11 col-md-11">
+                            <div class="swiper swiper-artists py-5 m-less-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">            
+                                        <div class="card-artist" style="-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));">
+                                            <img src="./asset/image-temp/home/artists/home-artist-01.webp" alt="" class="img-fluid-cover">
+                            
+                                            <div class="car-body">
+                                                <h2>Cantantes</h2>
+                                                <h6>Nuestros Artistas</h6>
+                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
+                                                    voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                                </h5>
+                                                <a class="btn btn-primary" href="/views/artistas/sing.html">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">            
+                                        <div class="card-artist" style="-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));">
+                                        <img src="./asset/image-temp/home/artists/home-artist-02.jpg" alt="" class="img-fluid-cover">
+                        
+                                        <div class="car-body">
+                                            <h2>Saxofonistas</h2>
+                                            <h6>Nuestros Artistas</h6>
+                                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
+                                                voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                            </h5>
+                                            <a class="btn btn-primary" href="/views/artistas/saxo.html">Ver más</a>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">            
+                                        <div class="card-artist" style="-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));">
+                                        <img src="./asset/image-temp/home/artists/home-artist-03.jpg" alt="" class="img-fluid-cover">
+                        
+                                        <div class="car-body">
+                                            <h2>Violinistas</h2>
+                                            <h6>Nuestros Artistas</h6>
+                                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
+                                                voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                            </h5>
+                                            <a class="btn btn-primary" href="/views/artistas/violinist.html">Ver más</a>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">            
+                                        <div class="card-artist" style="-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));">
+                                        <img src="./asset/image-temp/home/artists/home-artist-04.webp" alt="" class="img-fluid-cover">
+                        
+                                        <div class="car-body">
+                                            <h2>Dj's</h2>
+                                            <h6>Nuestros Artistas</h6>
+                                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
+                                                voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                            </h5>
+                                            <a class="btn btn-primary" href="/views/artistas/djs.html">Ver más</a>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">            
+                                        <div class="card-artist" style="-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));">
+                                        <img src="./asset/image-temp/home/artists/home-artist-05.jpg" alt="" class="img-fluid-cover">
+                        
+                                        <div class="car-body">
+                                            <h2>Pianistas</h2>
+                                            <h6>Nuestros Artistas</h6>
+                                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
+                                                voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
+                                            </h5>
+                                            <a class="btn btn-primary" href="/index.html">Ver más</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next swiper-btn"></div>
+                                <div class="swiper-button-prev swiper-btn"></div>
+                                <div class="swiper-pagination" style="position: absolute; bottom: 8px;"></div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div> 
+            
+            <div class="bg-black bg-opacity-50 position-relative">  
+                <img src="https://e0.pxfuel.com/wallpapers/63/494/desktop-wallpaper-jazz-background-background.jpg"
+				style="object-position:top; position:absolute; z-index:-1;  object-fit: cover; width: 100%; height: 100%; filter: contrast(0.5);">
+                <!-- Us -->
+                <div class="">
+                    <div class="container-fluid container-xl overflow-hidden py-5">   
+                        <div class="text-center text-gold-soft">
+                            <h3>ABOUT US</h3>
+                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h5>
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                        </div>
 
-                    <div class="swiper swiper-artists py-5">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">            
-                                <div class="card-artist">
-                                    <img src="./asset/image-temp/home/artists/home-artist-01.webp" alt="" class="img-fluid-cover">
-                    
-                                    <div class="car-body">
-                                        <h2>Cantantes</h2>
-                                        <h6>Nuestros Artistas</h6>
-                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                            voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                        </h5>
-                                        <a class="btn btn-primary" href="artist.html">Ver más</a>
+                        <div class="card-grid-us py-4">
+                            <div class="card-one" data-aos="fade-right">
+                                <div class="card-us">
+                                    <div class="img-logo-us">    
+                                        <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
+                                    </div>
+
+                                    <div class="img-bg-us"></div>
+                                    <div class="img-bg-us-zoom"></div>
+                                
+                                    <div class="card-body">
+                                        <h6> Misión</h6>
+                                        <h5>Crisp Spanish tortilla Matzo brei</h5>
+                                        <div class="flex-box-center mt-4">
+                                            <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">            
-                                <div class="card-artist">
-                                <img src="./asset/image-temp/home/artists/home-artist-02.jpg" alt="" class="img-fluid-cover">
-                
-                                <div class="car-body">
-                                    <h2>Saxofonistas</h2>
-                                    <h6>Nuestros Artistas</h6>
-                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="artist.html">Ver más</a>
-                                </div>
+                            <div class="card-two" data-aos="fade-up">
+                                <div class="card-us">
+                                    <div class="img-logo-us">
+                                        <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
+                                    </div>
+
+                                    <div class="img-bg-us"></div>
+                                    <div class="img-bg-us-zoom"></div>
+
+                                    <div class="card-body">
+                                        <h6> Visión</h6>
+                                        <h5>Crisp Spanish tortilla Matzo brei</h5>
+                                        <div class="flex-box-center mt-4">
+                                            <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">            
-                                <div class="card-artist">
-                                <img src="./asset/image-temp/home/artists/home-artist-03.jpg" alt="" class="img-fluid-cover">
-                
-                                <div class="car-body">
-                                    <h2>Violinistas</h2>
-                                    <h6>Nuestros Artistas</h6>
-                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="artist.html">Ver más</a>
-                                </div>
-                                </div>
-                            </div>
+                            <div class="card-three" data-aos="fade-left">
+                                <div class="card-us">
+                                    <div class="img-logo-us">
+                                        <img src="./asset/image/logo/golden-artist-black-vert.png" alt="">
+                                    </div>
 
-                            <div class="swiper-slide">            
-                                <div class="card-artist">
-                                <img src="./asset/image-temp/home/artists/home-artist-04.webp" alt="" class="img-fluid-cover">
-                
-                                <div class="car-body">
-                                    <h2>Dj's</h2>
-                                    <h6>Nuestros Artistas</h6>
-                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="artist.html">Ver más</a>
-                                </div>
-                                </div>
-                            </div>
+                                    <div class="img-bg-us"></div>
+                                    <div class="img-bg-us-zoom"></div>
 
-                            <div class="swiper-slide">            
-                                <div class="card-artist">
-                                <img src="./asset/image-temp/home/artists/home-artist-05.jpg" alt="" class="img-fluid-cover">
-                
-                                <div class="car-body">
-                                    <h2>Pianistas</h2>
-                                    <h6>Nuestros Artistas</h6>
-                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
-                                        voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
-                                    </h5>
-                                    <a class="btn btn-primary" href="artist.html">Ver más</a>
-                                </div>
+                                    <div class="card-body">
+                                        <h6> Contactanos</h6>
+                                        <h5>Crisp Spanish tortilla Matzo brei</h5>
+                                        <div class="flex-box-center mt-4">
+                                            <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next swiper-btn"></div>
-                        <div class="swiper-button-prev swiper-btn"></div>
-                        <div class="swiper-pagination" style="position: absolute; bottom: 8px;"></div>
-                    </div>
-                </div>
-            </div>    
-
-            <!-- Clients -->
-            <div class="container">   
-                <div class="text-center my-5">
-                    <h5>Nuestros clientes</h5>
-                    <h3>QUIÉN TRABAJA CON NOSOTROS</h3>
+                    </div> 
                 </div>
 
-                <div class="swiper swiper-clients">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-01.png" 
-                            width="150px" height="100px" style="object-fit: contain" alt="">
+                <!-- Clients -->
+                <div class="">
+                    <div class="container">   
+                        <div class="text-center text-gold-soft py-5">
+                            <h5>Nuestros clientes</h5>
+                            <h3>QUIÉN TRABAJA CON NOSOTROS</h3>
                         </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-02.jpeg" 
-                            width="150px" height="100px" style="object-fit: contain" alt="">
+
+                        <div class="swiper swiper-clients">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide text-center">
+                                    <img src="./asset/image-temp/home/customers/home-customer-01.png" 
+                                    width="150px" height="100px" style="object-fit: contain" alt="">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./asset/image-temp/home/customers/home-customer-02.jpeg" 
+                                    width="150px" height="100px" style="object-fit: contain" alt="">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./asset/image-temp/home/customers/home-customer-03.jpg" 
+                                    width="150px" height="100px" style="object-fit: contain" alt="">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./asset/image-temp/home/customers/home-customer-04.jpg" 
+                                    width="150px" height="100px" style="object-fit: contain" alt="">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./asset/image-temp/home/customers/home-customer-05.jpg" 
+                                    width="150px" height="100px" style="object-fit: contain" alt="">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./asset/image-temp/home/customers/home-customer-06.png" 
+                                    width="150px" height="100px" style="object-fit: contain" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-03.jpg" 
-                            width="150px" height="100px" style="object-fit: contain" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-04.jpg" 
-                            width="150px" height="100px" style="object-fit: contain" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-05.jpg" 
-                            width="150px" height="100px" style="object-fit: contain" alt="">
-                        </div>
-                        <div class="swiper-slide text-center">
-                            <img src="./asset/image-temp/home/customers/home-customer-06.png" 
-                            width="150px" height="100px" style="object-fit: contain" alt="">
+
+                        <div class="text-center text-gold-thin py-5">
+                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h6>
+                            <h6>Lorem ipsum dolor sit amet.</h6>
                         </div>
                     </div>
-                </div>
-
-                <div class="text-center my-5">
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis.</h6>
-                    <h6>Lorem ipsum dolor sit amet.</h6>
                 </div>
             </div>
         </div>
@@ -632,6 +690,7 @@
         <!-- Files.js -->
         <script src="./resources/js/slider.js"></script>
         <script src="./resources/js/function.js"></script>
+        
         <script>
             // Skills progress circle dynamic
             const progText = document.querySelectorAll('.circular-progress-text');

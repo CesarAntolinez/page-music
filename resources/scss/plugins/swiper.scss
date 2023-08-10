@@ -1,24 +1,42 @@
-// Swiper Services - Home
-.swiper-content-services {
-	position: relative;
-	max-width: 100%;
-	margin: 30px 0;
-	-webkit-box-reflect: below 1px linear-gradient(transparent 65%, #0009);
+
+//______________ Swipper service ______________//
+
+.swiper-services .swiper-btn {
+	background-color: #EBD1AE;
+    padding: 30px 24px;
+    opacity: .7;
+    border-radius: 4px;
+    color: #6B522F;
 }
-.swiper-content-services .swiper-services .swiper-wrapper {
-	justify-content: start;
+.swiper-services .swiper-pagination {
+	position: absolute; 
+	bottom: 16px;
 }
-.swiper-content-services .swiper-services .swiper-wrapper .swiper-slide {
-	background-position: center;
-	background-size: cover;
-	width: 350px;
-	min-height: 350px;
-	background-color: #fff;
+.swiper-services .swiper-pagination-bullet {
+	background-image: linear-gradient(to left, #EBB467, #EBD1AE, #AE9B81);
+	opacity: 1;
+	border: 1px solid #EBB467;
 }
-.swiper-content-services .swiper-3d .swiper-slide-shadow-left,
-.swiper-content-services .swiper-3d .swiper-slide-shadow-right
-{ background-image: none }
-// Swiper Artists - Home
+.swiper-services .swiper-pagination-bullet-active {
+	width: 65px !important;
+    height: 16px !important;
+    border-radius: 16px;
+	background-image: linear-gradient(to left, #EBB467, #EBD1AE, #EBD1AE) !important;
+}
+.swiper-services .swiper-pagination-bullet {
+	width: 20px;
+    height: 20px;
+}
+.swiper-services .swiper-pagination-horizontal {
+	width: 250px!important;
+}
+.swiper-services .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    transition: .8s transform,.2s left;
+}
+
+
+//______________ Swipper Artists ______________//
 .swiper-artists .swiper-btn {
 color: #EBB467;
 transition: color .3s ease;
@@ -57,3 +75,37 @@ height: 26px;
 	float: left;
 	margin-bottom: 10px;
 }
+
+@media(min-width: 576px) {
+	.swiper-services .swiper-button-next, 
+	.swiper-services .swiper-rtl .swiper-button-prev {
+		right: var(--swiper-navigation-sides-offset,0px) !important;
+	}
+	.swiper-button-prev, .swiper-rtl .swiper-button-next {
+		left: var(--swiper-navigation-sides-offset,0px) !important;
+	}
+}
+
+// @media(min-width: 992px) {
+// 	.swiper-services {
+// 		padding: 50px 50px;
+// 	}
+// }
+
+// @media(min-width: 1820px) {
+// 	.px-2xxl  {
+// 		padding: 0 10px 0 90px !important;
+// 	}
+// }
+
+// @media(min-width: 1920px) {
+// 	.px-2xxl  {
+// 		padding: 0 50px 0 250px !important;
+// 	}
+// }
+
+// @media(min-width: 2020px) {
+// 	.px-2xxl  {
+// 		padding: 0 100px 0 500px !important;
+// 	}
+// }
