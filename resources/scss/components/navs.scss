@@ -1,0 +1,157 @@
+// EXTEND CLASS
+.nav__shape-rounded {
+    height: 50px;
+    width: 50px;
+	border-radius: 50%;
+}
+.nav__icon-inside {
+	display: inline-block;
+	width: 30px;
+	height: 4px;
+	background-color: #6B522F;
+}
+.nav__icon-beforafter {
+	content: '';
+	position: absolute;
+	left: 0;
+	transition: all 200ms;
+} 
+
+// ***** NAVBAR DESKTOP *****
+.nav__header {
+	width: 100%;
+	padding: 0;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+  	ul { 
+		list-style-type: none;
+		margin: 0;
+		padding: inherit;
+		gap: 24px;
+		height: inherit;
+		align-items: center;
+		.actived a { 
+			color: var(--gold-thin);
+			border-bottom: 1px solid var(--gold-thin);
+		}
+	}
+}
+.nav__golden li >a { 
+	font-size: 24px;
+	text-decoration: none; 
+	color: var(--gold-soft);
+	cursor: pointer;
+	&:hover { color: var(--gold-thin) }
+}
+.nav__arrow-down::after { content: none !important } 
+.nav__arrow-down span::after {
+    content: "";
+	border-top: 0 solid !important;
+    border-right: 2px solid !important;
+    border-bottom: 2px solid !important;
+    border-left: 0 solid !important;
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%, -50%);
+    rotate: 45deg;
+    position: absolute;
+    top: 50%;
+	right: -25px;
+}
+	
+// ***** NAVBAR MOBILE *****
+#nav__mobile-check { display: none }
+#nav__mobile-check:checked+.nav__mobile-btn .nav__mobile-btn-icon {
+	background-color: transparent;
+	&:before {
+		top: 5px;
+		transform: rotate(135deg);
+	}
+	&:after {
+		top: 5px;
+		transform: rotate(-135deg);
+	}
+}
+#nav__mobile-check:checked~.nav__mobile-bg {
+	transform: scale(80);
+	opacity: .5;
+}
+#nav__mobile-check:checked~.nav__mobile-group-items {
+	width: 100%;
+	visibility: visible;
+	opacity: 1;
+	background-color: var(--gold-hard);
+}
+
+.nav__mobile-btn {
+	@extend .nav__shape-rounded;
+    position: absolute;
+    text-align: center;
+    z-index: 300;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+	&:hover .nav__mobile-btn-icon::before { top: 7px }
+	&:hover .nav__mobile-btn-icon::after { top: 14px }
+}
+.nav__mobile-btn-icon {
+	@extend .nav__icon-inside;
+	position: relative;
+	&:before {
+		@extend .nav__icon-inside;
+		@extend .nav__icon-beforafter;
+		top: 7px;
+	}
+	&:after {
+		@extend .nav__icon-inside;
+		@extend .nav__icon-beforafter;
+		top: 14px;
+	}
+}
+.nav__mobile-bg {
+	@extend .nav__shape-rounded;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+.nav__mobile-group-items {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	opacity: 0;
+	width: 0;
+	visibility: hidden;
+	z-index: 200;
+	transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.nav__mobile-items {
+	position: absolute;
+	top: 120px;
+	left: 0;
+	padding-left: 20px;
+	list-style: none;
+}
+.nav__mobile-items-link:link,
+.nav__mobile-items-link:visited {
+	display: inline-block;
+	color: #f4f4f4;
+	font-size: 16px;
+	text-decoration: none;
+	transition: all .2s;
+}
+.nav__mobile-items-link span { vertical-align: text-bottom }
+
+@media(min-width: 650px) {
+	#nav__mobile-check:checked~.nav__mobile-group-items { width: 650px }
+}
+
+@media(min-width: 1400px) {
+	.nav__header ul { gap: 42px }
+}

@@ -1,146 +1,172 @@
-// // Balls
-// .animation__ball-sm {
-//     display: block;
-//     width: 75px;
-//     height: 75px;
-//     border-radius: 50%;
-// }
-// .animation__ball-lg {
-//     display: block;
-//     width: 125px;
-//     height: 125px;
-//     border-radius: 50%;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Enlace entre botones y contenedores - Servicios
-#link-scroll-top {
-  scroll-margin-top: 120px;
+// ***** Animation Curtain (Services) *****
+.animation__curtain-card  { box-shadow: 0px -2px 2px 0 rgba(0, 0, 0, 0.15), 1px 5px 5px 0 rgba(0, 0, 0, 0.2) }
+.animation__curtain {
+	position: relative;
+	overflow: hidden;
 }
-// Animation view US
-@keyframes slide {
-  0% { transform:translateX(-25%) }
-  100% { transform:translateX(25%) }
+.animation__curtain .animation__curtain-img {
+	font-size: 0;
+	overflow: hidden;
 }
-.dinamic-bg-color {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #FFEFBA 50%, #FFFFFF 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
-} 
-.dinamic-bg-color2 {
-animation-direction:alternate-reverse;
-animation-duration:4s;
+.animation__curtain .animation__curtain-img img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	transition: all .3s;
 }
-.dinamic-bg-color3 { animation-duration:5s }
-
-// Animation Skill progress
-.circular-progress-bar {
-	background: linear-gradient(0deg, #080808 0%, #111111 100%);
+.animation__curtain .animation__curtain-text {
 	position: absolute;
-	width: 6.5em;
-	height: 6.5em;
+	top: 15px;
+	right: 15px;
+	left: 15px;
+	bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: all .3s ease-in;
+	opacity: 0;
+}
+.animation__curtain .animation__curtain-text .animation__curtain-inner {
+	position: absolute;
+	bottom: 16px;
+	height: 45%;
+	z-index: 1;
+}
+// Before and After
+.animation__curtain .animation__curtain-text::before,
+.animation__curtain .animation__curtain-text::after {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0;
+	content: '';
+}
+.animation__curtain .animation__curtain-text::before {
+	border-top: 3px solid #EBD1AE;
+	border-right: 3px solid #EBD1AE;
+	left: -100%;
+	top: 0;
+}
+.animation__curtain .animation__curtain-text::after {
+	border-bottom: 3px solid #EBD1AE;
+	border-left: 3px solid #EBD1AE;
+	left: 100%;
+	bottom: 0;
+}
+// Hover Effect
+.animation__curtain-card:hover {
+	opacity: 1;
+	transform: translateY(-4px);
+	box-shadow: 0 8px 13px 1px rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.35);
+}
+.animation__curtain-card:hover .animation__curtain .animation__curtain-img img { transform: scale(1.2) }
+.animation__curtain-card:hover .animation__curtain .animation__curtain-text {
+	opacity: 1;
+	box-shadow: 0 0 20px #EBD1AE;
+}
+.animation__curtain-card:hover .animation__curtain .animation__curtain-text::before,
+.animation__curtain-card:hover .animation__curtain .animation__curtain-text::after {
+	animation-delay: .5s;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+.animation__curtain-card:hover .animation__curtain .animation__curtain-text::before {
+	animation-name: left-up;
+}
+.animation__curtain-card:hover .animation__curtain .animation__curtain-text::after {
+	animation-name: right-dn;
+}
+@keyframes left-up {
+	0% { left: 100%; height: 0; }
+	50% { left: 0; height: 0; }
+	100% { left: 0; height: 100%; }
+}
+@keyframes right-dn {
+	0% { left: -100%; height: 0; }
+	50% { left: 0; height: 0; }
+	100% { left: 0; height: 100%; }
+}
+// ***** End Animation Curtain (Services) *****
+
+// ***** Animation bottom scroll top *****
+.animation__btn-scroll-effect {
+	width: 0rem;
+	height: 0rem;
+	background-color: cadetblue;
+	border-radius: 50%;
+	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #000;
-	z-index: 1;
-  h5 {
-    font-size: 2em;
-    font-weight: 500;
-  }
+	transition: .2s;
+	z-index: -1;
 }
-.circular-progress-effect {
+.animation__btn-scroll-effect i {
 	position: absolute;
-	width: 7.3em;
-	height: 7.3em;
-	bottom: -100%;
-	background: linear-gradient(0deg, #335bf4 0%, #16ff86 100%);
-	transition: bottom 6s;
-}
-
-// Search Bar - Header
-.Search-bar-toggle{
-	max-width: 250px;
-	display: flex;
-	position: relative;
-}
-.Search-bar-toggle input#search{
-	width: 50px;
-	height: 45px;
-	background: #a3a5a940;
-	border: none;
-	font-size: 10pt;
-	color: #262626;
-	padding-left: 40px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	top: 48%;
+	left: 50%;
+	transform: translate(50%, 50%) scale(0);
 	color: #fff;
-
-	-webkit-transition: width .55s ease;
-	-moz-transition: width .55s ease;
-	-ms-transition: width .55s ease;
-	-o-transition: width .55s ease;
-	transition: width .55s ease;
+	transition: .2s;
 }
-.Search-bar-toggle input#search::-webkit-input-placeholder {
-	color: #65737e;
-}
-.Search-bar-toggle input#search:-moz-placeholder { /* Firefox 18- */
-	color: #65737e;  
-}  
-.Search-bar-toggle input#search::-moz-placeholder {  /* Firefox 19+ */
-	color: #657e6a;  
-}
-.Search-bar-toggle input#search:-ms-input-placeholder {  
-	color: #65737e;  
-} 
-.Search-bar-toggle .icon{
+.animation__btn-scroll-top { z-index: 10 }
+.animation__btn-scroll-top .animation__btn-scroll-effect {
 	position: absolute;
-	z-index: 1;
-	color: #c0c2c5;
-	top: 0;
-	left: 0;
-	height: inherit;
-	transform: translate(8px, 10px);
+	animation: popup .3s ease-in-out;
+	width:40px;
+	height:40px;
+	z-index: 11;
 }
-.Search-bar-toggle input#search:focus, .Search-bar-toggle input#search:active{
-	outline:none;
-	width: 250px;
-} 
-.Search-bar-toggle:hover input#search{
-	width: 250px;
+.animation__btn-scroll-top i { transform: translate(-50%, -50%) scale(1); }
+@keyframes popup {
+	0%{
+		width: 0;
+		height: 0;
+	}
+	50%{
+		width: 20px;
+		height: 20px;
+	}
+	100%{
+		width: 40px;
+		height: 40px;
+	}
 }
-.Search-bar-toggle:hover .icon{
-	color: #93ad97;
+// ***** End Animation bottom scroll top *****
+.animation__bg-gold {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #FFEFBA 50%, #FFFFFF 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.animation__bg-gold-2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+.animation__bg-gold-3 {
+    animation-duration: 5s;
+}
+@keyframes slide {
+	0% {
+		transform: translateX(-25%);
+	}
+	100% {
+		transform: translateX(25%);
+	}
 }
 
-@media ( min-width: 768px ) {
-	.animation__ball-sm {
-        width: 145px;
-        height: 145px;
-    }
+//***** Media Querys 
+@media(min-width: 400px){
+	.animation__curtain-card  { width: 375px }
 }

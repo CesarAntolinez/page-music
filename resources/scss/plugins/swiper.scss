@@ -1,16 +1,15 @@
 
-//______________ Swipper service ______________//
-
+//***** Swipper Services *****
 .swiper-services .swiper-btn {
-	background-color: #EBD1AE;
+	color: var(--gold-hard);
+	background-color: var(--gold-soft);
     padding: 30px 24px;
     opacity: .7;
     border-radius: 4px;
-    color: #6B522F;
-}
-.swiper-services .swiper-pagination {
-	position: absolute; 
-	bottom: 16px;
+	.swiper-pagination {
+		position: absolute; 
+		bottom: 16px;
+	}
 }
 .swiper-services .swiper-pagination-bullet {
 	background-image: linear-gradient(to left, #EBB467, #EBD1AE, #AE9B81);
@@ -27,85 +26,32 @@
 	width: 20px;
     height: 20px;
 }
-.swiper-services .swiper-pagination-horizontal {
-	width: 250px!important;
-}
+.swiper-services .swiper-pagination-horizontal { width: 250px!important }
 .swiper-services .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, 
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transition: .8s transform,.2s left;
 }
+//***** End Swipper Services *****
 
-
-//______________ Swipper Artists ______________//
+//***** Swipper Artists *****
 .swiper-artists .swiper-btn {
-color: #EBB467;
-transition: color .3s ease;
-&:hover { color: #AE9B81; }
+	color: var(--gold-thin);
+	transition: color .3s ease;
+	&:hover { color: var(--gold-matt); }
+}
+.swiper-artists .swiper-pagination {
+	position: absolute; 
+	bottom: 8px;
 }
 .swiper-artists .swiper-pagination-bullet {
-background-color: #EBB467;
-width: 24px;
-height: 24px;
-opacity: 1;
+	background-color: var(--gold-thin);
+	width: 24px;
+	height: 24px;
+	opacity: 1;
 }
 .swiper-artists .swiper-pagination-bullet-active {
-background-color: #9E7A46;
-width: 26px;
-height: 26px;
+	background-color: var(--gold-dark);
+	width: 26px;
+	height: 26px;
 }
-
-// Stilos del Albún de la galería
-.portfolio-menu {
-	text-align: center;
-}
-.portfolio-menu ul li {
-	display: inline-block;
-	margin: 0;
-	list-style: none;
-	padding: 10px 15px;
-	cursor: pointer;
-	-webkit-transition: all 05s ease;
-	-moz-transition: all 05s ease;
-	-ms-transition: all 05s ease;
-	-o-transition: all 05s ease;
-	transition: all 0.5s ease;
-}
-.portfolio-item .item {
-
-	float: left;
-	margin-bottom: 10px;
-}
-
-@media(min-width: 576px) {
-	.swiper-services .swiper-button-next, 
-	.swiper-services .swiper-rtl .swiper-button-prev {
-		right: var(--swiper-navigation-sides-offset,0px) !important;
-	}
-	.swiper-button-prev, .swiper-rtl .swiper-button-next {
-		left: var(--swiper-navigation-sides-offset,0px) !important;
-	}
-}
-
-// @media(min-width: 992px) {
-// 	.swiper-services {
-// 		padding: 50px 50px;
-// 	}
-// }
-
-// @media(min-width: 1820px) {
-// 	.px-2xxl  {
-// 		padding: 0 10px 0 90px !important;
-// 	}
-// }
-
-// @media(min-width: 1920px) {
-// 	.px-2xxl  {
-// 		padding: 0 50px 0 250px !important;
-// 	}
-// }
-
-// @media(min-width: 2020px) {
-// 	.px-2xxl  {
-// 		padding: 0 100px 0 500px !important;
-// 	}
-// }
+//***** End Swipper Artists *****

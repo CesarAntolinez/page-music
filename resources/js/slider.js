@@ -1,4 +1,4 @@
-// Banner top
+// Swiper Banners Home
 var swiper = new Swiper(".mySwiperBanner", {
     effect: "fade",
     loop: true,
@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiperBanner", {
     slidesPerView: 1,
 });
 
-// Services
+// Swiper Services
 var swiper = new Swiper(".swiper-services", {
     slidesPerView: 1,
     spaceBetween: 24,
@@ -79,7 +79,7 @@ var swiper = new Swiper(".swiper-artists", {
     },
 });
 
-// Clientes
+// Swiper Clientes
 var swiper = new Swiper(".swiper-clients", {
     autoplay: {
       delay: 3000,
@@ -97,7 +97,7 @@ var swiper = new Swiper(".swiper-clients", {
     }
 });
 
-// Clientes
+// Swiper Profesionales
 var swiper = new Swiper(".swiper-professionals", {
     autoplay: {
       delay: 3000,

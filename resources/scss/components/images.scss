@@ -1,5 +1,8 @@
-// Global class
+// Object Fit
 .img__fit-cover { object-fit: cover }
+.img__fit-contain { object-fit: contain }
+// Object Position
+.img__position-center {  object-position: center !important }
 // Image background posisioned
 .img__bg-posisioned {
 	position:absolute;
@@ -8,8 +11,117 @@
 	width: 100%;
 	height:-webkit-fill-available;
 	object-fit: cover;
-	opacity: .6;
 }
+// EXTENDS CLASS
+.img__bg-zoom-hover { // Extend Class - Card Zoom Curtain Us - Home
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 250px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+// ***** Card Zoom Curtain Us - Home *****
+.img__logo-golden  {
+	position: absolute;
+	padding: 16px;
+	opacity: 0;
+	img {
+		width: 100%; 
+		background-color: #3d42126b; 
+		border-radius: 8px;
+	}
+}
+.img__curtain-zoom {
+	visibility: hidden;
+	@extend .img__bg-zoom-hover;
+}
+.img__bg-zoom {
+	top: 0;
+	position: absolute;
+	transition: 0.2s all ease-out;
+	@extend .img__bg-zoom-hover;
+}
+// ***** End Card Zoom Curtain Us - Home *****
+
+// ***** Images Banner top - Home *****
+.img__banner-top-swiper {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	object-position: center;
+}
+// ***** End Images Banner top - Home *****
+.img__rounded-circle-90 {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid gold;
+    object-fit: cover;
+}
+
+.img__max-w-500 { max-width: 100%; }
+
+// Backgrounds images
+//********** US View **********//
+.img__nosotros {
+	background-image: url('../image-temp/nosotros/nosotros-001.webp');
+	border-radius: 0 !important; 
+	height: 500px !important;
+	@extend .img-rounded-right-bottom; 
+}
+.img__mision {
+	background-image: url('../image-temp/nosotros/nosotros-002.jpg');
+	@extend .img-rounded-right-bottom;
+}
+.img__vision {
+	background-image: url('../image-temp/nosotros/nosotros-003.jpg');
+	@extend .img-rounded-right-bottom;
+}
+
+@media(min-width: 600px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 400px }
+}
+
+@media(min-width: 768px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 500px }
+}
+
+@media(min-width: 992px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 600px }
+}
+
+@media(min-width: 1200px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 800px }
+	.img__max-w-500 { max-width: 500px; }
+}
+
+@media(min-width: 1400px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 900px }
+}
+
+@media(min-width: 1750px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 1024px }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -32,15 +144,7 @@
 	background-position: center; 
 	background-attachment: fixed;
 }
-.img-bg-us-hover { // extend class
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 250px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-}
+
 .img-rounded-right-bottom { // extends class
 	width: 100%;
 	height: 400px; 
@@ -49,35 +153,9 @@
 	border-radius: 0 0 350px 0;
 }
 
-//********** HOME **********//
-// Banner top
-.img-banner-fluid {
-	width: 100%;
-	height: 320px;
-	object-fit: cover;
-	object-position: center;
-}
-// Us - Home
-.img-logo-us {
-	position: absolute;
-	padding: 16px;
-	opacity: 0;
-	img {
-		width: 100%; 
-		background-color: #3d42126b; 
-		border-radius: 8px;
-	}
-}
-.img-bg-us {
-	visibility: hidden;
-	@extend .img-bg-us-hover;
-}
-.img-bg-us-zoom {
-	top: 0;
-	position: absolute;
-	transition: 0.2s all ease-out;
-	@extend .img-bg-us-hover;
-}
+
+
+
 // Services - Home
 .img-bg-swiper-service {
 	background-image: url('../image-temp/home/banners/bg-banner-play-sax04.jpg');
@@ -106,27 +184,7 @@
 	@extend .img-bg-fixed;
 }
 
-//********** US View **********//
-// Us View
-.img-parallax {
-    background-image: url('../image-temp/us/us-banner-01.png');
-	height: 600px;
-	@extend .img-bg-fixed;
-}
-.img-info-us {
-	background-image: url('../image-temp/us/us-info-01.webp');
-	border-radius: 0 !important; 
-	height: 500px !important;
-	@extend .img-rounded-right-bottom; 
-}
-.img-mision-us {
-	background-image: url('../image-temp/us/us-mision.jpg');
-	@extend .img-rounded-right-bottom;
-}
-.img-vision-us {
-	background-image: url('../image-temp/us/us-vision.jpg');
-	@extend .img-rounded-right-bottom;
-}
+
 
 //********** Service View **********//
 .img-size-service {
@@ -145,51 +203,4 @@
 	top: -20%; 
 	left: 50%; 
 	z-index: 1;
-}
-@media(min-width: 600px) {
-	//********** HOME **********//
-	// Banner top
-	.img-banner-fluid { 
-		height: 400px;
-	}
-}
-
-@media(min-width: 768px) {
-	//********** HOME **********//
-	// Banner top
-	.img-banner-fluid { 
-		height: 500px;
-	}
-}
-
-@media(min-width: 992px) {
-	//********** HOME **********//
-	// Banner top
-	.img-banner-fluid { 
-		height: 600px;
-	}
-}
-
-@media(min-width: 1200px) {
-		//********** HOME **********//
-	// Banner top
-	.img-banner-fluid { 
-		height: 800px;
-	}
-}
-
-@media(min-width: 1400px) {
-	//********** HOME **********//
-	// Banner top
-	.img-banner-fluid { 
-		height: 900px;
-	}
-}
-
-@media(min-width: 1750px) {
-	//********** HOME **********//
-	// Banner top
-	.img-banner-fluid { 
-		height: 1024px;
-	}
 }

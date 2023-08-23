@@ -1,12 +1,9 @@
-#body {
+// Main Font Family
+body { font-family: 'Buda' !important }
+
+#body { // dejarlo pendiente
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: 120px;
-}
-.mt-main-content {
-    margin-top: 120px;
-}
-.content-g-a {
-    margin-top: 120px;
 }
