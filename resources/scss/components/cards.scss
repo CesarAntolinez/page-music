@@ -1,37 +1,50 @@
-// Extends class 
-.mini-card-grid { // extends class 
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	gap: 12px;
-}
-.mini-cards-us { // extends class 
-	width: 135px;
-    padding: 24px 0;
-    text-align: center;
-    border-radius: 4px;
-	box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
-}
-// Us - Home
-.card-grid-us {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	gap: 16px;
-	.card-one {
-		grid-row: 1/2;
-		grid-column: 1/4;
-	}
-	.card-two {
-		grid-row: 2/3;
-		grid-column: 1/4;
-	}
-	.card-three {
-		grid-row: 3/4;
-		grid-column: 1/4;
+// ***** Skill - Home *****
+.card__skill-progress {
+	display: inline-block;
+	text-align: center;
+	.card-body {
+		position: relative;
+		background: transparent;
+		border: 8px solid #1b1b1b;
+		border-radius: 50%;
+		width: 8em;
+		height: 8em;
+		overflow: hidden;
+		margin: auto;
 	}
 }
-.card-us {
+
+// ***** Artists - Home *****
+.card__reflect-below {
+	width: 275px;
+	height: 435px;
+	margin: auto;
+	padding: 8px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 4px;
+	background: linear-gradient(#EBB467, #EBD1AE, #9E7A46);
+	-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
+	.car-body {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: -100%;
+		position: absolute;
+		background-color: #EBD1AE38;
+		backdrop-filter: blur(5px);
+		color: #fff;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transition: 1.3s;
+	}
+	&:hover .car-body { right: 0 }
+}
+
+// ***** Card Zoom Curtain Us - Home *****
+.card__zoom-curtain {
 	width: 270px;
 	margin: auto;
 	position: relative;
@@ -43,10 +56,10 @@
 	&:hover {
 		box-shadow: 4px 7px 12px 1px rgba(107, 82, 47, .4);
 		transform: scale(1.05, 1.03);
-		.img-logo-us {
+		.img__logo-golden {
 			opacity: .7;
 		}
-		.img-bg-us-zoom {
+		.img__bg-zoom {
 			height: 100%;
 			opacity: 0.3;
 		}
@@ -74,104 +87,19 @@
 		}
 	}
 }
-.card-one .card-us {
-	.img-bg-us, .img-bg-us-zoom {background-image: url('../image-temp/home/us/home-us-001.jpg');}
-}
-.card-two .card-us {
-	.img-bg-us, .img-bg-us-zoom {background-image: url('../image-temp/home/us/home-us-02.jfif');}
-}
-.card-three .card-us {
-	.img-bg-us, .img-bg-us-zoom {background-image: url('../image-temp/home/us/home-us-03.webp');}
-}
-// Services - Home
-.card-service {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	background-color: #333;
-	padding: 40px 20px;
-	text-align: center;
-	overflow: hidden;
-	.card-curtain {
-		position: absolute;
-		top: calc(100% - 2px);
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(#03a9f4, #e91ee3);
-		z-index: 1;
-		transition: 0.5s;
-	}
-	&:hover .card-curtain {
-		top: 0;
-	}
-	.card-body {
-		position: relative;
-		z-index: 2;
-	}
-}
-// Skills - Home
-.card-content-skill {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-}
-.card-skill {
-	display: inline-block;
-	text-align: center;
-	.card-body {
-		position: relative;
-		background: transparent;
-		border: 8px solid #1b1b1b;
-		border-radius: 50%;
-		width: 8em;
-		height: 8em;
-		overflow: hidden;
-		margin: auto;
-	}
-}
-// Artists - Home
-.card-artist {
-	width: 320px;
-	height: 500px;
-	margin: auto;
-	overflow: hidden;
-	border-radius: 4px;
-	background: linear-gradient(#EBB467, #EBD1AE, #9E7A46);
-	padding: 8px;
-	position: relative;
-	.car-body {
-		width: 100%;
-		height: 100%;
-		top: 0;
-		right: -100%;
-		position: absolute;
-		background-color: #EBD1AE38;
-		backdrop-filter: blur(5px);
-		color: #fff;
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		transition: 1.3s;
-	  }
-	&:hover .car-body { right: 0 }
-}
 
-// Us - View
-.card-golden-artist-white {
+// ***** Card White Us *****
+.card__white-golden {
 	display: flex;
 	width: 515px !important; 
 	height: 300px !important; 
 	margin: auto;
 	position: absolute; 
-	top: 40%; 
-	left: 2%; 
+	bottom: -100px; 
+	left: -16px; 
 	padding: 45px 0;
 	background-color: white;
-	background-image: url('../image-temp/us/us-card-02.jpg');
+	background-image: url('../image-temp/nosotros/nosotros-005.jpg');
 	background-repeat: no-repeat; 
 	background-size: contain;
 	box-shadow: 16px 16px 25px 0 rgba(0,0,0,4.5);
@@ -182,177 +110,71 @@
 		margin-left: auto;
 	}
 }
+
+.card__mini-squared { 
+    width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+// Extends class 
+.mini-card-grid { // extends class 
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	gap: 12px;
+}
+.mini-cards-us { // extends class 
+	width: 135px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 4px;
+	box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
+	background-color: #fff;
+}
 // Valores y principios
 .card-group-val {
 	@extend .mini-card-grid;
-	.val-text {
-		grid-row: 1/2;
-		grid-column: 1/3;
-	}
 	.val-one {
-		grid-row: 2/3;
+		grid-row: 1/2;
 		grid-column: 1/2;
 		@extend .mini-cards-us;
 	}
 	.val-two {
-		grid-row: 2/3;
+		grid-row: 1/2;
 		grid-column: 2/3;
 		@extend .mini-cards-us;
 	}
 	.val-three {
-		grid-row: 3/4;
+		grid-row: 2/3;
 		grid-column: 1/2;
 		@extend .mini-cards-us;
 	}
   	.val-four {
-		grid-row: 3/4;
+		grid-row: 2/3;
 		grid-column: 2/3;
 		@extend .mini-cards-us;
 	}
 	.val-five {
-		grid-row: 4/5;
+		grid-row: 3/4;
 		grid-column: 1/2;
 		@extend .mini-cards-us;
 	}
 	.val-six {
-		grid-row: 4/5;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-}
-.card-group-prin {
-	@extend .mini-card-grid;
-  	.prin-text {
-		grid-row: 1/2;
-		grid-column: 1/3;
-  	}
-	.prin-one {
-		grid-row: 2/3;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.prin-two {
-		grid-row: 2/3;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-	.prin-three {
 		grid-row: 3/4;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-  	.prin-four {
-		grid-row: 3/4;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-	.prin-five {
-		grid-row: 4/5;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.prin-six {
-		grid-row: 4/5;
 		grid-column: 2/3;
 		@extend .mini-cards-us;
 	}
 }
 
-@media(min-width: 500px) {
-	// Us - View
-	// Valores y principios
-	.card-val-nosotros {
-		.val-text {
-			grid-row: 1/2;
-			grid-column: 1/4;
-		}
-		.val-one {
-			grid-row: 2/3;
-			grid-column: 1/2;
-		}
-		.val-two {
-			grid-row: 2/3;
-			grid-column: 2/3;
-		}
-		.val-three {
-			grid-row: 2/3;
-			grid-column: 3/4;
-		}
-		.val-four {
-			grid-row: 3/4;
-			grid-column: 1/2;
-		}
-		.val-five {
-			grid-row: 3/4;
-			grid-column: 2/3;
-		}
-		.val-six {
-			grid-row: 3/4;
-			grid-column: 3/4;
-		}
-	}
-	.card-princ-nosotros {
-		.val-text {
-			grid-row: 1/2;
-			grid-column: 1/4;
-		}
-		.val-one {
-			grid-row: 2/3;
-			grid-column: 1/2;
-		}
-		.val-two {
-			grid-row: 2/3;
-			grid-column: 2/3;
-		}
-		.val-three {
-			grid-row: 2/3;
-			grid-column: 3/4;
-		}
-		.val-four {
-			grid-row: 3/4;
-			grid-column: 1/2;
-		}
-		.val-five {
-			grid-row: 3/4;
-			grid-column: 2/3;
-		}
-		.val-six {
-			grid-row: 3/4;
-			grid-column: 3/4;
-		}
-	}
-}
 
-@media(min-width: 576px) {
-	// Us - Home
-	.card-grid-us {
-		justify-content: center;
-		.card-one {
-			// grid-row: 1/2;
-			grid-column: 1/2;
-		}
-		.card-two {
-			grid-row: 1/2;
-			grid-column: 2/3;
-		}
-		.card-three {
-			grid-row: 2/3;
-			grid-column: 1/3;
-		}
-	}
-}
 
 @media(min-width: 768px) {
-	// Us - Home
-	.card-grid-us { gap: 32px }
-
-	// Us - View
-	// Valores y principios
 	.card-group-val {
-		.val-text {
-			grid-row: 1/3;
-			grid-column: 4/5;
-		}
 		.val-one {
 			grid-row: 1/2;
 			grid-column: 1/2;
@@ -365,7 +187,8 @@
 			grid-row: 1/2;
 			grid-column: 3/4;
 		}
-	  	.val-four {
+
+		.val-four {
 			grid-row: 2/3;
 			grid-column: 1/2;
 		}
@@ -378,44 +201,87 @@
 			grid-column: 3/4;
 		}
 	}
-	.card-group-prin {
-		.prin-text {
-			grid-row: 1/3;
-			grid-column: 1/2;
-		}
-		.prin-one {
-			grid-row: 1/2;
-			grid-column: 2/3;
-		}
-		.prin-two {
-			grid-row: 1/2;
-			grid-column: 3/4;
-		}
-		.prin-three {
-			grid-row: 1/2;
-			grid-column: 4/5;
-		}
-	  	.prin-four {
-			grid-row: 2/3;
-			grid-column: 2/3;
-		}
-		.prin-five {
-			grid-row: 2/3;
-			grid-column: 3/4;
-		}
-		.prin-six {
-			grid-row: 2/3;
-			grid-column: 4/5;
-		}
-	}
 }
 
-@media(min-width: 900px) {
-	// Us - Home
-	.card-grid-us {
-		.card-three {
-			grid-row: 1/2;
-			grid-column: 3/4;
-		}
+// @media(min-width: 576px) {
+
+// }
+
+// @media(min-width: 768px) {
+// 	// Valores y principios
+// 	.card-group-val {
+// 		.val-text {
+// 			grid-row: 1/3;
+// 			grid-column: 4/5;
+// 		}
+// 		.val-one {
+// 			grid-row: 1/2;
+// 			grid-column: 1/2;
+// 		}
+// 		.val-two {
+// 			grid-row: 1/2;
+// 			grid-column: 2/3;
+// 		}
+// 		.val-three {
+// 			grid-row: 1/2;
+// 			grid-column: 3/4;
+// 		}
+// 	  	.val-four {
+// 			grid-row: 2/3;
+// 			grid-column: 1/2;
+// 		}
+// 		.val-five {
+// 			grid-row: 2/3;
+// 			grid-column: 2/3;
+// 		}
+// 		.val-six {
+// 			grid-row: 2/3;
+// 			grid-column: 3/4;
+// 		}
+// 	}
+// 	.card-group-prin {
+// 		.prin-text {
+// 			grid-row: 1/3;
+// 			grid-column: 1/2;
+// 		}
+// 		.prin-one {
+// 			grid-row: 1/2;
+// 			grid-column: 2/3;
+// 		}
+// 		.prin-two {
+// 			grid-row: 1/2;
+// 			grid-column: 3/4;
+// 		}
+// 		.prin-three {
+// 			grid-row: 1/2;
+// 			grid-column: 4/5;
+// 		}
+// 	  	.prin-four {
+// 			grid-row: 2/3;
+// 			grid-column: 2/3;
+// 		}
+// 		.prin-five {
+// 			grid-row: 2/3;
+// 			grid-column: 3/4;
+// 		}
+// 		.prin-six {
+// 			grid-row: 2/3;
+// 			grid-column: 4/5;
+// 		}
+// 	}
+
+
+// 	.p-descrip-boda { padding-top: 65px; }
+// }
+
+
+// @media(min-width: 992px) {
+// 	.p-descrip-boda { padding-top: 0; }
+
+// }
+
+@media(min-width: 1920px) {
+	.w-xxl-75 {
+		width: 75%;
 	}
 }

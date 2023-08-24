@@ -1,116 +1,28 @@
-// floating button
-.btn-circle-float {
+// EXTEND CLASS
+.btn__shape-rounded {
 	width:40px;
 	height:40px;
 	display: block;
 	border-radius:50%;
-	box-shadow: 2px 2px 3px $shadow-gray;
+	box-shadow: 2px 2px 3px #999;
 	position:fixed;
 	right:28px;
 	z-index: 100;
 	cursor: pointer;
 }
-/* ================= Button Whatsapp fixed ================= */
-.btn-float-whp{
-	@extend .btn-circle-float;
+// ***** Bottom Floating
+.btn__float-whp {
+	@extend .btn__shape-rounded;
 	bottom:10px;
-	background-color: $green-wapp;
+	background-color: #25d366;
 	padding: 2px 0 0 2px;
 }
-/* ================= Button float scroll top ================= */
-.btn-scroll-top {
+// ***** Bottom scroll top
+.btn__scroll-top {
 	position: fixed;
     bottom: 60px;
     right: 28px;
     width: 40px;
     height: 40px;
 	z-index: 1;
-}
-.btn-scroll {
-	width: 0rem;
-	height: 0rem;
-	background-color: cadetblue;
-	border-radius: 50%;
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: .2s;
-	z-index: -1;
-}
-.btn-scroll i {
-	position: absolute;
-	top: 48%;
-	left: 50%;
-	transform: translate(50%, 50%) scale(0);
-	color: #fff;
-	transition: .2s;
-}
-.btn-show { z-index: 10 }
-.btn-show .btn-scroll {
-	position: absolute;
-	animation: popup .3s ease-in-out;
-	width:40px;
-	height:40px;
-	z-index: 11;
-}
-.btn-show i { transform: translate(-50%, -50%) scale(1); }
-@keyframes popup {
-	0%{
-		width: 0;
-		height: 0;
-	}
-	50%{
-		width: 20px;
-		height: 20px;
-	}
-	100%{
-		width: 40px;
-		height: 40px;
-	}
-}
-// Button Service
-.btn-tab-serv {
-	width: 65px; 
-	height: 65px;
-	border: 0 !important;
-	background-color: transparent !important;
-}
-/* ================= Button others services ================= */
-.btns-group-serv {
-	gap: 12px
-}
-.btn-other-serv {
-	width: 140px;
-	border-radius: 4px !important;
-	border: 0;
-	background-color: bisque;
-	box-shadow: 0 14px 25px 0 rgba(0,0,0,.5), 0 0 0 0 rgba(0,0,0,.6);
-	img {
-		width: 80px;
-		height: 80px;
-		object-fit: cover;
-	}
-}
-  
-@media(min-width: 375px) {
-	// Button Service
-	.btn-tab-serv {
-		width: 80px; 
-		height: 80px;
-	}
-}
-  
-@media(min-width: 768px) {
-	// Button Service
-	.btns-group-serv {
-		gap: 20px
-	}
-	.btn-other-serv {
-		img {
-			width: 115px;
-			height: 115px;
-		}
-	}
 }

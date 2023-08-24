@@ -1,0 +1,204 @@
+// Margins
+.golden__mt-less-45 { margin-top: -45px !important } 
+.golden__mt-120 { margin-top: 120px !important } 
+.golden__mt-less-140 { margin-top: -140px }
+.golden__mt-card-class { margin-top: 36px !important; }
+.golden__mt-card-mision { margin-top: 150px !important } 
+.golden__mt-card-vision { margin-top: 50px !important } 
+
+// Paddings
+.golden__py-artists {
+    padding-top: 100px;
+    padding-right: 8px !important;
+    padding-bottom: 100px;
+    padding-left: 8px !important;
+}
+
+// Width
+.golden__w-275 { width: 275px }
+.golden__w-75- { width: 75% }
+// Positions
+.golden__position-top-65 {
+    margin-top: 65px; 
+    margin-bottom: -100px; 
+    width: 75%;
+}
+.golden__position-card-us {
+    margin-top: 65px; 
+    margin-bottom: -100px; 
+    width: 75%;
+}
+.golden__position-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.golden__position-left-24 {
+    bottom: 0; 
+    left: 24px; 
+    width: 90%;
+}
+
+// Filters
+.golden__filt-sepia-1 { filter: sepia(1) }
+.golden__filt-contrast-5 { filter: contrast(0.5) }
+
+// Shadows Box
+.golden__shadow-1-opacity-9 { box-shadow: -10px -4px 8px 3px rgba(39, 33, 25, 0.9) }
+.golden__shadow-2-opacity-9 { box-shadow: -16px 16px 20px 7px rgba(39, 33, 25, 0.9) }
+
+.golden__shadow-1-black-5 { box-shadow: 60px -65px 0px 3px rgba(0, 0, 0, 0.5) }
+.golden__shadow-2-black-5 { box-shadow: 60px 40px 0px 3px rgba(0, 0, 0, 0.5) }
+.golden__shadow-3-black-5 { box-shadow: -100px 45px 0px 3px rgba(0, 0, 0, 0.5) }
+.golden__shadow-4-black-5 { box-shadow: -2px -2px 5px 5px rgba(22, 14, 2, 0.5) }
+.golden__shadow-5-black-5 { box-shadow: -60px -40px 0px 3px rgba(0, 0, 0, 0.5) }
+.golden__shadow-1-doble-9 { box-shadow: 16px -24px 0px 3px rgba(0, 0, 0, 0.5), 4px -8px 10px 0 rgba(0, 0, 0, .9) }
+.golden__shadow-2-doble-9 { box-shadow: -16px -24px 0px 3px rgba(0, 0, 0, 0.5), -4px -8px 10px 0 rgba(0, 0, 0, .9) }
+
+.golden__shadow-1-gold-5 { box-shadow: -2px -2px 5px 5px rgba(235, 180, 103, 0.5) }
+
+.golden__shadow-1-inset-matt { box-shadow: 0 0 16px #AE9B81 inset; }
+.golden__shadow-1-inset-thin { box-shadow: 0 0 16px #EBB467 inset; }
+// Rounded Shape
+.golden__rounded-progress {
+	background: linear-gradient(0deg, #080808 0%, #111111 100%);
+	position: absolute;
+	width: 6.5em;
+	height: 6.5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// color: #fff;
+	z-index: 1;
+  h5 {
+    font-size: 2em;
+    font-weight: 500;
+	// color: var(--white);
+  }
+}
+.golden__rounded-progress-effect {
+	position: absolute;
+	width: 7.3em;
+	height: 7.3em;
+	bottom: -100%;
+	background: linear-gradient(0deg, #335bf4 0%, #16ff86 100%);
+    // background: linear-gradient(0deg, #AE9B81 0%, #ebb467 50%, #EBD1AE 100%);
+	transition: bottom 6s;
+}
+// Squared Shape
+.golden__squared-180 {
+    width: 180px;
+    height: 180px;
+}
+.golden__squared-artists {
+    height: 90%; 
+    width: 90%;
+    box-shadow: 0 0 16px #EBB467 inset; 
+    position: absolute; 
+    top: 50%;                     
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.golden__squared-inset {
+    box-shadow: 0 0 100px #fff inset; 
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 5%;
+    left: 5%;
+    z-index: -1;
+}
+.golden__squared-1-float { 
+    position: absolute;
+    width: 100%;
+    top: -350px;
+    left: 0;
+    height: 760px;
+    z-index: -1;
+}
+
+// Boxes
+.golden__box-video-left { width: 100% }
+
+@media(min-width: 375px) {
+    // Paddings
+    .golden__py-artists {
+        padding-right: 45px !important;
+        padding-bottom: 175px;
+        padding-left: 45px !important;
+    }
+    // Margins
+    .golden__mt-less-160 { margin-top: -160px }
+    // Squared Shape
+    .golden__squared-1-float {  width: 75% }
+}
+
+@media(min-width: 600px) {
+    // Positions
+    .golden__position-card-us {
+        margin-top: -56px;
+        margin-bottom: -100px;
+        margin-left: auto;
+        width: 80%;
+    }
+    .golden__box-valores { max-width: 450px }
+}
+
+@media(min-width: 768px) {
+    // Margins
+    .golden__mt-card-class { margin-top: 216px !important }
+    // Paddings
+    .golden__py-artists {
+        padding-right: 100px !important;
+        padding-bottom: 175px;
+        padding-left: 100px !important;
+    }
+    // Squared Shape
+    .golden__squared-1-float { 
+        width: 50%; 
+        left: -50px; 
+    }
+}
+
+@media(min-width: 992px) {
+    // Margin
+    .golden__mt-card-vision {
+        margin-top: -250px !important;
+    }
+    // Squared Shape
+    .golden__squared-1-float { 
+        height: 875px;
+    }
+    //Position
+    .golden__position-card-us {
+        margin-top: -300px;
+    }
+}
+
+@media(min-width: 1200px) {
+    //Position
+    .golden__position-card-us {
+        width: 75%;
+    }
+}
+
+@media(min-width: 1500px) {
+    // Paddings
+    .golden__px-longer { padding: 0 10% !important }
+}
+
+@media(min-width: 1920px) {
+    // Columns
+    .gold__col-xxlarge { width: 74.999% !important }
+    // Paddings
+    .golden__px-longer { padding: 0 18% !important }
+    .golden__box-video-left { 
+        width: 75%; 
+        margin-left: auto; 
+    }
+}

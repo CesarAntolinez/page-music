@@ -8,7 +8,9 @@
     "jquery": "^3.6.4",
     "swiper": "^9.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.65.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass --watch style.scss asset/css/app.css"

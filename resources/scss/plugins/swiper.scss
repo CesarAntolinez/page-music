@@ -1,59 +1,57 @@
-// Swiper Services - Home
-.swiper-content-services {
-	position: relative;
-	max-width: 100%;
-	margin: 30px 0;
-	-webkit-box-reflect: below 1px linear-gradient(transparent 65%, #0009);
+
+//***** Swipper Services *****
+.swiper-services .swiper-btn {
+	color: var(--gold-hard);
+	background-color: var(--gold-soft);
+    padding: 30px 24px;
+    opacity: .7;
+    border-radius: 4px;
+	.swiper-pagination {
+		position: absolute; 
+		bottom: 16px;
+	}
 }
-.swiper-content-services .swiper-services .swiper-wrapper {
-	justify-content: start;
+.swiper-services .swiper-pagination-bullet {
+	background-image: linear-gradient(to left, #EBB467, #EBD1AE, #AE9B81);
+	opacity: 1;
+	border: 1px solid #EBB467;
 }
-.swiper-content-services .swiper-services .swiper-wrapper .swiper-slide {
-	background-position: center;
-	background-size: cover;
-	width: 350px;
-	min-height: 350px;
-	background-color: #fff;
+.swiper-services .swiper-pagination-bullet-active {
+	width: 65px !important;
+    height: 16px !important;
+    border-radius: 16px;
+	background-image: linear-gradient(to left, #EBB467, #EBD1AE, #EBD1AE) !important;
 }
-.swiper-content-services .swiper-3d .swiper-slide-shadow-left,
-.swiper-content-services .swiper-3d .swiper-slide-shadow-right
-{ background-image: none }
-// Swiper Artists - Home
+.swiper-services .swiper-pagination-bullet {
+	width: 20px;
+    height: 20px;
+}
+.swiper-services .swiper-pagination-horizontal { width: 250px!important }
+.swiper-services .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    transition: .8s transform,.2s left;
+}
+//***** End Swipper Services *****
+
+//***** Swipper Artists *****
 .swiper-artists .swiper-btn {
-color: #EBB467;
-transition: color .3s ease;
-&:hover { color: #AE9B81; }
+	color: var(--gold-thin);
+	transition: color .3s ease;
+	&:hover { color: var(--gold-matt); }
+}
+.swiper-artists .swiper-pagination {
+	position: absolute; 
+	bottom: 8px;
 }
 .swiper-artists .swiper-pagination-bullet {
-background-color: #EBB467;
-width: 24px;
-height: 24px;
-opacity: 1;
+	background-color: var(--gold-thin);
+	width: 24px;
+	height: 24px;
+	opacity: 1;
 }
 .swiper-artists .swiper-pagination-bullet-active {
-background-color: #9E7A46;
-width: 26px;
-height: 26px;
+	background-color: var(--gold-dark);
+	width: 26px;
+	height: 26px;
 }
-
-// Stilos del Albún de la galería
-.portfolio-menu {
-	text-align: center;
-}
-.portfolio-menu ul li {
-	display: inline-block;
-	margin: 0;
-	list-style: none;
-	padding: 10px 15px;
-	cursor: pointer;
-	-webkit-transition: all 05s ease;
-	-moz-transition: all 05s ease;
-	-ms-transition: all 05s ease;
-	-o-transition: all 05s ease;
-	transition: all 0.5s ease;
-}
-.portfolio-item .item {
-
-	float: left;
-	margin-bottom: 10px;
-}
+//***** End Swipper Artists *****

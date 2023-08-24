@@ -1,44 +1,51 @@
-// Banner top
+// Swiper Banners Home
 var swiper = new Swiper(".mySwiperBanner", {
     effect: "fade",
     loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: true,
+    // },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     slidesPerView: 1,
 });
 
-// Services
+// Swiper Services
 var swiper = new Swiper(".swiper-services", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
     slidesPerView: 1,
-    spaceBetween: 8,
-    coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 0,
-    modifier: 1,
-    slideShadows: true,
+    spaceBetween: 24,
+    loop: false,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
     },
-    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
-            // when window width is >= 600px
-            600: {
-                slidesPerView: 2,
-            },
-                // when window width is >= 1024px
-                1024: {
-                slidesPerView: 3,
-            },
-            // when window width is >= 1920px
-            1920: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-            },
-        }
+        800: {
+            slidesPerView: 2,
+        },
+        1275: {
+            slidesPerView: 3,
+        },
+        1750: {
+            slidesPerView: 4,
+        },
+        2200: {
+            slidesPerView: 5,
+        },
+    }
 }); 
 
 // Swiper Artistas
@@ -57,18 +64,22 @@ var swiper = new Swiper(".swiper-artists", {
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        // when window width is >= 768px
         768: {
             slidesPerView: 2,
         },
-        
         1200: {
             slidesPerView: 3,
+        },
+        1700: {
+            slidesPerView: 4,
+        },
+        1920: {
+            slidesPerView: 5,
         },
     },
 });
 
-// Clientes
+// Swiper Clientes
 var swiper = new Swiper(".swiper-clients", {
     autoplay: {
       delay: 3000,
@@ -77,13 +88,37 @@ var swiper = new Swiper(".swiper-clients", {
     loop: true,
     slidesPerView: 1,
     breakpoints: {
-        // when window width is >= 400px
         400: {
             slidesPerView: 2,
         },
-        // when window width is >= 768px
         768: {
             slidesPerView: 3,
+        },
+    }
+});
+
+// Swiper Profesionales
+var swiper = new Swiper(".swiper-professionals", {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 24,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
         },
     }
 });
