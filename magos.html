@@ -17,7 +17,7 @@
         <!-- AOS Animation -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Route style sheet -->
-        <link rel="stylesheet" href="/asset/css/app.css">
+        <link rel="stylesheet" href="asset/css/app.css">
     </head>
 
     <body>
@@ -25,28 +25,28 @@
         <div class="header-g-a">
             <nav class="nav__header">
                 <a href="/index.html">
-                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="215">
+                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="215">
                 </a>
                 <!-- Desktop menu -->
                 <ul class="nav__golden d-none d-lg-flex">
-                    <li class="actived"><a href="/index.html">Inicio</a></li>
+                    <li class="actived"><a href="index.html">Inicio</a></li>
 
                     <li class="dropdown">
                         <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="position-relative">Servicios</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="/views/servicios/bodas.html">Bodas</a></li>
+                            <li><a class="dropdown-item active" href="bodas.html">Bodas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/eventos-empesariales.html">Eventos empresariales</a></li>
+                            <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/musica-restoran.html">Música restorán</a></li>
+                            <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/quinces.html">Quince años</a></li>
+                            <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/eventos-privados.html">Eventos privados</a></li>
+                            <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/clases-musica.html">Clases de música</a></li>
+                            <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
                         </ul>
                     </li>
 
@@ -55,23 +55,23 @@
                             <span class="position-relative">Artistas</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="/views/artistas/cantantes.html">Cantantes</a></li>
+                            <li><a class="dropdown-item active" href="cantantes.html">Cantantes</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/saxofonistas.html">Saxofonistas</a></li>
+                            <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/violinistas.html">Violinistas</a></li>
+                            <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/djs.html">Dj´s</a></li>
+                            <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/pianistas.html">Pianistas</a></li>
+                            <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/magos.html">Magos</a></li>
+                            <li><a class="dropdown-item" href="magos.html">Magos</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="/views/acerca-de/comentarios.html">Comentarios</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
 
-                    <li><a href="/views/acerca-de/nosotros.html">Nosotros</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                 </ul>
                 
                 <!-- Mobile menu -->
@@ -85,41 +85,69 @@
                     <div class="nav__mobile-bg bg-gold-hard"></div>
                 
                     <nav class="nav__mobile-group-items" role="navigation">
-                        <a href="/index.html">
-                            <img src="/asset/image/logo/golden-artists-white-hrz.png" width="215" class="ms-3">
+                        <a href="index.html">
+                            <img src="asset/image/logo/golden-artists-white-hrz.png" width="215" class="ms-3">
                         </a>
                         
                         <ul class="nav__mobile-items">
                             <li class="actived p-2">
-                                <a href="/index.html" class="nav__mobile-items-link">
+                                <a href="index.html" class="nav__mobile-items-link">
                                     <i class="material-symbols-outlined">home</i>
                                     <span class="h5">&nbsp;Inicio</span>
                                 </a>
                             </li>
 
-                            <li class="p-2">
-                                <a href="service.html" class="nav__mobile-items-link">
+                            <li class="dropdown p-2">
+                                <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none"  
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="material-symbols-outlined">cases</i>
-                                    <span class="h5">&nbsp;Servicios</span>
+                                    <span class="position-relative">Servicios</span>
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="bodas.html">Bodas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
+                                </ul>
                             </li>
 
-                            <li class="p-2">
-                                <a href="artist.html" class="nav__mobile-items-link">
+                            <li class="dropdown p-2">
+                                <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none" 
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="material-symbols-outlined">switch_account</i>
-                                    <span class="h5">&nbsp;Artistas</span>
+                                    <span class="position-relative">Artistas</span>
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="cantantes.html">Cantantes</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="magos.html">Magos</a></li>
+                                </ul>
                             </li>
 
                             <li class="p-2">
-                                <a href="./views/acerca-de/comentarios.html" class="nav__mobile-items-link">
+                                <a href="comentarios.html" class="nav__mobile-items-link">
                                     <i class="material-symbols-outlined">gallery_thumbnail</i>
                                     <span class="h5">&nbsp;Comentarios</span>
                                 </a>
                             </li>
 
                             <li class="p-2">
-                                <a href="./views/acerca-de/nosotros.html" class="nav__mobile-items-link">
+                                <a href="nosotros.html" class="nav__mobile-items-link">
                                     <i class="material-symbols-outlined">group</i>
                                     <span class="h5">&nbsp;Nosotros</span>
                                 </a>
@@ -133,7 +161,7 @@
         <!-- Content -->
         <div class="golden__mt-120">
 			<div class="position-relative bg-black bg-opacity-25">
-				<img src="/asset/image-temp/backgrounds/full-page/img-mago-001.avif" 
+				<img src="asset/image-temp/backgrounds/full-page/img-mago-001.avif" 
 				class="img__bg-posisioned" style="	object-position: center;">
 				
 				<div class="container-fluid">
@@ -141,7 +169,7 @@
 						<div class="col-12 col-sm-10 py-5">
 							<div class="row justify-content-between align-items-end">
 								<div class="col-auto col-lg-5 d-flex justify-content-center" data-aos="fade-right" style="overflow: hidden;">
-									<img src="/asset/image-temp/artistas/magos/mago-001/perfil-001.avif" 
+									<img src="asset/image-temp/artistas/magos/mago-001/perfil-001.avif" 
 									class="img-fluid border border-2 border-gold-thin" style="max-width: 275px; max-height: 500px;">
 								</div>
 								
@@ -151,7 +179,7 @@
 									<h5 class="fw-bold">we are, I am always home when I'm with you. Will you marry me?"</h5>
 			
 									<div class="d-flex justify-content-start mt-4">
-										<img src="/asset/image/logo/golden-artist-golden-hrz.png" width="250">
+										<img src="asset/image/logo/golden-artist-golden-hrz.png" width="250">
 									</div>
 								</div>
 							</div>
@@ -165,7 +193,7 @@
 									<a href="!#" class="text-decoration-none">
 										<div class="text-gold-thin fw-bold">
 											<img class="d-flex rounded-circle img__fit-cover golden__shadow-1-opacity-9 mx-auto mb-4"
-											src="/asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
+											src="asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
 											
 											<div class="px-3 px-xxl-4">
 												<h5 class="text-center">Lois Smith</h5>
@@ -179,7 +207,7 @@
 									<a href="!#" class="text-decoration-none">
 										<div class="text-gold-thin fw-bold">
 											<img class="d-flex rounded-circle img__fit-cover golden__shadow-1-opacity-9 mx-auto mb-4"
-											src="/asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
+											src="asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
 							
 											<div class="px-3 px-xxl-4">
 												<h5 class="text-center">Lois Smith</h5>
@@ -193,7 +221,7 @@
 									<a href="!#" class="text-decoration-none">
 										<div class="text-gold-thin fw-bold">
 											<img class="d-flex rounded-circle img__fit-cover golden__shadow-1-opacity-9 mx-auto mb-4"
-											src="/asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
+											src="asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
 							
 											<div class="px-3 px-xxl-4">
 												<h5 class="text-center">Lois Smith</h5>
@@ -207,7 +235,7 @@
 									<a href="!#" class="text-decoration-none">
 										<div class="text-gold-thin fw-bold">
 											<img class="d-flex rounded-circle img__fit-cover golden__shadow-1-opacity-9 mx-auto mb-4"
-											src="/asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
+											src="asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
 							
 											<div class="px-3 px-xxl-4">
 												<h5 class="text-center">Lois Smith</h5>
@@ -221,7 +249,7 @@
 									<a href="!#" class="text-decoration-none">
 										<div class="text-gold-thin fw-bold">
 											<img class="d-flex rounded-circle img__fit-cover golden__shadow-1-opacity-9 mx-auto mb-4"
-											src="/asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
+											src="asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
 							
 											<div class="px-3 px-xxl-4">
 												<h5 class="text-center">Lois Smith</h5>
@@ -235,7 +263,7 @@
 									<a href="!#" class="text-decoration-none">
 										<div class="text-gold-thin fw-bold">
 											<img class="d-flex rounded-circle img__fit-cover golden__shadow-1-opacity-9 mx-auto mb-4"
-											src="/asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
+											src="asset/image-temp/artistas/magos/mago-001/perfil-001.avif" width="100" height="100">
 							
 											<div class="px-3 px-xxl-4">
 												<h5 class="text-center">Lois Smith</h5>
@@ -264,7 +292,7 @@
 									theme__gradiente-gold-3-45deg golden__squared-180 mx-auto mb-4">
 									
 									<img class="position-absolute golden__position-center"
-									src="/asset/image/logo/golden-artist-golden-vert.png" width="150" height="150">
+									src="asset/image/logo/golden-artist-golden-vert.png" width="150" height="150">
 								</div>
 							</div>
 
@@ -286,7 +314,7 @@
 										<div class="row mx-auto rounded-1 border border-3 border-gold-thin golden__w-275 bg-white">
 											<div class="col-12 d-flex justify-content-center p-0">
 												<div class="">
-													<img src="/asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif" 
+													<img src="asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif" 
 													class="card-img-top rounded-0 img__fit-cover" height="300">
 												</div>
 											</div>
@@ -304,7 +332,7 @@
 										<div class="row mx-auto rounded-1 border border-3 border-gold-thin golden__w-275 bg-white">
 											<div class="col-12 d-flex justify-content-center p-0">
 												<div class="">
-													<img src="/asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif"
+													<img src="asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif"
 													class="card-img-top rounded-0 img__fit-cover" height="300">
 												</div>
 											</div>
@@ -322,7 +350,7 @@
 										<div class="row mx-auto rounded-1 border border-3 border-gold-thin golden__w-275 bg-white">
 											<div class="col-12 d-flex justify-content-center p-0">
 												<div class="">
-													<img src="/asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif"
+													<img src="asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif"
 													class="card-img-top rounded-0 img__fit-cover" height="300">
 												</div>
 											</div>
@@ -340,7 +368,7 @@
 										<div class="row mx-auto rounded-1 border border-3 border-gold-thin golden__w-275 bg-white">
 											<div class="col-12 d-flex justify-content-center p-0">
 												<div class="">
-													<img src="/asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif"
+													<img src="asset/image-temp/artistas/magos/mago-001/experiencia-001.jfif"
 													class="card-img-top rounded-0 img__fit-cover" height="300">
 												</div>
 											</div>
@@ -361,112 +389,116 @@
 			</div>
 		</div>
 
-		<!-- btn scroll -->
-		<div class="btn__scroll-top">
-			<div class="animation__btn-scroll-effect">
-				<i class="material-symbols-outlined">keyboard_double_arrow_up</i>
-			</div>
-		</div>
-		
-		<!-- btn whatsapp -->
-		<a href="" target="_blank">
-			<img class="btn__float-whp" src="/asset/image/iconos/whatsapp-white.png" alt="">
-		</a>
+        <!-- btn scroll -->
+        <div class="btn__scroll-top">
+            <div class="animation__btn-scroll-effect">
+                <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
+            </div>
+        </div>
+        
+        <!-- btn whatsapp -->
+        <a href="" target="_blank">
+            <img class="btn__float-whp" src="asset/image/iconos/whatsapp-white.png" alt="">
+        </a>
 
-		<!-- Footer OK  -->
-		<div class="bg-black mt-auto px-2">
-			<div class="container container-fluid-xxl">
-			<div class="row d-flex justify-content-around align-items-center py-5">
-				<div class="col-12 col-lg-5">
-				<div class="row">
-					<div class="col-12 d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
-					<a href="/index.html">
-						<img src="/asset/image/logo/golden-artist-golden-hrz.png" 
-						height="150">
-					</a>
-					<h6 class="text-white">administrativo@goldenartist.co</h6>
-					</div>
-		
-					<div class="col-12 col-sm-6 col-lg-12 col-xxl-6 text-white d-flex justify-content-center align-items-center mb-5">
-					<div>
-						<h5 class="mb-3">Atención inmediata</h5>
-						<h6>&#8226; &nbsp; Celular 319 650 3791</h6>
-						<h6>&#8226; &nbsp; @GoldenArtistsCo</h6>
-					</div>
-					</div>
-				
-					<div class="col-12 col-sm-6 col-lg-12 col-xxl-6 text-white d-flex justify-content-center mb-5">
-					<div>
-						<h5 class="mb-3">Acerca de Golden Artists</h5>
-		
-						<h6>&#8226; &nbsp; ¿Quiénes somos?</h6>
-						<h6>&#8226; &nbsp; Comentarios</h6>
-					</div>
-					</div>
-				</div>
-				</div>
-		
-				<div class="col-12 col-md-11 col-lg-6 bg-white bg-opacity-50 py-5 px-sm-5">
-				<div class="row">
-					<div class="col-12 mb-4">
-					<h2>Contactenos</h2>
-					</div>
-		
-					<div class="col-12">
-					<div class="form-floating mb-3">
-						<input type="text" class="form-control" id="floatingPassword" placeholder="Name">
-						<label for="floatingPassword">Name</label>
-					</div>
-					</div>
-		
-					<div class="col-12">
-					<div class="form-floating mb-3">
-						<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-						<label for="floatingInput">Email address</label>
-					</div>
-					</div>
-		
-					<div class="col-12">
-					<div class="form-floating mb-3">
-						<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-						<label for="floatingTextarea2">Comments</label>
-					</div>
-					</div>
-		
-					<div class="col-12 d-flex">
-					<button class="btn btn-primary w-100 py-3" type="button">Button</button>
-					</div>
-				</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<!-- Redes sociales -->
-		<div>
-			<div class="row mx-0 text-white">
-				<div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
-					<img src="/asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
-					<img src="/asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
-					<img src="/asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
-					<img src="/asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-				</div>
-			</div>
-		</div>
-
-		<!-- Bootstrap 5.2 cdn -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- Swiper cdn -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-		<!-- AOS Animation -->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<!-- Files.js -->
-		<script src="/resources/js/slider.js"></script>
-		<script src="/resources/js/function.js"></script>			
+        <!-- Footer OK  -->
+        <div class="bg-black mt-auto px-2">
+          <div class="container container-fluid-xxl">
+            <div class="row d-flex justify-content-around align-items-center py-5">
+              <div class="col-12 col-lg-5">
+                <div class="row">
+                  <div class="col-12 d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
+                    <a href="index.html">
+                      <img src="asset/image/logo/golden-artist-golden-hrz.png" 
+                      height="150">
+                    </a>
+                    <h6 class="text-white">administrativo@goldenartist.co</h6>
+                  </div>
+      
+                  <div class="col-12 col-sm-6 col-lg-12 col-xxl-6 text-white d-flex justify-content-center align-items-center mb-5">
+                    <div>
+                      <h5 class="mb-3">Atención inmediata</h5>
+                      <h6>&#8226; &nbsp; Celular 319 650 3791</h6>
+                      <h6>&#8226; &nbsp; @GoldenArtistsCo</h6>
+                    </div>
+                  </div>
+                
+                  <div class="col-12 col-sm-6 col-lg-12 col-xxl-6 text-white d-flex justify-content-center mb-5">
+                    <div>
+                      <h5 class="mb-3">Acerca de Golden Artists</h5>
+      
+                      <a class="text-white text-decoration-none" href="nosotros.html">
+                        <h6>&#8226; &nbsp;  ¿Quiénes somos?</h6>
+                      </a>
+                      <a class="text-white text-decoration-none" href="comentarios.html">
+                        <h6>&#8226; &nbsp;  Comentarios</h6>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-12 col-md-11 col-lg-6 bg-white bg-opacity-50 py-5 px-sm-5">
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <h2>Contactenos</h2>
+                  </div>
+      
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
+                      <label for="floatingPassword">Name</label>
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Comments</label>
+                    </div>
+                  </div>
+      
+                  <div class="col-12 d-flex">
+                    <button class="btn btn-primary w-100 py-3" type="button">Button</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Redes sociales -->
+        <div>
+            <div class="row mx-0 text-white">
+                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
+                    <img src="asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
+                    <img src="asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
+                    <img src="asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
+                    <img src="asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap 5.2 cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- AOS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Files.js -->
+        <script src="resources/js/slider.js"></script>
+        <script src="resources/js/function.js"></script>	
     </body>
 </html>

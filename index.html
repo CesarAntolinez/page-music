@@ -17,7 +17,7 @@
         <!-- AOS Animation -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Route style sheet -->
-        <link rel="stylesheet" href="./asset/css/app.css">
+        <link rel="stylesheet" href="asset/css/app.css">
     </head>
 
     <body>
@@ -25,28 +25,28 @@
         <div class="header-g-a">
             <nav class="nav__header">
                 <a href="/index.html">
-                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="215">
+                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="215">
                 </a>
                 <!-- Desktop menu -->
                 <ul class="nav__golden d-none d-lg-flex">
-                    <li class="actived"><a href="/index.html">Inicio</a></li>
+                    <li class="actived"><a href="index.html">Inicio</a></li>
 
                     <li class="dropdown">
                         <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="position-relative">Servicios</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="/views/servicios/bodas.html">Bodas</a></li>
+                            <li><a class="dropdown-item active" href="bodas.html">Bodas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/eventos-empesariales.html">Eventos empresariales</a></li>
+                            <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/musica-restoran.html">Música restorán</a></li>
+                            <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/quinces.html">Quince años</a></li>
+                            <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/eventos-privados.html">Eventos privados</a></li>
+                            <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/servicios/clases-musica.html">Clases de música</a></li>
+                            <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
                         </ul>
                     </li>
 
@@ -55,23 +55,23 @@
                             <span class="position-relative">Artistas</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="/views/artistas/cantantes.html">Cantantes</a></li>
+                            <li><a class="dropdown-item active" href="cantantes.html">Cantantes</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/saxofonistas.html">Saxofonistas</a></li>
+                            <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/violinistas.html">Violinistas</a></li>
+                            <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/djs.html">Dj´s</a></li>
+                            <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/pianistas.html">Pianistas</a></li>
+                            <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/views/artistas/magos.html">Magos</a></li>
+                            <li><a class="dropdown-item" href="magos.html">Magos</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="/views/acerca-de/comentarios.html">Comentarios</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
 
-                    <li><a href="./views/acerca-de/nosotros.html">Nosotros</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                 </ul>
                 
                 <!-- Mobile menu -->
@@ -85,41 +85,69 @@
                     <div class="nav__mobile-bg bg-gold-hard"></div>
                 
                     <nav class="nav__mobile-group-items" role="navigation">
-                        <a href="/index.html">
-                            <img src="/asset/image/logo/golden-artists-white-hrz.png" width="215" class="ms-3">
+                        <a href="index.html">
+                            <img src="asset/image/logo/golden-artists-white-hrz.png" width="215" class="ms-3">
                         </a>
                         
                         <ul class="nav__mobile-items">
                             <li class="actived p-2">
-                                <a href="/index.html" class="nav__mobile-items-link">
+                                <a href="index.html" class="nav__mobile-items-link">
                                     <i class="material-symbols-outlined">home</i>
                                     <span class="h5">&nbsp;Inicio</span>
                                 </a>
                             </li>
 
-                            <li class="p-2">
-                                <a href="service.html" class="nav__mobile-items-link">
+                            <li class="dropdown p-2">
+                                <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none"  
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="material-symbols-outlined">cases</i>
-                                    <span class="h5">&nbsp;Servicios</span>
+                                    <span class="position-relative">Servicios</span>
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="bodas.html">Bodas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
+                                </ul>
                             </li>
 
-                            <li class="p-2">
-                                <a href="artist.html" class="nav__mobile-items-link">
+                            <li class="dropdown p-2">
+                                <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none" 
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="material-symbols-outlined">switch_account</i>
-                                    <span class="h5">&nbsp;Artistas</span>
+                                    <span class="position-relative">Artistas</span>
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="cantantes.html">Cantantes</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="magos.html">Magos</a></li>
+                                </ul>
                             </li>
 
                             <li class="p-2">
-                                <a href="./views/acerca-de/comentarios.html" class="nav__mobile-items-link">
+                                <a href="comentarios.html" class="nav__mobile-items-link">
                                     <i class="material-symbols-outlined">gallery_thumbnail</i>
                                     <span class="h5">&nbsp;Comentarios</span>
                                 </a>
                             </li>
 
                             <li class="p-2">
-                                <a href="./views/acerca-de/nosotros.html" class="nav__mobile-items-link">
+                                <a href="nosotros.html" class="nav__mobile-items-link">
                                     <i class="material-symbols-outlined">group</i>
                                     <span class="h5">&nbsp;Nosotros</span>
                                 </a>
@@ -136,15 +164,15 @@
             <div class="swiper mySwiperBanner h-100">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide position-relative">
-                        <img src="/asset/image-temp/backgrounds/banners/banner-001.jpg" class="img__banner-top-swiper">
+                        <img src="asset/image-temp/backgrounds/banners/banner-001.jpg" class="img__banner-top-swiper">
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="/asset/image-temp/backgrounds/banners/banner-002.jpg" class="img__banner-top-swiper">
+                        <img src="asset/image-temp/backgrounds/banners/banner-002.jpg" class="img__banner-top-swiper">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="/asset/image-temp/backgrounds/banners/banner-003.jpg" class="img__banner-top-swiper">
+                        <img src="asset/image-temp/backgrounds/banners/banner-003.jpg" class="img__banner-top-swiper">
                     </div>
                 </div>
 
@@ -156,7 +184,7 @@
 
             <!-- Services -->   
             <div class="bg-black bg-opacity-50 position-relative">  
-                <img src="/asset/image-temp/backgrounds/full-page/img-saxo-001.avif"
+                <img src="asset/image-temp/backgrounds/full-page/img-saxo-001.avif"
                 class="img__bg-posisioned golden__filt-sepia-1">
 
                 <div class="container-fluid py-5">
@@ -174,12 +202,12 @@
                                     <div class="animation__curtain-card  mx-auto theme__gradiente-gold-2-145deg">
                                         <div class="animation__curtain">
                                             <div class="animation__curtain-img">
-                                                <img src="/asset/image-temp/services/bodas/boda-001.jpg" alt="">
+                                                <img src="asset/image-temp/services/bodas/boda-001.jpg" alt="">
                                             </div>
 
                                             <div class="animation__curtain-text">
                                                 <div class="animation__curtain-inner">
-                                                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +216,7 @@
                                             <h5 class="text-center">Bodas</h5>
                                             <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
                                             <div class="d-flex mt-3">
-                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="/views/servicios/bodas.html">Ver más</a>
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="bodas.html">Ver más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -198,11 +226,11 @@
                                     <div class="animation__curtain-card  mx-auto theme__gradiente-gold-2-145deg">
                                         <div class="animation__curtain">
                                             <div class="animation__curtain-img">
-                                                <img src="/asset/image-temp/services/event-empresa/event-emp-001.jpg" alt="">
+                                                <img src="asset/image-temp/services/event-empresa/event-emp-001.jpg" alt="">
                                             </div>
                                             <div class="animation__curtain-text">
                                                 <div class="animation__curtain-inner">
-                                                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -211,7 +239,7 @@
                                             <h5 class="text-center">Eventos Empresariales</h5>
                                             <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
                                             <div class="d-flex mt-3">
-                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="/views/servicios/eventos-empesariales.html">Ver más</a>
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="eventos-empesariales.html">Ver más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -221,11 +249,11 @@
                                     <div class="animation__curtain-card  mx-auto theme__gradiente-gold-2-145deg">
                                         <div class="animation__curtain">
                                             <div class="animation__curtain-img">
-                                                <img src="/asset/image-temp/services/music/restoran-musica-001.jpg" alt="">
+                                                <img src="asset/image-temp/services/music/restoran-musica-001.jpg" alt="">
                                             </div>
                                             <div class="animation__curtain-text">
                                                 <div class="animation__curtain-inner">
-                                                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -234,7 +262,7 @@
                                             <h5 class="text-center">Música Restorán</h5>
                                             <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
                                             <div class="d-flex mt-3">
-                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="/views/servicios/musica-restoran.html">Ver más</a>
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="musica-restoran.html">Ver más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -244,11 +272,11 @@
                                     <div class="animation__curtain-card  mx-auto theme__gradiente-gold-2-145deg">
                                         <div class="animation__curtain">
                                             <div class="animation__curtain-img">
-                                                <img src="/asset/image-temp/services/quinces/quince-001.jpg" alt="">
+                                                <img src="asset/image-temp/services/quinces/quince-001.jpg" alt="">
                                             </div>
                                             <div class="animation__curtain-text">
                                                 <div class="animation__curtain-inner">
-                                                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -257,7 +285,7 @@
                                             <h5 class="text-center">Quince Años</h5>
                                             <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
                                             <div class="d-flex mt-3">
-                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="/views/servicios/quinces.html">Ver más</a>
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="quinces.html">Ver más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -267,11 +295,11 @@
                                     <div class="animation__curtain-card  mx-auto theme__gradiente-gold-2-145deg">
                                         <div class="animation__curtain">
                                             <div class="animation__curtain-img">
-                                                <img src="/asset/image-temp/services/event-privados/event-privado-001.jpeg" alt="">
+                                                <img src="asset/image-temp/services/event-privados/event-privado-001.jpeg" alt="">
                                             </div>
                                             <div class="animation__curtain-text">
                                                 <div class="animation__curtain-inner">
-                                                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -280,7 +308,7 @@
                                             <h5 class="text-center">Eventos Privados</h5>
                                             <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
                                             <div class="d-flex mt-3">
-                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="/views/servicios/eventos-privados.html">Ver más</a>
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="eventos-privados.html">Ver más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -290,11 +318,11 @@
                                     <div class="animation__curtain-card  mx-auto theme__gradiente-gold-2-145deg">
                                         <div class="animation__curtain">
                                             <div class="animation__curtain-img">
-                                                <img src="/asset/image-temp/services/music/clase-musica-001.avif" alt="">
+                                                <img src="asset/image-temp/services/music/clase-musica-001.avif" alt="">
                                             </div>
                                             <div class="animation__curtain-text">
                                                 <div class="animation__curtain-inner">
-                                                    <img src="/asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
+                                                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="250" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -303,7 +331,7 @@
                                             <h5 class="text-center">Clases de Música</h5>
                                             <p class="lh-sm m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt.</p>
                                             <div class="d-flex mt-3">
-                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="/views/servicios/clases-musica.html">Ver más</a>
+                                                <a class="btn btn-outline-gold-thin w-75 mx-auto" href="clases-musica.html">Ver más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -405,7 +433,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">            
                                         <div class="card__reflect-below">
-                                            <img src="/asset/image-temp/artistas/genero/cantante-001.webp" alt="" class="w-100 h-100 img__fit-cover">
+                                            <img src="asset/image-temp/artistas/genero/cantante-001.webp" alt="" class="w-100 h-100 img__fit-cover">
                             
                                             <div class="car-body">
                                                 <h2>Cantantes</h2>
@@ -413,14 +441,14 @@
                                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
                                                     voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
                                                 </h5>
-                                                <a class="btn btn-primary" href="/views/artistas/cantantes.html">Ver más</a>
+                                                <a class="btn btn-primary" href="cantantes.html">Ver más</a>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">            
                                         <div class="card__reflect-below">
-                                        <img src="/asset/image-temp/artistas/genero/saxofonista-001.jpg" alt="" class="img-fluid-cover">
+                                        <img src="asset/image-temp/artistas/genero/saxofonista-001.jpg" alt="" class="img-fluid-cover">
                         
                                         <div class="car-body">
                                             <h2>Saxofonistas</h2>
@@ -428,14 +456,14 @@
                                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
                                                 voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
                                             </h5>
-                                            <a class="btn btn-primary" href="/views/artistas/saxofonistas.html">Ver más</a>
+                                            <a class="btn btn-primary" href="saxofonistas.html">Ver más</a>
                                         </div>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">            
                                         <div class="card__reflect-below">
-                                        <img src="/asset/image-temp/artistas/genero/violinista-001.jpg" alt="" class="img-fluid-cover">
+                                        <img src="asset/image-temp/artistas/genero/violinista-001.jpg" alt="" class="img-fluid-cover">
                         
                                         <div class="car-body">
                                             <h2>Violinistas</h2>
@@ -443,14 +471,14 @@
                                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
                                                 voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
                                             </h5>
-                                            <a class="btn btn-primary" href="/views/artistas/violinistas.html">Ver más</a>
+                                            <a class="btn btn-primary" href="violinistas.html">Ver más</a>
                                         </div>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">            
                                         <div class="card__reflect-below">
-                                        <img src="/asset/image-temp/artistas/genero/dj-001.webp" alt="" class="img-fluid-cover">
+                                        <img src="asset/image-temp/artistas/genero/dj-001.webp" alt="" class="img-fluid-cover">
                         
                                         <div class="car-body">
                                             <h2>Dj's</h2>
@@ -458,14 +486,14 @@
                                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
                                                 voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
                                             </h5>
-                                            <a class="btn btn-primary" href="/views/artistas/djs.html">Ver más</a>
+                                            <a class="btn btn-primary" href="djs.html">Ver más</a>
                                         </div>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">            
                                         <div class="card__reflect-below">
-                                        <img src="./asset/image-temp/artistas/genero/pianista-001.jpg" alt="" class="img-fluid-cover">
+                                        <img src="asset/image-temp/artistas/genero/pianista-001.jpg" alt="" class="img-fluid-cover">
                         
                                         <div class="car-body">
                                             <h2>Pianistas</h2>
@@ -473,14 +501,14 @@
                                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
                                                 voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
                                             </h5>
-                                            <a class="btn btn-primary" href="/views/artistas/pianistas.html">Ver más</a>
+                                            <a class="btn btn-primary" href="pianistas.html">Ver más</a>
                                         </div>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">            
                                         <div class="card__reflect-below">
-                                        <img src="/asset/image-temp/artistas/genero/magos-001.jpg" alt="" 
+                                        <img src="asset/image-temp/artistas/genero/magos-001.jpg" alt="" 
                                         class="img-fluid-cover">
                         
                                         <div class="car-body">
@@ -489,7 +517,7 @@
                                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa 
                                                 voluptatum quaerat labore, magnam illo. Ea eligendi cum corrupti minima?
                                             </h5>
-                                            <a class="btn btn-primary" href="/views/artistas/magos.html">Ver más</a>
+                                            <a class="btn btn-primary" href="magos.html">Ver más</a>
                                         </div>
                                         </div>
                                     </div>
@@ -520,7 +548,7 @@
                         <div class="g__box-1" data-aos="fade-right">
                             <div class="card__zoom-curtain">
                                 <div class="img__logo-golden">    
-                                    <img src="/asset/image/logo/golden-artist-black-vert.png" alt="">
+                                    <img src="asset/image/logo/golden-artist-black-vert.png" alt="">
                                 </div>
 
                                 <div class="img__curtain-zoom"></div>
@@ -530,7 +558,7 @@
                                     <h6> Misión</h6>
                                     <h5>Crisp Spanish tortilla Matzo brei</h5>
                                     <div class="flex-box-center mt-4">
-                                        <a href="./views/acerca-de/nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                                        <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
                                     </div>
                                 </div>
                             </div>
@@ -539,7 +567,7 @@
                         <div class="g__box-2" data-aos="fade-up">
                             <div class="card__zoom-curtain">
                                 <div class="img__logo-golden">
-                                    <img src="/asset/image/logo/golden-artist-black-vert.png" alt="">
+                                    <img src="asset/image/logo/golden-artist-black-vert.png" alt="">
                                 </div>
 
                                 <div class="img__curtain-zoom"></div>
@@ -549,7 +577,7 @@
                                     <h6> Visión</h6>
                                     <h5>Crisp Spanish tortilla Matzo brei</h5>
                                     <div class="flex-box-center mt-4">
-                                        <a href="./views/acerca-de/nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                                        <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
                                     </div>
                                 </div>
                             </div>
@@ -558,7 +586,7 @@
                         <div class="g__box-3" data-aos="fade-left">
                             <div class="card__zoom-curtain">
                                 <div class="img__logo-golden">
-                                    <img src="/asset/image/logo/golden-artist-black-vert.png" alt="">
+                                    <img src="asset/image/logo/golden-artist-black-vert.png" alt="">
                                 </div>
 
                                 <div class="img__curtain-zoom"></div>
@@ -568,7 +596,7 @@
                                     <h6> Contactanos</h6>
                                     <h5>Crisp Spanish tortilla Matzo brei</h5>
                                     <div class="flex-box-center mt-4">
-                                        <a href="./views/acerca-de/nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
+                                        <a href="nosotros.html" class="btn btn-outline-primary w-75">Más información</a>
                                     </div>
                                 </div>
                             </div>
@@ -586,27 +614,27 @@
                     <div class="swiper swiper-clients">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide text-center">
-                                <img src="/asset/image-temp/clientes/cliente-001.png" 
+                                <img src="asset/image-temp/clientes/cliente-001.png" 
                                 width="150px" height="100px" class="img__fit-contain">
                             </div>
                             <div class="swiper-slide text-center">
-                                <img src="/asset/image-temp/clientes/cliente-002.jpeg" 
+                                <img src="asset/image-temp/clientes/cliente-002.jpeg" 
                                 width="150px" height="100px" class="img__fit-contain">
                             </div>
                             <div class="swiper-slide text-center">
-                                <img src="/asset/image-temp/clientes/cliente-003.jpg" 
+                                <img src="asset/image-temp/clientes/cliente-003.jpg" 
                                 width="150px" height="100px" class="img__fit-contain">
                             </div>
                             <div class="swiper-slide text-center">
-                                <img src="/asset/image-temp/clientes/cliente-004.jpg" 
+                                <img src="asset/image-temp/clientes/cliente-004.jpg" 
                                 width="150px" height="100px" class="img__fit-contain">
                             </div>
                             <div class="swiper-slide text-center">
-                                <img src="/asset/image-temp/clientes/cliente-005.jpg" 
+                                <img src="asset/image-temp/clientes/cliente-005.jpg" 
                                 width="150px" height="100px" class="img__fit-contain">
                             </div>
                             <div class="swiper-slide text-center">
-                                <img src="/asset/image-temp/clientes/cliente-006.png" 
+                                <img src="asset/image-temp/clientes/cliente-006.png" 
                                 width="150px" height="100px" class="img__fit-contain">
                             </div>
                         </div>
@@ -629,7 +657,7 @@
         
         <!-- btn whatsapp -->
         <a href="" target="_blank">
-            <img class="btn__float-whp" src="/asset/image/iconos/whatsapp-white.png" alt="">
+            <img class="btn__float-whp" src="asset/image/iconos/whatsapp-white.png" alt="">
         </a>
 
         <!-- Footer OK  -->
@@ -639,8 +667,8 @@
               <div class="col-12 col-lg-5">
                 <div class="row">
                   <div class="col-12 d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
-                    <a href="/index.html">
-                      <img src="/asset/image/logo/golden-artist-golden-hrz.png" 
+                    <a href="index.html">
+                      <img src="asset/image/logo/golden-artist-golden-hrz.png" 
                       height="150">
                     </a>
                     <h6 class="text-white">administrativo@goldenartist.co</h6>
@@ -658,8 +686,12 @@
                     <div>
                       <h5 class="mb-3">Acerca de Golden Artists</h5>
       
-                      <h6>&#8226; &nbsp; ¿Quiénes somos?</h6>
-                      <h6>&#8226; &nbsp; Comentarios</h6>
+                      <a class="text-white text-decoration-none" href="nosotros.html">
+                        <h6>&#8226; &nbsp;  ¿Quiénes somos?</h6>
+                      </a>
+                      <a class="text-white text-decoration-none" href="comentarios.html">
+                        <h6>&#8226; &nbsp;  Comentarios</h6>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -704,16 +736,16 @@
         <div>
             <div class="row mx-0 text-white">
                 <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
-                    <img src="./asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                    <img src="asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
-                    <img src="./asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                    <img src="asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
-                    <img src="./asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
+                    <img src="asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
-                    <img src="./asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                    <img src="asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
                 </div>
             </div>
         </div>
@@ -725,8 +757,8 @@
         <!-- AOS Animation -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Files.js -->
-        <script src="./resources/js/slider.js"></script>
-        <script src="./resources/js/function.js"></script>
+        <script src="resources/js/slider.js"></script>
+        <script src="resources/js/function.js"></script>
         
         <!-- Skills progress circle dynamic -->
         <script>
