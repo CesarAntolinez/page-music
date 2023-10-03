@@ -36,12 +36,13 @@
 		gap: 24px;
 		height: inherit;
 		align-items: center;
-		.actived a { 
+		.actived .nav__line-down  { 
 			color: var(--gold-thin);
 			border-bottom: 1px solid var(--gold-thin);
 		}
 	}
 }
+
 .nav__golden li >a { 
 	font-size: 24px;
 	text-decoration: none; 
