@@ -1,7 +1,7 @@
 // Swiper Banners Home
 var swiper = new Swiper(".mySwiperBanner", {
     effect: "fade",
-    loop: true,
+    loop: false,
     // autoplay: {
     //     delay: 3000,
     //     disableOnInteraction: true,
@@ -16,6 +16,34 @@ var swiper = new Swiper(".mySwiperBanner", {
         prevEl: ".swiper-button-prev",
     },
     slidesPerView: 1,
+    on: {
+        init: function(){
+            const videos = document.querySelectorAll('video');
+            const activeIndex = this.realIndex;
+            const activeSlide = document.getElementsByClassName('swiper-slide')[activeIndex];
+            const activeVideo = activeSlide.getElementsByTagName('video')[0];
+            activeVideo.muted = true;
+            Array.prototype.forEach.call(videos, function(video){
+                video.pause();
+                video.currentTime = 0;
+
+            })
+            activeVideo.play();
+        },
+        slideChange: function(){
+            const videos = document.querySelectorAll('video');
+            const activeIndex = this.realIndex;
+            const activeSlide = document.getElementsByClassName('swiper-slide')[activeIndex];
+            const activeVideo = activeSlide.getElementsByTagName('video')[0];
+            activeVideo.muted = true;
+            Array.prototype.forEach.call(videos, function(video){
+                video.pause();
+                video.currentTime = 0;
+
+            })
+            activeVideo.play();
+        },
+    }
 });
 
 // Swiper Services
