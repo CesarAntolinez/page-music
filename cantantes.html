@@ -21,89 +21,38 @@
     </head>
 
     <body>
-       <!-- Header -->
-       <div class="header-g-a">
-        <nav class="nav__header">
-          <a href="/index.html">
-            <img src="asset/image/logo/golden-artist-golden-hrz.png" width="215">
-          </a>
+      <!-- Header -->
+      <nav class="nav__header">
+          <div class="d-flex">
+              <a href="/index.html">
+                  <img src="asset/image/logo/golden-artist-golden-hrz.png" width="175">
+              </a>
+
+              <div class="d-none d-lg-flex align-items-center ms-3">
+                  <div class="px-2">
+                      <img src="asset/image/iconos/facebook-white.png" style="width: 24px; height: 24px;">
+                  </div>
+                  <div class="px-2">
+                      <img src="asset/image/iconos/whatsapp-white.png" style="width: 24px; height: 24px;">
+                  </div>
+                  <div class="px-2">
+                      <img src="asset/image/iconos/instagram-white.png" style="width:24px; height: 24px;">
+                  </div>
+                  <div class="px-2">
+                      <img src="asset/image/iconos/tiktok_logo.png" style="width: 27px; height: 27px;">
+                  </div>
+              </div>
+          </div>
+
           <!-- Desktop menu -->
           <ul class="nav__golden d-none d-lg-flex">
-            <li><a href="index.html">Inicio</a></li>
-  
-            <li class="dropdown">
-                <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="position-relative">Servicios</span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
-                </ul>
-            </li>
-  
-            <li class="dropdown actived">
-              <a class="dropdown-toggle nav__arrow-down nav__line-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="position-relative">Artistas</span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item active" href="cantantes.html">Cantantes</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="fotografos.html">Fotógrafos</a></li>
-              </ul>
-            </li>
-  
-            <li><a href="comentarios.html">Comentarios</a></li>
-  
-            <li><a href="nosotros.html">Nosotros</a></li>
-          </ul>
-          
-          <!-- Mobile menu -->
-          <div class="navigation d-flex d-lg-none position-relative">
-            <input id="nav__mobile-check" type="checkbox">
-  
-            <label class="bg-white nav__mobile-btn" for="nav__mobile-check">
-              <span class="nav__mobile-btn-icon" aria-label="toggle navigation menu"></span>
-            </label>
-  
-            <div class="nav__mobile-bg bg-gold-hard"></div>
-          
-              <nav class="nav__mobile-group-items" role="navigation">
-                <a href="index.html">
-                  <img src="asset/image/logo/golden-artists-white-hrz.png" width="215" class="ms-3">
-                </a>
-                  
-                <ul class="nav__mobile-items">
-                  <li class="p-2">
-                    <a href="index.html" class="nav__mobile-items-link">
-                      <i class="material-symbols-outlined">home</i>
-                      <span class="h5">&nbsp;Inicio</span>
-                    </a>
-                  </li>
-  
-                  <li class="dropdown p-2">
-                    <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none"  
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="material-symbols-outlined">cases</i>
+              <li class="actived"><a class="nav__line-down" href="index.html">Inicio</a></li>
+
+              <li class="dropdown">
+                  <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="position-relative">Servicios</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
                       <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
@@ -115,19 +64,17 @@
                       <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
-                    </ul>
-                  </li>
-  
-                  <li class="dropdown actived p-2">
-                    <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link nav__line-down text-white text-decoration-none" 
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="material-symbols-outlined">switch_account</i>
+                  </ul>
+              </li>
+
+              <li class="dropdown">
+                  <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="position-relative">Artistas</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
                       <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item active" href="cantantes.html">Cantantes</a></li>
+                      <li><a class="dropdown-item" href="cantantes.html">Cantantes</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
                       <li><hr class="dropdown-divider"></li>
@@ -136,30 +83,99 @@
                       <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="fotografos.html">Fotógrafos</a></li>
-                    </ul>
-                  </li>
-  
-                  <li class="p-2">
-                    <a href="comentarios.html" class="nav__mobile-items-link">
-                      <i class="material-symbols-outlined">gallery_thumbnail</i>
-                      <span class="h5">&nbsp;Comentarios</span>
-                    </a>
-                  </li>
-  
-                  <li class="p-2">
-                    <a href="nosotros.html" class="nav__mobile-items-link">
-                      <i class="material-symbols-outlined">group</i>
-                      <span class="h5">&nbsp;Nosotros</span>
-                    </a>
-                  </li>
-                </ul>
+                  </ul>
+              </li>
+
+              <li><a href="comentarios.html">Comentarios</a></li>
+
+              <li><a href="nosotros.html">Contacto</a></li>
+          </ul>
+          
+          <!-- Mobile menu -->
+          <div class="navigation d-flex d-lg-none position-relative">
+              <input id="nav__mobile-check" type="checkbox">
+
+              <label class="bg-white nav__mobile-btn" for="nav__mobile-check">
+                  <span class="nav__mobile-btn-icon" aria-label="toggle navigation menu"></span>
+              </label>
+
+              <div class="nav__mobile-bg bg-gold-hard"></div>
+          
+              <nav class="nav__mobile-group-items" role="navigation">
+                  <a href="index.html">
+                      <img src="asset/image/logo/golden-artists-white-hrz.png" width="215" class="ms-3">
+                  </a>
+                  
+                  <ul class="nav__mobile-items">
+                      <li class="actived p-2">
+                          <a href="index.html" class="nav__mobile-items-link nav__line-down">
+                              <i class="material-symbols-outlined">home</i>
+                              <span class="h5">&nbsp;Inicio</span>
+                          </a>
+                      </li>
+
+                      <li class="dropdown p-2">
+                          <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none"  
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="material-symbols-outlined">cases</i>
+                              <span class="position-relative">Servicios</span>
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="dropdown p-2">
+                          <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none" 
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="material-symbols-outlined">switch_account</i>
+                              <span class="position-relative">Artistas</span>
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="cantantes.html">Cantantes</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="fotografos.html">Fotógrafos</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="p-2">
+                          <a href="comentarios.html" class="nav__mobile-items-link">
+                              <i class="material-symbols-outlined">gallery_thumbnail</i>
+                              <span class="h5">&nbsp;Comentarios</span>
+                          </a>
+                      </li>
+
+                      <li class="p-2">
+                          <a href="nosotros.html" class="nav__mobile-items-link">
+                              <i class="material-symbols-outlined">group</i>
+                              <span class="h5">&nbsp;Nosotros</span>
+                          </a>
+                      </li>
+                  </ul>
               </nav>
           </div>
-        </nav>
-      </div>
+      </nav>
 
-        <!-- Content -->
-        <div class="golden__mt-120">
+      <!-- Content -->
+      <div class="golden__mt-120">
 			<div class="position-relative">
 				<img src="asset/image-temp/backgrounds/full-page/img-sing-001.webp" class="img__bg-posisioned theme__filter-opacity8">
 
@@ -397,94 +413,72 @@
             <img class="btn__float-whp" src="asset/image/iconos/whatsapp-white.png" alt="">
         </a>
 
-        <!-- Footer OK  -->
-        <div class="bg-black mt-auto px-2">
-          <div class="container container-fluid-xxl">
-            <div class="row d-flex justify-content-around align-items-center py-5">
-              <div class="col-12 col-lg-5">
-                <div class="row">
-                  <div class="col-12 d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
-                    <a href="index.html">
-                      <img src="asset/image/logo/golden-artist-golden-hrz.png" 
-                      height="150">
-                    </a>
-                    <h6 class="text-white">administrativo@goldenartist.co</h6>
-                  </div>
-      
-                  <div class="col-12 col-sm-6 col-lg-12 col-xxl-6 text-white d-flex justify-content-center align-items-center mb-5">
-                    <div>
-                      <h5 class="mb-3">Atención inmediata</h5>
-                      <h6>&#8226; &nbsp; Celular 319 650 3791</h6>
-                      <h6>&#8226; &nbsp; @GoldenArtistsCo</h6>
+        <!-- Footer -->
+        <div class="bg-black py-5">
+          <div class="container-fluid container-xxl">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-5 d-flex justify-content-center align-items-lg-center">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
+                            <a href="index.html">
+                            <img src="asset/image/logo/golden-artists-white-hrz.png" width="175">
+                            </a>
+                            <small class="text-white">administrativo@goldenartist.co</small>
+                        </div>
+            
+                        <div class="col-12 col-sm-6 text-white d-flex justify-content-center align-items-center mb-5">
+                            <div>
+                            <h6 class="">Atención inmediata</h6>
+                            <small class="d-block">&#8226; &nbsp; Celular 319 650 3791</small>
+                            <small class="d-block">&#8226; &nbsp; @GoldenArtistsCo</small>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-6 text-white d-flex justify-content-center mb-5">
+                            <div>
+                            <h6 class="">Acerca de Golden Artists</h6>
+                            <a class="text-white text-decoration-none" href="nosotros.html">
+                                <small class="d-block">&#8226; &nbsp;  ¿Quiénes somos?</small>
+                            </a>
+                            <a class="text-white text-decoration-none" href="comentarios.html">
+                                <small class="d-block">&#8226; &nbsp;  Comentarios</small>
+                            </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                
-                  <div class="col-12 col-sm-6 col-lg-12 col-xxl-6 text-white d-flex justify-content-center mb-5">
-                    <div>
-                      <h5 class="mb-3">Acerca de Golden Artists</h5>
-      
-                      <a class="text-white text-decoration-none" href="nosotros.html">
-                        <h6>&#8226; &nbsp;  ¿Quiénes somos?</h6>
-                      </a>
-                      <a class="text-white text-decoration-none" href="comentarios.html">
-                        <h6>&#8226; &nbsp;  Comentarios</h6>
-                      </a>
-                    </div>
-                  </div>
                 </div>
-              </div>
       
-              <div class="col-12 col-md-11 col-lg-6 bg-white bg-opacity-50 py-5 px-sm-5">
-                <div class="row">
-                  <div class="col-12 mb-4">
-                    <h2>Contactenos</h2>
-                  </div>
-      
-                  <div class="col-12">
-                    <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
-                      <label for="floatingPassword">Name</label>
+                <div class="col-12 col-sm-10 col-md-9 col-lg-6 col-xxl-7 m-auto">
+                    <h5 class="text-white text-center mb-4">Contactenos</h5>  
+                    <div class="row">  
+                        <div class="col-12 col-xxl-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
+                                <label for="floatingPassword">Name</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xxl-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                        </div>
+        
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>
+                        </div>
+        
+                        <div class="col-12 d-flex">
+                            <button class="btn btn-primary w-100 py-3" type="button">Button</button>
+                        </div>
                     </div>
-                  </div>
-      
-                  <div class="col-12">
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">Email address</label>
-                    </div>
-                  </div>
-      
-                  <div class="col-12">
-                    <div class="form-floating mb-3">
-                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                      <label for="floatingTextarea2">Comments</label>
-                    </div>
-                  </div>
-      
-                  <div class="col-12 d-flex">
-                    <button class="btn btn-primary w-100 py-3" type="button">Button</button>
-                  </div>
                 </div>
-              </div>
             </div>
           </div>
-        </div>
-        <!-- Redes sociales -->
-        <div>
-            <div class="row mx-0 text-white">
-                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
-                    <img src="asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-                </div>
-                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
-                    <img src="asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-                </div>
-                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
-                    <img src="asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
-                </div>
-                <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
-                    <img src="asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
-                </div>
-            </div>
         </div>
         
         <!-- Bootstrap 5.2 cdn -->

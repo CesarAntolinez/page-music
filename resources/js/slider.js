@@ -2,10 +2,10 @@
 var swiper = new Swiper(".mySwiperBanner", {
     effect: "fade",
     loop: false,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: true,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: true,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

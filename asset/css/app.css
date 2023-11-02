@@ -303,7 +303,7 @@
   grid-template-rows: auto;
   gap: 12px; }
 
-.mini-cards-us, .card-group-val .val-one, .card-group-val .val-two, .card-group-val .val-three, .card-group-val .val-four, .card-group-val .val-five, .card-group-val .val-six {
+.mini-cards-us, .card-group-val .val-one, .card-group-val .val-two, .card-group-val .val-three, .card-group-val .val-four, .card-group-val .val-five, .card-group-val .val-six, .card-group-val .val-seven, .card-group-val .val-height, .card-group-val .val-nine, .card-group-val .val-ten, .card-group-val .val-eleven, .card-group-val .val-twelve {
   width: 135px;
   padding: 24px 0;
   text-align: center;
@@ -329,8 +329,26 @@
 .card-group-val .val-six {
   grid-row: 3/4;
   grid-column: 2/3; }
+.card-group-val .val-seven {
+  grid-row: 5/6;
+  grid-column: 1/2; }
+.card-group-val .val-height {
+  grid-row: 5/6;
+  grid-column: 2/3; }
+.card-group-val .val-nine {
+  grid-row: 6/7;
+  grid-column: 1/2; }
+.card-group-val .val-ten {
+  grid-row: 6/7;
+  grid-column: 2/3; }
+.card-group-val .val-eleven {
+  grid-row: 7/8;
+  grid-column: 1/2; }
+.card-group-val .val-twelve {
+  grid-row: 7/8;
+  grid-column: 2/3; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .card-group-val .val-one {
     grid-row: 1/2;
     grid-column: 1/2; }
@@ -348,6 +366,24 @@
     grid-column: 2/3; }
   .card-group-val .val-six {
     grid-row: 2/3;
+    grid-column: 3/4; }
+  .card-group-val .val-seven {
+    grid-row: 3/4;
+    grid-column: 1/2; }
+  .card-group-val .val-height {
+    grid-row: 3/4;
+    grid-column: 2/3; }
+  .card-group-val .val-nine {
+    grid-row: 3/4;
+    grid-column: 3/4; }
+  .card-group-val .val-ten {
+    grid-row: 4/5;
+    grid-column: 1/2; }
+  .card-group-val .val-eleven {
+    grid-row: 4/5;
+    grid-column: 2/3; }
+  .card-group-val .val-twelve {
+    grid-row: 4/5;
     grid-column: 3/4; } }
 @media (min-width: 1200px) {
   .card__reflect-below {
@@ -376,7 +412,44 @@
       justify-content: center;
       transition: 1.3s; }
     .card__reflect-below:hover .car-body {
-      right: 0; } }
+      right: 0; }
+
+  .card-group-val .val-one {
+    grid-row: 1/2;
+    grid-column: 1/2; }
+  .card-group-val .val-two {
+    grid-row: 1/2;
+    grid-column: 2/3; }
+  .card-group-val .val-three {
+    grid-row: 1/2;
+    grid-column: 3/4; }
+  .card-group-val .val-four {
+    grid-row: 1/2;
+    grid-column: 4/5; }
+  .card-group-val .val-five {
+    grid-row: 2/3;
+    grid-column: 1/2; }
+  .card-group-val .val-six {
+    grid-row: 2/3;
+    grid-column: 2/3; }
+  .card-group-val .val-seven {
+    grid-row: 2/3;
+    grid-column: 3/4; }
+  .card-group-val .val-height {
+    grid-row: 2/3;
+    grid-column: 4/5; }
+  .card-group-val .val-nine {
+    grid-row: 3/4;
+    grid-column: 1/2; }
+  .card-group-val .val-ten {
+    grid-row: 3/4;
+    grid-column: 2/3; }
+  .card-group-val .val-eleven {
+    grid-row: 3/4;
+    grid-column: 3/4; }
+  .card-group-val .val-twelve {
+    grid-row: 3/4;
+    grid-column: 4/5; } }
 @media (min-width: 1920px) {
   .w-xxl-75 {
     width: 75%; } }
@@ -384,7 +457,7 @@
   margin-top: -45px !important; }
 
 .golden__mt-120 {
-  margin-top: 120px !important; }
+  margin-top: 99px !important; }
 
 .golden__mt-less-140 {
   margin-top: -140px; }
@@ -737,6 +810,9 @@
 .material-symbols-outlined.md-36 {
   font-size: 36px; }
 
+.material-symbols-outlined.md-40 {
+  font-size: 40px; }
+
 .material-symbols-outlined.md-48 {
   font-size: 48px; }
 
@@ -1044,7 +1120,7 @@ body {
       border-bottom: 1px solid var(--gold-thin); }
 
 .nav__golden li > a {
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   color: var(--gold-soft);
   cursor: pointer; }
@@ -1060,8 +1136,8 @@ body {
   border-right: 2px solid !important;
   border-bottom: 2px solid !important;
   border-left: 0 solid !important;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   transform: translate(-50%, -50%);
   rotate: 45deg;
   position: absolute;
@@ -1169,6 +1245,9 @@ body {
 
 .theme__gradiente-gold-2-90deg {
   background-image: linear-gradient(90deg, #fcf595, #9E7A46); }
+
+.theme__gradiente-gold-1-left {
+  background-image: linear-gradient(to left, #EBB467, #EBD1AE); }
 
 .theme__filter-gray5 {
   filter: grayscale(0.5); }
