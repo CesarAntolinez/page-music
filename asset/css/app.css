@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Playfair+Display&family=Quicksand&family=Roboto:wght@100;400;900&display=swap");
 .animation__curtain-card {
   box-shadow: 0px -2px 2px 0 rgba(0, 0, 0, 0.15), 1px 5px 5px 0 rgba(0, 0, 0, 0.2); }
 
@@ -477,6 +478,9 @@
   padding-bottom: 100px;
   padding-left: 8px !important; }
 
+.golden__h-text-card {
+  height: 100%; }
+
 .golden__w-275 {
   width: 275px; }
 
@@ -615,6 +619,9 @@
 
   .golden__squared-1-float {
     width: 75%; } }
+@media (min-width: 576px) {
+  .golden__h-sm-100 {
+    height: 100%; } }
 @media (min-width: 600px) {
   .golden__position-card-us {
     margin-top: -56px;
@@ -637,6 +644,9 @@
     width: 50%;
     left: -50px; } }
 @media (min-width: 992px) {
+  .golden__h-text-card {
+    height: calc(100% - 300px); }
+
   .golden__mt-card-vision {
     margin-top: -250px !important; }
 
@@ -1072,7 +1082,7 @@
   z-index: 1; }
 
 body {
-  font-family: "Buda" !important; }
+  font-family: "Quicksand" !important; }
 
 #body {
   height: 100vh;
@@ -1257,6 +1267,12 @@ body {
 
 .theme__filter-opacity9 {
   filter: opacity(0.9); }
+
+.font__charmonman {
+  font-family: "Charmonman"; }
+
+.font__roboto {
+  font-family: "Roboto" !important; }
 
 .swiper-services .swiper-btn {
   color: var(--gold-hard);
