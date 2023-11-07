@@ -13,7 +13,8 @@
     padding-bottom: 100px;
     padding-left: 8px !important;
 }
-
+// Height
+.golden__h-text-card { height: 100% }
 // Width
 .golden__w-275 { width: 275px }
 .golden__w-75- { width: 75% }
@@ -138,6 +139,11 @@
     .golden__squared-1-float {  width: 75% }
 }
 
+@media(min-width: 576px) {
+    // Height
+    .golden__h-sm-100 { height: 100% }
+}
+
 @media(min-width: 600px) {
     // Positions
     .golden__position-card-us {
@@ -166,6 +172,8 @@
 }
 
 @media(min-width: 992px) {
+    // Height
+    .golden__h-text-card { height: calc(100% - 300px) }
     // Margin
     .golden__mt-card-vision {
         margin-top: -250px !important;
