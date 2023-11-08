@@ -1,15 +1,47 @@
+// // Swipper Banner Top
+.mySwiperBanner > .swiper-button-next {
+    right: 65px;
+}
+.mySwiperBanner > .swiper-button-prev {
+    left: 65px;
+}
+.mySwiperBanner > .swiper-button-prev,
+.mySwiperBanner > .swiper-button-next {
+	background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, #f78f08 100%);
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    text-align: center;
+    line-height: 4;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after  {
+	color: #f7dab2;
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #AE9B81,
+		0 0 42px #AE9B81,
+		0 0 82px #9E7A46,
+		0 0 92px #9E7A46,
+		0 0 102px #666204,
+		0 0 151px #666204;
 
+}
 //***** Swipper Services *****
-.swiper-services .swiper-btn {
-	color: var(--gold-hard);
-	background-color: var(--gold-soft);
-    padding: 30px 24px;
-    opacity: .7;
-    border-radius: 4px;
-	.swiper-pagination {
-		position: absolute; 
-		bottom: 16px;
-	}
+.swiper-services > .swiper-button-prev,
+.swiper-services > .swiper-button-next {
+	background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 50%, rgba(206, 148, 67, 0.6) 66%, #EBD1AE 80%, #EBB467 85%);
+    box-shadow: 0px 0px 16px 14px black;
+	border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    text-align: center;
+    line-height: 4;
+}
+.swiper-services .swiper-pagination {
+	position: absolute; 
+	bottom: 16px;
 }
 .swiper-services .swiper-pagination-bullet {
 	background-image: linear-gradient(to left, #EBB467, #EBD1AE, #AE9B81);
