@@ -3,6 +3,7 @@
 
 .theme__gradiente-gold-1-145deg { background: linear-gradient(145deg, rgba(71, 56, 35, 0.9) 20%, rgba(119, 88, 44, 0.66) 50%, rgba(206, 148, 67, 0.66) 70%, rgba(247, 143, 8, 0.66) 90%) }
 .theme__gradiente-gold-2-145deg { background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%) }
+.theme__gradiente-gold-3-145deg { background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, #EBD1AE 43%, rgba(119, 88, 44, 0.1) 50%, rgba(206, 148, 67, 0.6) 66%, #EBD1AE 80%, #EBB467 85%) }
 .theme__gradiente-gold-2-45deg { background: linear-gradient(45deg, rgba(71, 56, 35, 0.9) 20%, rgba(119, 88, 44, 0.66) 50%, rgba(206, 148, 67, 0.66) 70%, rgba(250, 203, 143, 0.66) 90%) }
 .theme__gradiente-gold-3-45deg { background-image: linear-gradient(45deg, #22221cc2, #72480fd1) }
 
@@ -10,6 +11,21 @@
 .theme__gradiente-gold-2-90deg { background-image: linear-gradient(90deg, #fcf595, #9E7A46) }
 .theme__gradiente-gold-1-left { background-image: linear-gradient(to left, #EBB467, #EBD1AE) }
 
+.theme__radial-gradiente-gold-1 { background-image: radial-gradient(circle at 49.22% 50.45%, #ffea82 0, #eed077 25%, #d8b46c 50%, #c09a62 75%, #a98359 100%) }
+
+
+.theme__gold-neon {
+    color: #f7dab2;
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #AE9B81,
+    0 0 42px #AE9B81,
+    0 0 82px #9E7A46,
+    0 0 92px #9E7A46,
+    0 0 102px #666204,
+    0 0 151px #666204;
+}
 // Filters
 .theme__filter-gray5 { filter: grayscale(.5) }
 .theme__filter-opacity8 { filter: opacity(0.8) }
@@ -18,3 +34,4 @@
 
 .font__charmonman { font-family: 'Charmonman' }
 .font__roboto { font-family: 'Roboto' !important }
+.font__Outfit { font-family: 'Outfit' !important }

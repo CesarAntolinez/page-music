@@ -97,7 +97,7 @@
 .animation__btn-scroll-effect {
 	width: 0rem;
 	height: 0rem;
-	background-color: cadetblue;
+	background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, #f78f08 100%);
 	border-radius: 50%;
 	cursor: pointer;
 	position: absolute;
@@ -112,8 +112,8 @@
 	top: 48%;
 	left: 50%;
 	transform: translate(50%, 50%) scale(0);
-	color: #fff;
 	transition: .2s;
+	@extend .theme__gold-neon;
 }
 .animation__btn-scroll-top { z-index: 10 }
 .animation__btn-scroll-top .animation__btn-scroll-effect {
@@ -122,6 +122,7 @@
 	width:40px;
 	height:40px;
 	z-index: 11;
+	border: 2px solid #EBB467;
 }
 .animation__btn-scroll-top i { transform: translate(-50%, -50%) scale(1); }
 @keyframes popup {
