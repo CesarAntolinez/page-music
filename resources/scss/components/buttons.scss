@@ -4,7 +4,7 @@
 	height:40px;
 	display: block;
 	border-radius:50%;
-	box-shadow: 2px 2px 3px #999;
+	box-shadow: 2px 1px 3px 2px #EBB467;
 	position:fixed;
 	right:28px;
 	z-index: 100;
@@ -14,7 +14,6 @@
 .btn__float-whp {
 	@extend .btn__shape-rounded;
 	bottom:10px;
-	background-color: #25d366;
 	padding: 2px 0 0 2px;
 }
 // ***** Bottom scroll top
