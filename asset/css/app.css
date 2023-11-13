@@ -127,7 +127,9 @@
   transition: .2s; }
 
 .animation__btn-scroll-top {
-  z-index: 10; }
+  z-index: 10;
+  background-color: black;
+  border-radius: 50%; }
 
 .animation__btn-scroll-top .animation__btn-scroll-effect {
   position: absolute;
@@ -491,6 +493,9 @@
 
 .golden__fs-21 {
   font-size: 21px !important; }
+
+.golden__fs-15 {
+  font-size: 15px !important; }
 
 .golden__lh-05 {
   line-height: 0.5; }
@@ -1004,15 +1009,15 @@
   max-width: 100%; }
 
 .img__nosotros {
-  background-image: url("../image-temp/nosotros/nosotros-001.webp");
+  background-image: url("../image-temp/about-us/contacts/img-contact-c002.webp");
   border-radius: 0 !important;
   height: 500px !important; }
 
 .img__mision {
-  background-image: url("../image-temp/nosotros/nosotros-002.jpg"); }
+  background-image: url("../image-temp/about-us/contacts/img-contact-c003.jpg"); }
 
 .img__vision {
-  background-image: url("../image-temp/nosotros/nosotros-003.jpg"); }
+  background-image: url("../image-temp/about-us/contacts/img-contact-c004.jpg"); }
 
 @media (min-width: 600px) {
   .img__banner-top-swiper {
