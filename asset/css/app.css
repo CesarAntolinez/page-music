@@ -689,20 +689,20 @@
     grid-column: 1/4; }
     .grid__card-270px .g__box-1 .card__zoom-curtain .img__curtain-zoom,
     .grid__card-270px .g__box-1 .card__zoom-curtain .img__bg-zoom {
-      background-image: url("../image-temp/about-us/home/mission-us1.jpg"); }
+      background-image: url("../image-temp/about-us/home/contact-us3.jpg");
+      background-position: top; }
   .grid__card-270px .g__box-2 {
     grid-row: 2/3;
     grid-column: 1/4; }
     .grid__card-270px .g__box-2 .card__zoom-curtain .img__curtain-zoom,
     .grid__card-270px .g__box-2 .card__zoom-curtain .img__bg-zoom {
-      background-image: url("../image-temp/about-us/home/vision-us2.jpg"); }
+      background-image: url("../image-temp/about-us/home/mission-us1.jpg"); }
   .grid__card-270px .g__box-3 {
     grid-row: 3/4;
     grid-column: 1/4; }
     .grid__card-270px .g__box-3 .card__zoom-curtain .img__curtain-zoom,
     .grid__card-270px .g__box-3 .card__zoom-curtain .img__bg-zoom {
-      background-image: url("../image-temp/about-us/home/contact-us3.jpg");
-      background-position: top; }
+      background-image: url("../image-temp/about-us/home/vision-us2.jpg"); }
 
 .grid__request-button {
   display: grid;
