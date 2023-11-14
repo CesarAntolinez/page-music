@@ -10,7 +10,8 @@
         .card__zoom-curtain {
             .img__curtain-zoom, 
             .img__bg-zoom {
-                background-image: url('../image-temp/about-us/home/mission-us1.jpg')
+                background-image: url('../image-temp/about-us/home/contact-us3.jpg');
+                background-position: top;
             }
         }
 	}
@@ -20,7 +21,7 @@
         .card__zoom-curtain {
             .img__curtain-zoom, 
             .img__bg-zoom {
-                background-image: url('../image-temp/about-us/home/vision-us2.jpg')
+                background-image: url('../image-temp/about-us/home/mission-us1.jpg')
             }
         }
 	}
@@ -30,8 +31,7 @@
         .card__zoom-curtain {
             .img__curtain-zoom, 
             .img__bg-zoom {
-                background-image: url('../image-temp/about-us/home/contact-us3.jpg');
-                background-position: top;
+                background-image: url('../image-temp/about-us/home/vision-us2.jpg')
             }
         }
 	}

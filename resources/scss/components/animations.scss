@@ -115,7 +115,7 @@
 	transition: .2s;
 	@extend .theme__gold-neon;
 }
-.animation__btn-scroll-top { z-index: 10 }
+.animation__btn-scroll-top { z-index: 10; background-color: black; border-radius: 50%; }
 .animation__btn-scroll-top .animation__btn-scroll-effect {
 	position: absolute;
 	animation: popup .3s ease-in-out;
