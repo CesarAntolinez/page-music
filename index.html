@@ -830,7 +830,7 @@
                 </div>
         
                 <div class="col-12 col-sm-10 col-md-9 col-lg-6 col-xxl-7 m-auto">
-                    <h5 class="font__roboto fw-bold text-gold-thin text-center mb-4">Contáctenos</h5>  
+                    <h4 class="font__roboto fw-bold text-gold-thin text-center mb-4">Contáctenos</h4>  
                     <div class="row">  
                         <div class="col-12 col-xxl-6">
                             <div class="form-floating mb-3">
@@ -854,7 +854,9 @@
                         </div>
         
                         <div class="col-12 d-flex">
-                            <button class="btn btn-primary w-100 py-3" type="button">Button</button>
+                            <button class="btn btn-gold-thin w-100 py-3" type="button">
+                                <span class="font__roboto fw-bold text-gold-hard h5 mb-0">Enviar</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -879,7 +881,7 @@
             const progContainer = document.querySelector('.skills__golden'); 
             let bole = false;
             window.addEventListener("scroll", function (){
-                if (pageYOffset > progContainer.offsetTop - 800 && bole === false) {
+                if (pageYOffset > progContainer.offsetTop - (-450) && bole === false) {
                     for(let i = 0; i < progText.length; i++) {
                         progText[i].innerText = 0;
                         count = 0;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Playfair+Display&family=Roboto:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 .animation__curtain-card {
   box-shadow: 0px -2px 2px 0 rgba(0, 0, 0, 0.15), 1px 5px 5px 0 rgba(0, 0, 0, 0.2); }
 
@@ -1228,8 +1228,8 @@ body {
 .font__roboto {
   font-family: "Roboto" !important; }
 
-.font__Outfit {
-  font-family: "Outfit" !important; }
+.font__dancing {
+  font-family: "Dancing Script" !important; }
 
 .mySwiperBanner > .swiper-button-next {
   right: 65px; }
