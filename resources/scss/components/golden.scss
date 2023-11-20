@@ -1,3 +1,21 @@
+// Comments cards
+.golden__box-comment {
+    min-height: 150px;
+    max-height: 530px;
+    overflow-y: auto;
+}
+.comment__box {
+    position: relative;
+    padding-left: 30px !important;
+    .comment__text{ border-left: 3px solid #EBB467 }
+}
+.morecontent span {
+    display: none;
+}
+.morelink {
+    font-weight: bold;
+    color: #EBB467;
+}
 // Margins
 .golden__mt-less-45 { margin-top: -45px !important } 
 .golden__mt-120 { margin-top: 96px !important } 

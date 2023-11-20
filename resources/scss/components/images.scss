@@ -65,6 +65,31 @@
     object-fit: cover;
 }
 
+// ***** Images - Comments *****
+@mixin imgContainer($width, $height, $bg-color: #FFFFFF, $radius: 4px) {
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    @if $radius != 4 {
+        border-radius: $radius;
+    }
+}
+@mixin imgObject($type: contain, $position: center){
+    width: 100%;
+    height: 100%;
+    object-fit: $type;
+    object-position: $position;
+    border-radius: inherit;       
+}
+
+.img__rounded-small {
+    @include imgContainer(60px, 60px, #FFFFFF, 50% );
+    img {
+        @include imgObject(cover);
+    }
+}
+// ***** End Images - Comments *****
+
 .img__max-w-500 { max-width: 100%; }
 
 // Backgrounds images
