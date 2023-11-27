@@ -663,7 +663,7 @@
                     </div> 
 
                     <div class="grid__card-270px mt-5 py-4">
-                        <div class="g__box-1" data-aos="fade-right">
+                        <div class="g__box-1 h-100" data-aos="fade-right">
                             <div class="card__zoom-curtain">
                                 <div class="img__logo-golden">
                                     <img src="asset/image/logo/golden-artist-black-vert.png" alt="">
@@ -685,7 +685,7 @@
                             </div>
                         </div>
 
-                        <div class="g__box-2" data-aos="fade-up">
+                        <div class="g__box-2 h-100" data-aos="fade-up">
                             <div class="card__zoom-curtain">
                                 <div class="img__logo-golden">    
                                     <img src="asset/image/logo/golden-artist-black-vert.png" alt="">
@@ -695,8 +695,8 @@
                                 <div class="img__bg-zoom"></div>
                             
                                 <div class="card-body">
-                                    <h5> Misión</h5>
-                                    <h6>Crisp Spanish tortilla Matzo brei</h6>
+                                    <h5 class="fw-bold"> Misión</h5>
+                                    <h6>Conoce la misión de Golden Artists. </h6>
                                 
                                     <div class="d-flex justify-content-center pt-2">
                                         <a class="btn w-75 fw-bold font__roboto theme__radial-gradiente-gold-1 text-gold-hard" 
@@ -707,7 +707,7 @@
                             </div>
                         </div>
 
-                        <div class="g__box-3" data-aos="fade-left">
+                        <div class="g__box-3 h-100" data-aos="fade-left">
                             <div class="card__zoom-curtain">
                                 <div class="img__logo-golden">
                                     <img src="asset/image/logo/golden-artist-black-vert.png" alt="">
@@ -717,8 +717,8 @@
                                 <div class="img__bg-zoom"></div>
 
                                 <div class="card-body">
-                                    <h5> Visión</h5>
-                                    <h6>Crisp Spanish tortilla Matzo brei</h6>
+                                    <h5 class="fw-bold"> Visión</h5>
+                                    <h6>Conoce la visión de Golden Artists de cara al futuro.</h6>
                                     
                                     <div class="d-flex justify-content-center pt-2">
                                         <a class="btn w-75 fw-bold font__roboto theme__radial-gradiente-gold-1 text-gold-hard" 
@@ -881,7 +881,7 @@
             const progContainer = document.querySelector('.skills__golden'); 
             let bole = false;
             window.addEventListener("scroll", function (){
-                if (pageYOffset > progContainer.offsetTop - (-450) && bole === false) {
+                if (pageYOffset > progContainer.offsetTop - (-400) && bole === false) {
                     for(let i = 0; i < progText.length; i++) {
                         progText[i].innerText = 0;
                         count = 0;
