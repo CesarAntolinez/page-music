@@ -45,7 +45,8 @@ $custom-colors: (
   "gold-thin": #EBB467,
   "gold-matt": #AE9B81,
   "gold-dark": #9E7A46,
-  "gold-hard": #6B522F
+  "gold-hard": #6B522F,
+  "gold-havy": #251908
 );
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
