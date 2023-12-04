@@ -120,7 +120,7 @@ var swiper = new Swiper(".swiper-clients", {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
     }
 });
