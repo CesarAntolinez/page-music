@@ -477,7 +477,7 @@
   margin-top: -45px !important; }
 
 .golden__mt-120 {
-  margin-top: 96px !important; }
+  margin-top: 112px !important; }
 
 .golden__mt-less-140 {
   margin-top: -140px; }
@@ -490,6 +490,9 @@
 
 .golden__mt-card-vision {
   margin-top: 50px !important; }
+
+.golden__mb-social-media {
+  margin-bottom: -25px; }
 
 .golden__py-artists {
   padding-top: 100px;
@@ -652,7 +655,13 @@
     width: 75%; } }
 @media (min-width: 576px) {
   .golden__h-sm-100 {
-    height: 100%; } }
+    height: 100%; }
+
+  .golden__mt-120 {
+    margin-top: 96px !important; }
+
+  .golden__mb-social-media {
+    margin-bottom: 0; } }
 @media (min-width: 600px) {
   .golden__position-card-us {
     margin-top: -56px;
@@ -673,7 +682,10 @@
 
   .golden__squared-1-float {
     width: 50%;
-    left: -50px; } }
+    left: -50px; }
+
+  .golden__mb-social-media {
+    margin-bottom: -40px; } }
 @media (min-width: 992px) {
   .golden__h-text-card {
     height: calc(100% - 300px); }
@@ -685,7 +697,10 @@
     height: 875px; }
 
   .golden__position-card-us {
-    margin-top: -300px; } }
+    margin-top: -300px; }
+
+  .golden__mb-social-media {
+    margin-bottom: 0; } }
 @media (min-width: 1200px) {
   .golden__position-card-us {
     width: 75%; } }
