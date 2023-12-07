@@ -18,11 +18,12 @@
 }
 // Margins
 .golden__mt-less-45 { margin-top: -45px !important } 
-.golden__mt-120 { margin-top: 96px !important } 
+.golden__mt-120 { margin-top: 112px !important } 
 .golden__mt-less-140 { margin-top: -140px }
 .golden__mt-card-class { margin-top: 36px !important; }
 .golden__mt-card-mision { margin-top: 150px !important } 
 .golden__mt-card-vision { margin-top: 50px !important } 
+.golden__mb-social-media { margin-bottom: -25px }
 
 // Paddings
 .golden__py-artists {
@@ -166,6 +167,8 @@
 @media(min-width: 576px) {
     // Height
     .golden__h-sm-100 { height: 100% }
+    .golden__mt-120 { margin-top: 96px !important } 
+    .golden__mb-social-media { margin-bottom: 0 }
 }
 
 @media(min-width: 600px) {
@@ -193,6 +196,7 @@
         width: 50%; 
         left: -50px; 
     }
+    .golden__mb-social-media { margin-bottom: -40px }
 }
 
 @media(min-width: 992px) {
@@ -210,6 +214,7 @@
     .golden__position-card-us {
         margin-top: -300px;
     }
+    .golden__mb-social-media { margin-bottom: 0 }
 }
 
 @media(min-width: 1200px) {
