@@ -92,7 +92,8 @@
                                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body p-0">
                                                 <ul class="">
-                                                    <li class="actived my-2 py-2" style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="bodas.html">Bodas</a></li>
+                                                    <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="bodas.html">Bodas</a></li>
+                                                    <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
                                                     <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="eventos-empesariales.html">Eventos empresariales</a></li>
                                                     <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
                                                     <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="musica-restoran.html">Música restorán</a></li>
@@ -100,8 +101,7 @@
                                                     <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="quinces.html">Quince años</a></li>
                                                     <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
                                                     <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="eventos-privados.html">Eventos privados</a></li>
-                                                    <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                                    <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="clases-musica.html">Clases de música</a></li>
+                                                    <li class="actived my-2 py-2" style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="clases-musica.html">Clases de música</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -165,7 +165,7 @@
                                     <span class="position-relative">Servicios</span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item active" href="bodas.html">Bodas</a></li>
+                                    <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
                                     <li><hr class="dropdown-divider"></li>
@@ -175,7 +175,7 @@
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
+                                    <li><a class="dropdown-item active" href="clases-musica.html">Clases de música</a></li>
                                 </ul>
                             </li>
                 
@@ -209,19 +209,18 @@
 
         <!-- Content -->
         <div class="golden__mt-main">
-            <div class="position-relative">
-                <img src="asset/image-temp/services/clas-music/bg-class.jpeg" class="img__bg-posisioned">
+            <div style="background-image: url('asset/image-temp/services/clas-music/bg-class.jpeg') ;
+                background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
                 <div class="container-fluid container-xxl">
                     <div class="container-fluid container-lg">
-                        <h1 class="my-3">Musica para restaurants</h1>
-                        <div class="row">
+                        <div class="row py-5">
                             <div class="col-12 col-sm-6 col-md-5">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuc1Faj9_E7ImuzZg3lpeSkuH7FBETMVTSYw&usqp=CAU" alt="" class="h-img">
                             </div>
                             <div class="col-12 col-sm-6 col-md-5 p-4">
-                                <h2>Título imagen</h2>
+                                <h1 class="text-white display-2">Clases de Música</h1>
                 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad dolorum incidunt repudiandae porro totam!</p>
+                                <p class="text-white p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad dolorum incidunt repudiandae porro totam!</p>
                             </div>
                             <div class="col-12 col-sm-8 col-md-7 my-sm-3 ms-sm-auto">
                                 <img src="https://cdn0.casamiento.com.uy/vendor/0067/3_2/960/jpg/84fa9c2e-a35d-418b-b5dd-ab7cc0140fd0_16_67-157818674493890.jpeg"
@@ -249,7 +248,11 @@
                 </div>
             </div>
 
-            <div style="background-image: radial-gradient(circle at 65.19% 28.3%, #b1ffb3 0, #9ffbb5 12.5%, #8df1b7 25%, #7ce6b6 37.5%, #6cd8b4 50%, #5fcab0 62.5%, #54bead 75%, #4cb3aa 87.5%, #46aaa7 100%);">
+            <div class="position-relative">
+                <div class="animation__bg-class"></div>
+                <div class="animation__bg-class animation__bg-gold-2"></div>
+                <div class="animation__bg-class animation__bg-gold-3"></div>
+
                 <div class="container-fluid container-md">
                     <div class="row py-5 mx-0">
                         <div class="col-md-auto rounded-circle bg-black bg-opacity-50 position-relative mx-auto mb-4 mb-md-0" style="width: 150px; height: 150px;">
@@ -271,9 +274,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="container-fluid container-lg py-5">
+
                     <div class="row justify-content-center justify-content-lg-start justify-content-xxl-between">
                         <div class="col-md-4 d-flex align-items-center">
                             <div class="golden__shadow-5-black-5">
@@ -320,8 +321,8 @@
                 </div>
             </div>
 
-            <div class="container-fluid container-md">
-                <div class="py-5 bg-white mt-5">
+            <div class="bg-white">
+                <div class="py-5 mt-5">
                     <div class="px-3 text-center">
                         <h3 class="fw-bold">Nuestros servicios</h3>
                         <h5 class="w-75 mx-auto px-md-5">
@@ -386,7 +387,7 @@
         <div class="bg-black py-5">
             <div class="container-fluid container-xxl">
                 <div class="row">
-                    <div class="col-12 col-lg-6 col-xl-5 d-flex justify-content-center align-items-lg-center">
+                    <div class="col-12 col-xxl-6 d-flex justify-content-center align-items-lg-center">
                         <div class="row">
                             <div class="col-12 d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
                                 <a href="index.html">
@@ -417,34 +418,49 @@
                         </div>
                     </div>
             
-                    <div class="col-12 col-sm-10 col-md-9 col-lg-6 col-xxl-7 m-auto">
+                    <div class="col-12 col-sm-10 col-xxl-6 m-auto">
                         <h4 class="font__roboto fw-bold text-gold-thin text-center mb-4">Contáctenos</h4>  
-                        <div class="row">  
-                            <div class="col-12 col-xxl-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
-                                    <label for="floatingPassword">Name</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">  
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                                            <label for="floatingName">Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="number" class="form-control" id="floatingCellPhone" placeholder="Name">
+                                            <label for="floatingCellPhone">Cellphone</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                                            <label for="floatingEmail">Email address</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-xxl-6">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
+                            <div class="col-md-6">
+                                <div class="row">  
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 187px"></textarea>
+                                            <label for="floatingTextarea">Comments</label>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-12 d-flex">
+                                        <button class="btn w-100 fw-bold golden__fs-21 font__roboto theme__radial-gradiente-gold-1">
+                                            Enviar
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-            
-                            <div class="col-12">
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                    <label for="floatingTextarea2">Comments</label>
-                                </div>
-                            </div>
-            
-                            <div class="col-12 d-flex">
-                                <button class="btn btn-gold-thin w-100 py-3" type="button">
-                                    <span class="font__roboto fw-bold text-gold-hard h5 mb-0">Enviar</span>
-                                </button>
                             </div>
                         </div>
                     </div>
