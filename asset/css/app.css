@@ -152,6 +152,17 @@
   100% {
     width: 40px;
     height: 40px; } }
+.animation__bg-gold-gray {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #44433f4f 50%, #FFFFFF 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1; }
+
 .animation__bg-gold {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #FFEFBA 50%, #FFFFFF 50%);
@@ -476,7 +487,7 @@
 .golden__mt-less-45 {
   margin-top: -45px !important; }
 
-.golden__mt-120 {
+.golden__mt-main {
   margin-top: 112px !important; }
 
 .golden__mt-less-140 {
@@ -657,7 +668,7 @@
   .golden__h-sm-100 {
     height: 100%; }
 
-  .golden__mt-120 {
+  .golden__mt-main {
     margin-top: 96px !important; }
 
   .golden__mb-social-media {
@@ -884,6 +895,9 @@
 .img__fit-contain {
   object-fit: contain; }
 
+.img__card-flex {
+  height: 400px; }
+
 .img__position-center {
   object-position: center !important; }
 
@@ -964,6 +978,11 @@
 .img__vision {
   background-image: url("../image-temp/about-us/contacts/img-contact-c004.jpg"); }
 
+@media (min-width: 576px) {
+  .h-img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover; } }
 @media (min-width: 600px) {
   .img__banner-top-swiper {
     height: 400px; } }
@@ -978,7 +997,10 @@
     height: 800px; }
 
   .img__max-w-500 {
-    max-width: 500px; } }
+    max-width: 500px; }
+
+  .img__h-flex-400 {
+    height: calc(100% - 400px); } }
 @media (min-width: 1400px) {
   .img__banner-top-swiper {
     height: 900px; } }
@@ -1212,7 +1234,6 @@ body {
   bottom: 0;
   pointer-events: none;
   /* Border styling with gradient to create the border effect*/
-  border: 1.4px solid transparent;
   background: linear-gradient(125deg, rgba(255, 255, 255, 0.9) 15%, rgba(213, 252, 245, 0.8) 38%, rgba(168, 248, 205, 0.6) 55%, rgba(115, 244, 214, 0.2) 89%) border-box;
   /* Clipping pseudoelement background */
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
@@ -1230,6 +1251,10 @@ body {
   border-bottom: 3px solid #EBD1AE;
   border-right: 3px solid #EBD1AE;
   transform: rotate(45deg); }
+
+.accordion-button.actived::after {
+  border-bottom: 3px solid #EBB467;
+  border-right: 3px solid #EBB467; }
 
 .accordion-button:focus {
   box-shadow: none !important; }

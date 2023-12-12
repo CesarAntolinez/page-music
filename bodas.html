@@ -23,164 +23,194 @@
     <body>
         <!-- Header -->
         <nav class="nav__header">
-            <div class="d-flex">
-                <a href="index.html">
-                    <img src="asset/image/logo/golden-artist-golden-hrz.png" width="171">
-                </a>
-      
-                <div class="d-none d-lg-flex align-items-center ms-3">
-                    <a href="https://www.facebook.com/people/Golden-Artists-Co/61552166097120/?mibextid=LQQJ4d" target="_blank">
-                        <img src="asset/image/iconos/facebook.png" width="42" height="42">
-                    </a>
-    
-                    <a href="https://wa.link/ra12hm" target="_blank">
-                        <img src="asset/image/iconos/whatsapp.png" width="42" height="42">
-                    </a>
-    
-                    <a href="https://www.instagram.com/goldenartistsco/" target="_blank">
-                        <img src="asset/image/iconos/instagram.png" width="42" height="42">
-                    </a>
+            <div class="container-fluid container-xxl px-sm-3">
+                <div class="row justify-content-between px-xl-5">
+                    <div class="col-12 col-sm-auto order-sm-2 d-sm-flex align-items-sm-center golden__mb-social-media col-md-12 justify-content-md-end order-md-1 order-lg-2 col-lg-auto">
+                        <div class="d-flex justify-content-end" style="height: max-content;">
+                            <a href="https://www.facebook.com/people/Golden-Artists-Co/61552166097120/?mibextid=LQQJ4d" target="_blank">
+                                <img src="asset/image/iconos/facebook.png" width="40" height="40">
+                            </a>
+
+                            <a href="https://wa.link/ra12hm" target="_blank">
+                                <img src="asset/image/iconos/whatsapp.png" width="40" height="40">
+                            </a>
+
+                            <a href="https://www.instagram.com/goldenartistsco/" target="_blank">
+                                <img src="asset/image/iconos/instagram.png" width="40" height="40">
+                            </a>
+                            
+                            <a href="https://www.tiktok.com/@goldenartistsco?_t=8hBqmyDa57G&_r=1" target="_blank">
+                                <img src="asset/image/iconos/tiktok.png" width="40" height="40">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-8 col-sm-auto order-sm-1">
+                        <a href="index.html">
+                            <img src="asset/image/logo/golden-artist-golden-hrz.png" width="171">
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu -->
+                    <div class="col-3 col-sm-auto navigation d-flex d-md-none align-items-center justify-content-end position-relative order-sm-4">
+                        <input id="nav__mobile-check" type="checkbox">
+            
+                        <label class="bg-white nav__mobile-btn" for="nav__mobile-check">
+                            <span class="nav__mobile-btn-icon" aria-label="toggle navigation menu"></span>
+                        </label>
+            
+                        <div class="nav__mobile-bg bg-gold-thin bg-opacity-25"></div>
                     
-                    <a href="https://www.tiktok.com/@goldenartistsco?_t=8hBqmyDa57G&_r=1" target="_blank">
-                        <img src="asset/image/iconos/tiktok.png" width="42" height="42">
-                    </a>
+                        <nav class="nav__mobile-group-items glass" role="navigation">
+                            <div class="d-flex">
+                                <a href="index.html">
+                                    <img src="asset/image/logo/golden-artists-white-hrz.png" width="171" class="ms-4">
+                                </a>
+                            </div>
+                            
+                            <ul class="nav__mobile-items">
+                                <li class="p-2 ps-3">
+                                    <a href="index.html" class="nav__mobile-items-link">
+                                        <span class="fs-1rem">&nbsp;Inicio</span>
+                                    </a>
+                                </li>
+
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item" style="background-color: transparent;">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed fw-bold text-gold-thin d-flex align-items-baseline actived" 
+                                                type="button" 
+                                                data-bs-toggle="collapse" 
+                                                data-bs-target="#flush-collapseOne" 
+                                                aria-expanded="false" 
+                                                aria-controls="flush-collapseOne"
+                                                style="background-color: transparent">
+                                                Servicios
+                                            </button>
+                                        </h2>
+
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body p-0">
+                                                <ul class="">
+                                                    <li class="actived my-2 py-2" style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="bodas.html">Bodas</a></li>
+                                                    <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="eventos-empesariales.html">Eventos empresariales</a></li>
+                                                    <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                    <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="musica-restoran.html">Música restorán</a></li>
+                                                    <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                    <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="quinces.html">Quince años</a></li>
+                                                    <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                    <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="eventos-privados.html">Eventos privados</a></li>
+                                                    <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                    <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="clases-musica.html">Clases de música</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item" style="background-color: transparent;">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fw-bold text-gold-soft d-flex align-items-baseline" 
+                                        type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#flush-collapseTwo" 
+                                        aria-expanded="false" 
+                                        aria-controls="flush-collapseTwo"
+                                        style="background-color: transparent">
+                                            Artistas
+                                        </button>
+                                    </h2>
+
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body p-0">
+                                            <ul class="">
+                                                <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="saxofonistas.html">Saxofonistas</a></li>
+                                                <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="cantantes.html">Cantantes</a></li>
+                                                <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="violinistas.html">Violinistas</a></li>
+                                                <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="djs.html">Dj´s</a></li>
+                                                <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="pianistas.html">Pianistas</a></li>
+                                                <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
+                                                <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="fotografos.html">Fotógrafos</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>   
+            
+                                <li class="p-2 ps-3">
+                                    <a href="comentarios.html" class="nav__mobile-items-link">
+                                        <span class="fw-bold text-gold-soft fs-1rem">&nbsp;Comentarios</span>
+                                    </a>
+                                </li>
+            
+                                <li class="p-2 ps-3">
+                                    <a href="nosotros.html" class="nav__mobile-items-link">
+                                        <span class="fw-bold text-gold-soft fs-1rem">&nbsp;Nosotros</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col-6 col-sm order-sm-3 d-md-flex align-items-md-center justify-content-md-end">
+                        <!-- Desktop menu -->
+                        <ul class="nav__golden d-none d-md-flex">
+                            <li><a href="index.html">Inicio</a></li>
+                
+                            <li class="dropdown actived">
+                                <a class="dropdown-toggle nav__arrow-down nav__line-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="position-relative">Servicios</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="bodas.html">Bodas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
+                                </ul>
+                            </li>
+                
+                            <li class="dropdown">
+                                <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="position-relative">Artistas</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="cantantes.html">Cantantes</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="fotografos.html">Fotógrafos</a></li>
+                                </ul>
+                            </li>
+                
+                            <li><a href="comentarios.html">Comentarios</a></li>
+                
+                            <li><a href="nosotros.html">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Desktop menu -->
-            <ul class="nav__golden d-none d-lg-flex">
-                <li><a href="index.html">Inicio</a></li>
-
-                <li class="dropdown actived">
-                    <a class="dropdown-toggle nav__arrow-down nav__line-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="position-relative">Servicios</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item active" href="bodas.html">Bodas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="position-relative">Artistas</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="cantantes.html">Cantantes</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="fotografos.html">Fotógrafos</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="comentarios.html">Comentarios</a></li>
-
-                <li><a href="nosotros.html">Contacto</a></li>
-            </ul>
-            
-            <!-- Mobile menu -->
-            <div class="navigation d-flex d-lg-none position-relative">
-                <input id="nav__mobile-check" type="checkbox">
-
-                <label class="bg-white nav__mobile-btn" for="nav__mobile-check">
-                    <span class="nav__mobile-btn-icon" aria-label="toggle navigation menu"></span>
-                </label>
-
-                <div class="nav__mobile-bg bg-gold-hard"></div>
-            
-                <nav class="nav__mobile-group-items" role="navigation">
-                    <a href="index.html">
-                        <img src="asset/image/logo/golden-artists-white-hrz.png" width="215" class="ms-3">
-                    </a>
-                    
-                    <ul class="nav__mobile-items">
-                        <li class="actived p-2">
-                            <a href="index.html" class="nav__mobile-items-link nav__line-down">
-                                <i class="material-symbols-outlined">home</i>
-                                <span class="h5">&nbsp;Inicio</span>
-                            </a>
-                        </li>
-
-                        <li class="dropdown p-2">
-                            <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none"  
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="material-symbols-outlined">cases</i>
-                                <span class="position-relative">Servicios</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown p-2">
-                            <a class="dropdown-toggle nav__arrow-down nav__mobile-items-link text-white text-decoration-none" 
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="material-symbols-outlined">switch_account</i>
-                                <span class="position-relative">Artistas</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="cantantes.html">Cantantes</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="fotografos.html">Fotógrafos</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="p-2">
-                            <a href="comentarios.html" class="nav__mobile-items-link">
-                                <i class="material-symbols-outlined">gallery_thumbnail</i>
-                                <span class="h5">&nbsp;Comentarios</span>
-                            </a>
-                        </li>
-
-                        <li class="p-2">
-                            <a href="nosotros.html" class="nav__mobile-items-link">
-                                <i class="material-symbols-outlined">group</i>
-                                <span class="h5">&nbsp;Nosotros</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </nav>
 
         <!-- Content -->
-        <div class="golden__mt-120">
-            <div class="position-relative">
-                <img src="asset/image-temp/services/wedding/bg-wedding-w1.jpg" class="img__bg-posisioned">
+        <div class="golden__mt-main">
+            <div style="background-image: url('asset/image-temp/services/wedding/bg-boda.jpeg') ;
+            background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
 
                 <div class="container-fluid container-xxl">
                     <div class="row justify-content-center align-items-center py-4">
@@ -213,9 +243,7 @@
 						</div>
                     </div>
                 </div>
-            </div>
-            
-            <div style="background-color: #d9acac6e;">
+
                 <div class="container-fluid container-xl">
                     <div class="row py-5">
                         <div class="col-md-6 p-md-4">
@@ -224,7 +252,7 @@
                             style="object-fit: cover; width: 100%; height: 100%; max-height: 516px; max-width: 600px;">
                         </div>
 
-                        <div class="col-md-5 m-auto ps-4 pt-5 pt-md-0 p-lg-5">
+                        <div class="col-md-5 m-auto ps-4 pt-5 pt-md-0 p-lg-5" style="background-color: #ffffff73;">
                             <h2 class="font__dancing fw-bold">Servicios de bodas</h2>
                             <h5>
                                 Desde músicos que melodiosamente tejen el ambiente perfecto hasta fotógrafos que capturan 
@@ -243,7 +271,12 @@
                 </div>
             </div>
 
-            <div class="bg-gold-thin bg-opacity-10">
+           
+            <div class="position-relative">
+                <div class="animation__bg-gold-gray"></div>
+                <div class="animation__bg-gold animation__bg-gold-2"></div>
+                <div class="animation__bg-gold animation__bg-gold-3"></div>
+
                 <div class="container-fluid container-md">
                     <div class="row py-5 mx-0">
                         <div class="col-md-auto rounded-circle bg-black bg-opacity-50 position-relative mx-auto mb-4 mb-md-0" style="width: 150px; height: 150px;">
@@ -267,77 +300,85 @@
                         </div>
 					</div>
 
-                    <div class="row h-100">
-                        <div class="col-lg-4 my-2 my-lg-0">
-                            <div class="row golden__h-sm-100 px-lg-2">
-                                <div class="col-sm-5 col-lg-12 pe-sm-0 ps-lg-0">
-                                    <img class="w-100 img__fit-cover" 
-                                    src="asset/image-temp/services/wedding/img-wedding-wva01.jpg" style="height: 300px;">
-                                </div>
+                    <div class="row">
+                        <div class="col-xl-4 my-3">
+                            <div class="px-lg-2 h-100">
+                                <div class="row justify-content-center h-100">
+                                    <div class="col-12 col-sm-10 col-lg-5 col-xl-12 pe-lg-0 px-xl-2">
+                                        <img class="w-100 img__fit-cover img__card-flex" 
+                                        src="asset/image-temp/services/wedding/img-wedding-wva01.jpg">
+                                    </div>
 
-                                <div class="col-sm-7 col-lg-12 golden__h-text-card ps-sm-0 pe-lg-0">
-                                    <div class="bg-white h-100 p-4">
-                                        <h5 class="fw-bold text-center">Excelencia Profesional</h5>
-                                        <p>
-                                            En Golden Artists, nos enorgullece ofrecer siempre  lo mejor. 
-                                            Todos nuestros artistas como saxofonistas, pianistas, violinistas, cantantes y fotógrafos 
-                                            son profesionales. Garantizamos un nivel de ejecución y talento que elevará tu evento a 
-                                            nuevas alturas. Tu boda merece lo mejor, y nosotros nos aseguramos de brindarle precisamente eso.
-                                        </p>
+                                    <div class="col-12 col-sm-10 col-lg-7 col-xl-12 ps-lg-0 px-xl-2 img__h-flex-400">
+                                        <div class="bg-white h-100 p-4">
+                                            <h5 class="fw-bold text-center">Excelencia Profesional</h5>
+                                            <p>
+                                                En Golden Artists, nos enorgullece ofrecer siempre  lo mejor. 
+                                                Todos nuestros artistas como saxofonistas, pianistas, violinistas, cantantes y fotógrafos 
+                                                son profesionales. Garantizamos un nivel de ejecución y talento que elevará tu evento a 
+                                                nuevas alturas. Tu boda merece lo mejor, y nosotros nos aseguramos de brindarle precisamente eso.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>    
                       
-                        <div class="col-lg-4 my-2 my-lg-0">
-                            <div class="row golden__h-sm-100 px-lg-2">
-                                <div class="col-sm-5 col-lg-12 pe-sm-0 ps-lg-0">
-                                    <img class="w-100 img__fit-cover" 
-                                    src="asset/image-temp/services/wedding/img-wedding-wva02.jpg" style="height: 300px;">
-                                </div>
+                        <div class="col-xl-4 my-3">
+                            <div class="px-lg-2 h-100">
+                                <div class="row justify-content-center h-100">
+                                    <div class="col-12 col-sm-10 col-lg-5 col-xl-12 pe-lg-0 px-xl-2">
+                                        <img class="w-100 img__fit-cover img__card-flex" 
+                                        src="asset/image-temp/services/wedding/img-wedding-wva02.jpg">
+                                    </div>
 
-                                <div class="col-sm-7 col-lg-12 golden__h-text-card ps-sm-0 pe-lg-0">
-                                    <div class="bg-white h-100 p-4">
-                                        <h5 class="fw-bold text-center">Experiencia Completa</h5>
-                                        <p>
-                                            Más que solo música excepcional, en cada evento te ofrecemos una experiencia completa. 
-                                            Además del talentoso músico, como un destacado saxofonista para bodas en la recepción, 
-                                            o un cantante - pianista para la ceremonia, contarás con el apoyo de un coordinador 
-                                            logístico y un ingeniero de sonido para garantizar que cada detalle se ejecute sin 
-                                            problemas. Nos aseguramos de que tu evento sea impecable desde la planificación hasta 
-                                            la ejecución.
-                                        </p>
+                                    <div class="col-12 col-sm-10 col-lg-7 col-xl-12 ps-lg-0 px-xl-2 img__h-flex-400">
+                                        <div class="bg-white h-100 p-4">
+                                            <h5 class="fw-bold text-center">Experiencia Completa</h5>
+                                            <p>
+                                                Más que solo música excepcional, en cada evento te ofrecemos una experiencia completa. 
+                                                Además del talentoso músico, como un destacado saxofonista para bodas en la recepción, 
+                                                o un cantante - pianista para la ceremonia, contarás con el apoyo de un coordinador 
+                                                logístico y un ingeniero de sonido para garantizar que cada detalle se ejecute sin 
+                                                problemas. Nos aseguramos de que tu evento sea impecable desde la planificación hasta 
+                                                la ejecución.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div> 
         
-                        <div class="col-lg-4 my-2 my-lg-0">
-                            <div class="row golden__h-sm-100 px-lg-2">
-                                <div class="col-sm-5 col-lg-12 pe-sm-0 ps-lg-0">
-                                    <img class="w-100 img__fit-cover" 
-                                    src="asset/image-temp/services/wedding/img-wedding-wva03.jpg" style="height: 300px;">
-                                </div>
+                        <div class="col-xl-4 my-3">
+                            <div class="px-lg-2 h-100 h-100">
+                                <div class="row justify-content-center h-100">
+                                    <div class="col-12 col-sm-10 col-lg-5 col-xl-12 pe-lg-0 px-xl-2">
+                                        <img class="w-100 img__fit-cover img__card-flex" 
+                                        src="asset/image-temp/services/wedding/img-wedding-wva03.jpg">
+                                    </div>
 
-                                <div class="col-sm-7 col-lg-12 golden__h-text-card ps-sm-0 pe-lg-0">
-                                    <div class="bg-white h-100 p-4">
-                                        <h5 class="fw-bold text-center">Todo en Uno. Descuentos Inigualables</h5>
-                                        <p>
-                                            Simplifica tu proceso de planificación al máximo. Con Golden Artists, obtienes 
-                                            todos los servicios en un solo lugar: música para la ceremonia con un saxofonista 
-                                            para bodas, shows musicales de violín, o voz en vivo, fotógrafos para bodas, DJs, 
-                                            maestros de ceremonia y alquiler de luces y sonido. Además, a medida que agregas 
-                                            más servicios, los descuentos se acumulan, brindándote una solución integral sin 
-                                            sacrificar tu presupuesto.
-                                        </p>
+                                    <div class="col-12 col-sm-10 col-lg-7 col-xl-12 ps-lg-0 px-xl-2 img__h-flex-400">
+                                        <div class="bg-white h-100 p-4">
+                                            <h5 class="fw-bold text-center">Todo en Uno. Descuentos Inigualables</h5>
+                                            <p>
+                                                Simplifica tu proceso de planificación al máximo. Con Golden Artists, obtienes 
+                                                todos los servicios en un solo lugar: música para la ceremonia con un saxofonista 
+                                                para bodas, shows musicales de violín, o voz en vivo, fotógrafos para bodas, DJs, 
+                                                maestros de ceremonia y alquiler de luces y sonido. Además, a medida que agregas 
+                                                más servicios, los descuentos se acumulan, brindándote una solución integral sin 
+                                                sacrificar tu presupuesto.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div> 
                     </div>
                 </div>
+            </div>  
 
-                <div class="py-5 bg-white mt-5">
+            <div class="bg-white">
+                <div class="py-5 mt-5">
                     <div class="px-3 text-center">
                         <h3 class="fw-bold">Nuestros servicios</h3>
                         <h5 class="w-75 mx-auto px-md-5">
@@ -383,7 +424,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>  
+            </div>
         </div>
 
         <!-- btn scroll -->
@@ -403,7 +444,7 @@
         <div class="bg-black py-5">
             <div class="container-fluid container-xxl">
             <div class="row">
-                <div class="col-12 col-lg-6 col-xl-5 d-flex justify-content-center align-items-lg-center">
+                <div class="col-12 col-xxl-6 d-flex justify-content-center align-items-lg-center">
                     <div class="row">
                         <div class="col-12 d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
                             <a href="index.html">
@@ -434,34 +475,49 @@
                     </div>
                 </div>
         
-                <div class="col-12 col-sm-10 col-md-9 col-lg-6 col-xxl-7 m-auto">
+                <div class="col-12 col-sm-10 col-xxl-6 m-auto">
                     <h4 class="font__roboto fw-bold text-gold-thin text-center mb-4">Contáctenos</h4>  
-                    <div class="row">  
-                        <div class="col-12 col-xxl-6">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
-                                <label for="floatingPassword">Name</label>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">  
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                                        <label for="floatingName">Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="floatingCellPhone" placeholder="Name">
+                                        <label for="floatingCellPhone">Cellphone</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                                        <label for="floatingEmail">Email address</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-xxl-6">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
+                        <div class="col-md-6">
+                            <div class="row">  
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 187px"></textarea>
+                                        <label for="floatingTextarea">Comments</label>
+                                    </div>
+                                </div>
+                
+                                <div class="col-12 d-flex">
+                                    <button class="btn w-100 fw-bold golden__fs-21 font__roboto theme__radial-gradiente-gold-1">
+                                        Enviar
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-        
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Comments</label>
-                            </div>
-                        </div>
-        
-                        <div class="col-12 d-flex">
-                            <button class="btn btn-gold-thin w-100 py-3" type="button">
-                                <span class="font__roboto fw-bold text-gold-hard h5 mb-0">Enviar</span>
-                            </button>
                         </div>
                     </div>
                 </div>

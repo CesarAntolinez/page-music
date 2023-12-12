@@ -193,7 +193,7 @@
 	pointer-events: none;
 	// border-radius: 28px;
 	/* Border styling with gradient to create the border effect*/
-	border: 1.4px solid transparent;
+	// border: 1.4px solid transparent;
 	background: linear-gradient(
 		125deg,
 		rgba(255, 255, 255, 0.9) 15%,
@@ -219,6 +219,10 @@
 	border-bottom: 3px solid #EBD1AE;
 	border-right: 3px solid #EBD1AE;
 	transform: rotate(45deg);
+}
+.accordion-button.actived::after {
+	border-bottom: 3px solid #EBB467;
+	border-right: 3px solid #EBB467;
 }
 .accordion-button:focus {
     box-shadow: none !important;
