@@ -1,6 +1,7 @@
 // Object Fit
 .img__fit-cover { object-fit: cover }
 .img__fit-contain { object-fit: contain }
+.img__card-flex { height: 400px }
 // Object Position
 .img__position-center {  object-position: center !important }
 // Image background posisioned
@@ -109,6 +110,14 @@
 	@extend .img-rounded-right-bottom;
 }
 
+@media (min-width: 576px) {
+    .h-img { 
+        width: 100%;
+        height: 150%;
+        object-fit: cover;
+    }
+}
+
 @media(min-width: 600px) {
 	// ***** Images Banner top - Home *****
 	.img__banner-top-swiper { height: 400px }
@@ -128,6 +137,7 @@
 	// ***** Images Banner top - Home *****
 	.img__banner-top-swiper { height: 800px }
 	.img__max-w-500 { max-width: 500px; }
+	.img__h-flex-400 { height: calc(100% - 400px) }
 }
 
 @media(min-width: 1400px) {
