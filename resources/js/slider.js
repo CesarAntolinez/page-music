@@ -128,7 +128,7 @@ var swiper = new Swiper(".swiper-clients", {
 // Swiper Profesionales
 var swiper = new Swiper(".swiper-professionals", {
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     loop: true,
