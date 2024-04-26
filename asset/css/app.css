@@ -1071,6 +1071,13 @@ body {
   flex-direction: column;
   padding-top: 120px; }
 
+#menu-menu-2 {
+  list-style: none;
+  margin: 0; }
+  #menu-menu-2 .menu-item {
+    padding: 4px;
+    margin: 0 4px; }
+
 .nav__shape-rounded, .nav__mobile-btn, .nav__mobile-bg {
   height: 50px;
   width: 50px;
