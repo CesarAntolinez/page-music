@@ -1,472 +1,429 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
 
-    <title>Golden Artists</title>
+        <title>Golden Artists</title>
 
-    <!-- Google icons material symbols -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Route style sheet -->
-    <link rel="stylesheet" href="asset/css/app.css">
-  </head>
+        <!-- Google icons material symbols -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- Route style sheet -->
+        <link rel="stylesheet" href="./asset/css/app.css">
+    </head>
 
-  <body>
-        <!-- Header -->
-        <nav class="nav__header">
-          <div class="container-fluid container-xxl px-sm-3">
-              <div class="row justify-content-between px-xl-5">
-                  <div class="col-12 col-sm-auto order-sm-2 d-sm-flex align-items-sm-center golden__mb-social-media col-md-12 justify-content-md-end order-md-1 order-lg-2 col-lg-auto">
-                      <div class="d-flex justify-content-end" style="height: max-content;">
-                          <a href="https://www.facebook.com/people/Golden-Artists-Co/61552166097120/?mibextid=LQQJ4d" target="_blank">
-                              <img src="asset/image/iconos/facebook.png" width="40" height="40">
-                          </a>
+    <body id="body">
+        <!-- Header OK  -->
+        <div class="header-g-a">
+            <nav class="nav-head">
+                <a href="index.html">
+                    <img src="./asset/image/logo/golden-artist-golden-hrz.png" width="215" alt="">
+                </a>
+                <!-- Desktop menu -->
+                <ul class="d-none d-lg-flex">
+                    <li><a href="index.html">Inicio</a></li>
 
-                          <a href="https://wa.link/ra12hm" target="_blank">
-                              <img src="asset/image/iconos/whatsapp.png" width="40" height="40">
-                          </a>
+                    <li><a href="service.html">Servicios</a></li>
 
-                          <a href="https://www.instagram.com/goldenartistsco/" target="_blank">
-                              <img src="asset/image/iconos/instagram.png" width="40" height="40">
-                          </a>
-                          
-                          <a href="https://www.tiktok.com/@goldenartistsco?_t=8hBqmyDa57G&_r=1" target="_blank">
-                              <img src="asset/image/iconos/tiktok.png" width="40" height="40">
-                          </a>
-                      </div>
-                  </div>
+                    <li><a href="artist.html">Artistas</a></li>
 
-                  <div class="col-8 col-sm-auto order-sm-1">
-                      <a href="index.html">
-                          <img src="asset/image/logo/golden-artist-golden-hrz.png" width="171">
-                      </a>
-                  </div>
+                    <li><a href="gallery.html">Galería</a></li>
 
-                  <!-- Mobile menu -->
-                  <div class="col-3 col-sm-auto navigation d-flex d-md-none align-items-center justify-content-end position-relative order-sm-4">
-                      <input id="nav__mobile-check" type="checkbox">
-          
-                      <label class="bg-white nav__mobile-btn" for="nav__mobile-check">
-                          <span class="nav__mobile-btn-icon" aria-label="toggle navigation menu"></span>
-                      </label>
-          
-                      <div class="nav__mobile-bg bg-gold-thin bg-opacity-25"></div>
-                  
-                      <nav class="nav__mobile-group-items glass" role="navigation">
-                          <div class="d-flex">
-                              <a href="index.html">
-                                  <img src="asset/image/logo/golden-artists-white-hrz.png" width="171" class="ms-4">
-                              </a>
-                          </div>
-                          
-                          <ul class="nav__mobile-items">
-                              <li class="p-2 ps-3">
-                                  <a href="index.html" class="nav__mobile-items-link nav__line-down">
-                                      <span class="fw-bold text-gold-soft fs-1rem">&nbsp;Inicio</span>
-                                  </a>
-                              </li>
+                    <li class="actived"><a href="nosotros.html">Nosotros</a></li>
 
-                              <div class="accordion accordion-flush" id="accordionFlushExample">
-                                  <div class="accordion-item" style="background-color: transparent;">
-                                      <h2 class="accordion-header" id="flush-headingOne">
-                                          <button class="accordion-button collapsed fw-bold text-gold-soft d-flex align-items-baseline" 
-                                              type="button" 
-                                              data-bs-toggle="collapse" 
-                                              data-bs-target="#flush-collapseOne" 
-                                              aria-expanded="false" 
-                                              aria-controls="flush-collapseOne"
-                                              style="background-color: transparent">
-                                              Servicios
-                                          </button>
-                                      </h2>
-
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body p-0">
-                                              <ul class="">
-                                                  <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="bodas.html">Bodas</a></li>
-                                                  <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                                  <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="eventos-empesariales.html">Eventos empresariales</a></li>
-                                                  <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                                  <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="musica-restoran.html">Música restorán</a></li>
-                                                  <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                                  <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="quinces.html">Quince años</a></li>
-                                                  <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                                  <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="eventos-privados.html">Eventos privados</a></li>
-                                                  <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                                  <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="clases-musica.html">Clases de música</a></li>
-                                              </ul>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="accordion-item" style="background-color: transparent;">
-                                  <h2 class="accordion-header" id="flush-headingTwo">
-                                      <button class="accordion-button collapsed fw-bold text-gold-soft d-flex align-items-baseline" 
-                                      type="button" 
-                                      data-bs-toggle="collapse" 
-                                      data-bs-target="#flush-collapseTwo" 
-                                      aria-expanded="false" 
-                                      aria-controls="flush-collapseTwo"
-                                      style="background-color: transparent">
-                                          Artistas
-                                      </button>
-                                  </h2>
-
-                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                      <div class="accordion-body p-0">
-                                          <ul class="">
-                                              <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="saxofonistas.html">Saxofonistas</a></li>
-                                              <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                              <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="cantantes.html">Cantantes</a></li>
-                                              <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                              <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="violinistas.html">Violinistas</a></li>
-                                              <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                              <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="djs.html">Dj´s</a></li>
-                                              <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                              <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="pianistas.html">Pianistas</a></li>
-                                              <li style="list-style: none;"><hr class="my-2" style="border-color: #EBD1AE;"></li>
-                                              <li style="list-style: none;"><a class="text-decoration-none text-gold-soft" href="fotografos.html">Fotógrafos</a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                                  </div>
-                              </div>   
-          
-                              <li class="p-2 ps-3">
-                                  <a href="comentarios.html" class="nav__mobile-items-link">
-                                      <span class="fw-bold text-gold-soft fs-1rem">&nbsp;Comentarios</span>
-                                  </a>
-                              </li>
-          
-                              <li class="actived p-2 ps-3">
-                                  <a href="nosotros.html" class="nav__mobile-items-link">
-                                      <span class="fs-1rem">&nbsp;Nosotros</span>
-                                  </a>
-                              </li>
-                          </ul>
-                      </nav>
-                  </div>
-
-                  <div class="col-6 col-sm order-sm-3 d-md-flex align-items-md-center justify-content-md-end">
-                      <!-- Desktop menu -->
-                      <ul class="nav__golden d-none d-md-flex">
-                          <li><a href="index.html">Inicio</a></li>
-              
-                          <li class="dropdown">
-                              <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <span class="position-relative">Servicios</span>
-                              </a>
-                              <ul class="dropdown-menu dropdown-menu-dark">
-                                  <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="eventos-empesariales.html">Eventos empresariales</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="musica-restoran.html">Música restorán</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="quinces.html">Quince años</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="eventos-privados.html">Eventos privados</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="clases-musica.html">Clases de música</a></li>
-                              </ul>
-                          </li>
-              
-                          <li class="dropdown">
-                              <a class="dropdown-toggle nav__arrow-down pe-4" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <span class="position-relative">Artistas</span>
-                              </a>
-                              <ul class="dropdown-menu dropdown-menu-dark">
-                                  <li><a class="dropdown-item" href="saxofonistas.html">Saxofonistas</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="cantantes.html">Cantantes</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="violinistas.html">Violinistas</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="djs.html">Dj´s</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="pianistas.html">Pianistas</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="fotografos.html">Fotógrafos</a></li>
-                              </ul>
-                          </li>
-              
-                          <li><a href="comentarios.html">Comentarios</a></li>
-              
-                          <li class="actived"><a class="nav__line-down" href="nosotros.html">Contacto</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </nav>
-
-      <!-- Content -->
-      <div class="golden__mt-main"> 
-        <div class="position-relative bg-black bg-opacity-50">
-          <img src="asset/image-temp/about-us/contacts/img-contact-c001.jpg" class="img__bg-posisioned">
-          <div class="container-fluid p-3 py-5 p-xl-5">
-            <div class="row justify-content-center py-md-3 py-xl-5">
-              <div class="col-md-6 col-lg-5">
-                <h1 class="font__roboto fw-bold text-gold-thin">Contáctenos</h1>
-
-                <div class="font__roboto mt-5">
-                  <a class="text-decoration-none text-white" href="https://wa.link/ra12hm" target="_blank">
-                    <img class="rounded-circle" src="asset/image/iconos/whatsapp.png" width="55" height="55">
-                  
-                    <span class="h3 fw-bold ms-3" style="vertical-align: bottom">Escríbenos</span>
-                    <h4 class="mt-1">+57 319 650 3791</h4>
-                  </a>
-                </div>
-
-                <div class="font__roboto mt-5">
-                  <a class="text-decoration-none text-white" href="https://www.instagram.com/goldenartistsco/" target="_blank">
-                    <img class="rounded-circle" src="asset/image/iconos/instagram.png" width="55" height="55">
-                  
-                    <span class="h3 fw-bold ms-3" style="vertical-align: bottom">Instagram</span>
-                    <h4 class="mt-1">@GoldenArtistsCo</h4>
-                  </a>
-                </div>
-
-                <div class="font__roboto text-white mt-5">
-                  <i class="bg-black rounded-circle material-symbols-outlined p-2 md-30 text-gold-thin">mail</i>
-                  
-                  <span class="h3 fw-bold ms-3" style="vertical-align: bottom">Correo electrónico</span>
-                  <h4 class="mt-1">@admin@golden-artists.com</h4>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-5">
-                <div class="row">
-                  <div class="col-12 mt-4">
-                    <div class="form-floating text-white">
-                      <input type="text" class="form-control text-white" id="name" placeholder="Name"
-                      style="background-color: inherit; border-radius: 0; border: 0; border-bottom: 3px solid #fff;">
-                      <label for="name">Name</label>
+                    <div class="ms-3">
+                        <div class="Search-bar-toggle">
+                            <span class="icon"><i class="material-symbols-outlined">search</i></span>
+                            <input type="search" id="search" placeholder="Search..." />
+                        </div>
                     </div>
-                  </div>
+                </ul>
+                <!-- Mobile menu -->
+                <div class="navigation d-flex d-lg-none position-relative">
+                    <input id="nav-mobile-check" type="checkbox">
 
-                  <div class="col-12 mt-4">
-                    <div class="form-floating text-white">
-                      <input type="text" class="form-control text-white" id="cellphone" placeholder="Name"
-                      style="background-color: inherit; border-radius: 0; border: 0; border-bottom: 3px solid #fff;">
-                      <label for="cellphone">Cellphone</label>
-                    </div>
-                  </div>
-      
-                  <div class="col-12 mt-4">
-                    <div class="form-floating text-white">
-                      <input type="email" class="form-control text-white" id="email" placeholder="name@example.com"
-                      style="background-color: inherit; border-radius: 0; border: 0; border-bottom: 3px solid #fff;">
-                      <label for="email">Email address</label>
-                    </div>
-                  </div>
-      
-                  <div class="col-12 mt-4">
-                    <div class="form-floating text-white">
-                      <textarea class="form-control text-white" placeholder="Leave a comment here" id="comments"
-                      style="height: 150px; background-color: inherit; border-radius: 0; border: 0; border-bottom: 3px solid #fff;"></textarea>
-                      <label for="comments">Comments</label>
-                    </div>
-                  </div>
-      
-                  <div class="col-12 mt-5">
-                    <button class="btn btn-gold-thin w-100 py-3" type="button">
-                      <span class="font__roboto fw-bold text-gold-hard h5 mb-0">Enviar</span>
-                    </button>
-                  </div>
+                    <label class="nav-mobile-btn-menu bg-white" for="nav-mobile-check">
+                        <span class="nav-mobile-btn-icon" aria-label="toggle navigation menu"></span>
+                    </label>
+
+                    <div class="nav-mobile-bg bg-gold-hard"></div>
+                
+                    <nav class="nav-mobile-box-list" role="navigation">
+                        <a href="index.html">
+                            <img src="./asset/image/logo/golden-artists-white-hrz.png" width="215" alt="" style="margin-left: 15px">
+                        </a>
+                        <ul class="nav-mobile-list">
+                            <li class="p-2">
+                                <a href="index.html" class="nav-mobile-item-link">
+                                    <i class="material-symbols-outlined">home</i>
+                                    <span class="h5">&nbsp;Inicio</span>
+                                </a>
+                            </li>
+                            <li class="p-2">
+                                <a href="service.html" class="nav-mobile-item-link">
+                                    <i class="material-symbols-outlined">cases</i>
+                                    <span class="h5">&nbsp;Servicios</span>
+                                </a>
+                            </li>
+                            <li class="p-2">
+                                <a href="artist.html" class="nav-mobile-item-link">
+                                    <i class="material-symbols-outlined">switch_account</i>
+                                    <span class="h5">&nbsp;Artistas</span>
+                                </a>
+                            </li>
+                            <li class="p-2">
+                                <a href="gallery.html" class="nav-mobile-item-link">
+                                    <i class="material-symbols-outlined">gallery_thumbnail</i>
+                                    <span class="h5">&nbsp;Galería</span>
+                                </a>
+                            </li>
+                            <li class="actived p-2">
+                                <a href="nosotros.html" class="nav-mobile-item-link">
+                                    <i class="material-symbols-outlined">group</i>
+                                    <span class="h5">&nbsp;Nosotros</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-              </div>
-            </div>
-          </div>
+            </nav>
         </div>
-
-        <div class="container-fluid">   
-          <div class="row bg-black bg-opacity-10 py-5">
-            <div class="col-xl-11 col-xxl-10 mx-auto">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-sm-11 col-md-8 col-lg-6 px-4 p-xl-5 my-5 my-lg-0">
-                        <div class="row border-4 border-primary border-end">
-                            <div class="col-sm-7 p-0">
-                                <div class="img__mision"></div>
+  
+        <!-- US -->
+        <div class="position-relative">
+            <!-- Top image -->
+            <div class="img-parallax"></div>
+            <div class="dinamic-bg-color"></div>
+            <div class="dinamic-bg-color dinamic-bg-color2"></div>
+            <div class="dinamic-bg-color dinamic-bg-color3"></div>
+        
+            <!-- Content -->
+            <div class="container-fluid p-0">   
+                <!-- Us -->
+                <div class="row mx-0">
+                    <div class="col-12 border-0 p-0  bg-transparent box-shadow-dark">
+                        <div class="row mx-0">
+                            <div class="col-12 col-md-5  p-0">
+                                <div class="img-info-us"></div>
                             </div>
 
-                            <div class="col-sm-5 flex-box-column-center ">
+                            <div class="col-12 col-md-7 d-flex align-items-center  p-md-5">
+                                <div class="row mx-0">
+                                    <div class="col-12  my-5 my-md-5">
+                                        <h3 class="text-center  mb-4">NOSOTROS</h3>
+                                        <h5 class="px-xxl-5">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsum? Maxime 
+                                            iusto laborum aperiam magnam atque eveniet excepturi quibusdam fugiat nisi doloribus 
+                                            repudiandae sint nulla quas, consequatur laboriosam eum ducimus.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mx-0 bg-white justify-content-center justify-content-xl-around  py-5">
+                    <!-- Misión -->
+                    <div class="col-11 col-sm-8 col-md-10 col-xl-5 
+                        border-4 border-primary border-end my-5  box-shadow-soft">
+                        <div class="row">
+                            <div class="col-md-7 p-0">
+                                <div class="img-mision-us"></div>
+                            </div>
+
+                            <div class="col-12 col-md-5 flex-box-column-center  my-5 my-md-5">
                                 <h2>Misión</h2>
                                 <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido.</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-11 col-md-8 col-lg-6 px-4 p-xl-5 my-5 my-lg-0">
-                        <div class="row border-4 border-primary border-end">
-                            <div class="col-sm-7 p-0">
-                                <div class="img__vision"></div>
+                    <!-- Visión -->
+                    <div class="col-11 col-sm-8 col-md-10 col-xl-5 my-5
+                        border-4 border-primary border-end  box-shadow-soft">
+                        <div class="row">
+                            <div class="col-md-7 p-0">
+                                <div class="img-vision-us"></div>
                             </div>
 
-                            <div class="col-sm-5 flex-box-column-center">
+                            <div class="col-12 col-md-5 flex-box-column-center  my-5 my-md-5">
                                 <h2>Visión</h2>
                                 <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="col-xl-10 mx-auto my-5 position-relative">
-              <div class="w-75 h-100 position-absolute" style="border: 18px solid #EBB467; right:0; z-index: -3;"></div>
-              <div class="row">
-                <div class="col-12 col-md-5 d-flex align-items-center">
-                  <div class="img__nosotros golden__shadow-2-black-5"></div>
-                </div>
+                <!-- Principios y Valores -->
+                <div class="mt-4  box-shadow-dark">
+                    <div class="row mx-0 justify-content-between position-relative">
+                        <!-- Imagen -->
+                        <div class="col-xl-5  p-0">
+                            <div class="w-100">
+                                <img src="./asset/image-temp/us/us-card-01.jpg" class="w-100" 
+                                height="500" style="object-fit: cover" alt="">
+                            </div>
+                        </div>
+                        <!-- Tarjeta golden artists -->
+                        <div class="d-none d-xl-flex card-golden-artist-white">
+                            <img src="./asset/image/logo/golden-artist-golden-vert.png" alt="">
+                        </div>
+                        <!-- Principios y valores -->
+                        <div class="col-xl-7  p-0">
+                            <div class="row mx-0 flex-box-column-center">
+                                <div class="col-12 bg-black text-gold-soft ms-auto p-5">
+                                    <h4 class="text-center">Nuestros</h4>
+                                    <h4 class="text-center">Principios y valores</h4>
+                                </div>
 
-                <div class="col-12 col-md-7 d-flex flex-column align-items-center p-md-5">
-                  <h2 class="text-center fw-bold mt-5 mt-md-3">NOSOTROS</h2>
+                                <div class="col-12 ms-auto p-0 d-flex justify-content-center bg-white rounded-top pb-4 p-5">
+                                    <div class="card-group-val">            
+                                        <div class="val-one">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">diversity_4</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Honestidad</small>
+                                            </div>
+                                        </div>
 
-                  <h6 class="px-sm-4 px-xxl-5 mt-3">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsum? Maxime 
-                    iusto laborum aperiam magnam atque eveniet excepturi quibusdam fugiat nisi doloribus 
-                    repudiandae sint nulla quas, consequatur laboriosam eum ducimus.
-                  </h6>
-
-                  <h3 class="my-4">Nuestros valores y principios</h3>
-
-                  <div class="card-group-val">            
-                    <div class="val-one">  
-                      <i class="material-symbols-outlined md-36 text-gold-thin">diversity_4</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Honestidad</span>
-                    </div>
-
-                    <div class="val-two">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">diversity_1</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Respeto</span>
-                    </div>
-
-                    <div class="val-three">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">clinical_notes</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Responsabilidad</span>
-                    </div>
-            
-                    <div class="val-four">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">handshake</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Compromiso</span>
-                    </div>
-                    
-                    <div class="val-five">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">schedule</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Puntualidad</span>
-                    </div>
-
-                    <div class="val-six">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">real_estate_agent</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Confianza</span>
-                    </div>
+                                        <div class="val-two">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">diversity_1</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Respeto</small>
+                                            </div>
+                                        </div>
+    
+                                        <div class="val-three">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">clinical_notes</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Responsabilidad</small>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="val-four">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">handshake</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Compromiso</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="val-five">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">schedule</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Puntualidad</small>
+                                            </div>
+                                        </div>
                 
-                    <div class="val-seven">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">workspace_premium</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Calidad</span>
-                    </div>
+                                        <div class="val-six">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">real_estate_agent</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Confianza</small>
+                                            </div>
+                                        </div>
 
-                    <div class="val-height">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">groups</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Liderazgo</span>
-                    </div>
+                                        <div class="val-text flex-box-column-center">
+                                            <h5>Valores</h5>
+                                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Quae vero, aperiam dicta ea ullam quam.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="val-nine">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">engineering</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Profesionalismo</span>
-                    </div>
-            
-                    <div class="val-ten">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">diversity_3</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Trabajo en equipo</span>
-                    </div>
-                  
-                    <div class="val-eleven">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">psychology</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Iniciativa</span>
-                    </div>
+                                <div class="col-12 ms-auto p-0 d-flex justify-content-center pt-4 p-5" style="background-color: white;">
+                                    <div class="card-group-prin">            
+                                        <div class="prin-one">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">workspace_premium</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Calidad</small>
+                                            </div>
+                                        </div>
 
-                    <div class="val-twelve">
-                      <i class="material-symbols-outlined md-36 text-gold-thin">favorite</i>
-                      <span class="text-gold-hard golden__fs-15 d-block fw-bold">Pasión</span>
+                                        <div class="prin-two">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">groups</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Liderazgo</small>
+                                            </div>
+                                        </div>
+    
+                                        <div class="prin-three">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">engineering</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Profesionalismo</small>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="prin-four">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">diversity_3</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Trabajo en equipo</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="prin-five">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">psychology</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Iniciativa</small>
+                                            </div>
+                                        </div>
+                
+                                        <div class="prin-six">
+                                            <div class="rounded-circle">
+                                                <i class="material-symbols-outlined md-36 text-primary">favorite</i>
+                                            </div>
+                                            <div class="">
+                                                <small class="text-primary">Pasión</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="prin-text flex-box-column-center">
+                                            <h5>Principios</h5>
+                                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Quae vero, aperiam dicta ea ullam quam.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div> 
-              </div>
+                </div>
             </div>
-          </div>
+        </div>   
+        
+        <!-- btn scroll -->
+        <div class="btn-scroll-top">
+            <div class="btn-scroll">
+                <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
+            </div>
         </div>
-      </div>
+        <!-- btn whatsapp -->
+        <a href="" target="_blank">
+            <img class="btn-float-whp" src="./asset/image/iconos/whatsapp-white.png" alt="">
+        </a>
 
-      <!-- btn scroll -->
-      <div class="btn__scroll-top">
-          <div class="animation__btn-scroll-effect">
-              <i class="material-symbols-outlined">keyboard_double_arrow_up</i>
-          </div>
-      </div>
-      
-      <!-- btn whatsapp -->
-      <a href="https://wa.link/ra12hm" target="_blank">
-          <img class="btn__float-whp" src="asset/image/iconos/whatsapp.png" alt="">
-      </a>
+        <!-- Footer OK  -->
+        <div class="footer-g-a bg-black">
+            <div class="container-fluid container-xl  py-5">
+                <div class="row text-white g-4">
+                    <h3 class="text-center fw-bold mb-0">Contáctenos</h3>
+                    <h5 class="text-center mt-1 mb-4 px-sm-3">por medio de nuestros canales de comunicación.</h5>
 
+                    <div class="col-12 col-xl-4 d-flex justify-content-center align-items-lg-start">
+                        <div class="row g-4 g-md-0">
+                            <div class="col-auto m-auto">
+                                <a href="index.html">
+                                    <img src="./asset/image/logo/golden-artist-golden-vert.png" width="150" alt="">
+                                </a>
+                            </div>
 
-        <!-- Footer -->
-        <div class="bg-black py-5">
-          <div class="container-fluid container-xxl">
-              <div class="row">
-                  <div class="col-12">
-                      <div class="row">
-                          <div class="col-12 col-xl-4 d-flex flex-column align-items-center mb-5 mb-xl-0">
-                              <a href="index.html">
-                              <img src="asset/image/logo/golden-artists-white-hrz.png" width="175">
-                              </a>
-                              <small class="text-gold-thin">admin@golden-artists.com</small>
-                          </div>
-              
-                          <div class="col-12 col-xl-4 col-sm-6 text-white d-flex justify-content-center align-items-center mb-5 mb-sm-0">
-                              <div>
-                              <h6 class="font__roboto fw-bold text-gold-thin">Atención inmediata</h6>
-                              <small class="d-block">&#8226; &nbsp; Whatsapp: +57  319 650 3791</small>
-                              <small class="d-block">&#8226; &nbsp; @GoldenArtistsCo</small>
-                              </div>
-                          </div>
-                          
-                          <div class="col-12 col-xl-4 col-sm-6 text-white d-flex justify-content-center align-items-center">
-                              <div>
-                              <h6 class="font__roboto fw-bold text-gold-thin">Acerca de Golden Artists</h6>
-                              <a class="text-white text-decoration-none" href="nosotros.html">
-                                  <small class="d-block">&#8226; &nbsp;  ¿Quiénes somos?</small>
-                              </a>
-                              <a class="text-white text-decoration-none" href="comentarios.html">
-                                  <small class="d-block">&#8226; &nbsp;  Comentarios</small>
-                              </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      <!-- Bootstrap 5.2 cdn -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Swiper cdn -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      <!-- AOS Animation -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <!-- Files.js -->
-      <script src="resources/js/slider.js"></script>
-      <script src="resources/js/function.js"></script>
-  </body>
+                            <div class="col d-flex flex-column mt-4 ps-md-5">
+                                <h6 class="d-flex mb-2 mb-xxl-3"><img  src="./asset/image/iconos/whatsapp-white.png" style="width:24px; height: 24px" alt="">&nbsp;&nbsp;
+                                    319 650 3791
+                                </h6>
+                                <h6 class="d-flex mb-2 mb-xxl-3">
+                                    <img src="./asset/image/iconos/instagram-white.png" style="width:20px; height: 20px" alt="">&nbsp;&nbsp;
+                                    @GoldenArtistsCo
+                                </h6>
+                                <h6 class="d-flex mb-1"><i class="material-symbols-outlined">mail</i>&nbsp;&nbsp;administrativo@goldenartist.co</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 col-xl-8 px-sm-4 mx-auto">
+                        <form action=""> 
+                            <div class="row g-4">
+                                <div class="col-12 col-xxl-12">
+                                    <div class="mt-xl-1">
+                                        <input class="form-control" type="text" placeholder="Name">
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <input class="form-control" type="text" placeholder="E-mail">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-xxl-12">
+                                    <textarea class="form-control" name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-start">
+                                    <button type="button" class="btn btn-outline-gold-soft w-50">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Redes sociales -->
+            <div>
+                <div class="row mx-0 text-white">
+                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #334c8c">
+                        <img src="./asset/image/iconos/facebook-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                    </div>
+                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #29a71a">
+                        <img src="./asset/image/iconos/whatsapp-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                    </div>
+                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #db169e">
+                        <img src="./asset/image/iconos/instagram-white.png" style="width:40px; height: 40px; vertical-align: text-bottom" alt="">
+                    </div>
+                    <div class="col-3 d-flex align-items-center justify-content-center py-4" style="background-color: #00a6de">
+                        <img src="./asset/image/iconos/tweter-white.png" style="width: 40px; height: 40px; vertical-align: text-bottom" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap 5.2 cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Files.js -->
+        <script src="./resources/js/function.js"></script>
+
+        
+        <script>
+            // Button fixed - Scroll Top 
+            window.onscroll = function(){
+                if(document.documentElement.scrollTop > 100){
+                    document.querySelector('.btn-scroll-top')
+                    .classList.add('btn-show');
+                }
+                else{
+                    document.querySelector('.btn-scroll-top')
+                    .classList.remove('btn-show');
+                }
+            }
+            document.querySelector('.btn-scroll-top')
+                .addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                }); 
+            });
+        </script>
+    </body>
 </html>

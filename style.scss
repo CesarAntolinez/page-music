@@ -1,26 +1,20 @@
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
-
-
 
 // SCSS FILES
 // components
 @import 'resources/scss/components/animations.scss';
 @import 'resources/scss/components/buttons.scss';
 @import 'resources/scss/components/cards.scss';
-@import 'resources/scss/components/golden.scss';
+@import 'resources/scss/components/customized.scss';
+@import 'resources/scss/components/flex-box.scss';
+@import 'resources/scss/components/gallery-temporal.scss';
 @import 'resources/scss/components/grids.scss';
-@import 'resources/scss/components/icons.scss';
 @import 'resources/scss/components/images.scss';
 @import 'resources/scss/components/layouts.scss';
-@import 'resources/scss/components/navs.scss';
+@import 'resources/scss/components/navbar.scss';
+@import 'resources/scss/components/tabs.scss';
 @import 'resources/scss/components/themes.scss';
 // plugins
 @import 'resources/scss/plugins/swiper.scss';
@@ -42,13 +36,26 @@ $theme-colors: (
 // Create your own map
 $custom-colors: (
   "gold-soft": #EBD1AE,
-  "gold-thin": #EBB467,
+  "gold-thin": rgb(235, 180, 103),
   "gold-matt": #AE9B81,
   "gold-dark": #9E7A46,
-  "gold-hard": #6B522F,
-  "gold-havy": #251908
+  "gold-hard": #6B522F
 );
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import './node_modules/bootstrap/scss/bootstrap.scss';
+
+/* Rules for sizing the icon. */
+.material-symbols-outlined.md-18 { font-size: 18px; }
+.material-symbols-outlined.md-20 { font-size: 20px; }
+.material-symbols-outlined.md-24 { font-size: 24px; }
+.material-symbols-outlined.md-36 { font-size: 36px; }
+.material-symbols-outlined.md-48 { font-size: 48px; }
+
+.material-symbols-outlined.fill-1 { font-variation-settings: 'FILL' 1 }
+
+// Main Font Family
+body {
+	font-family: 'Buda' !important;
+}
